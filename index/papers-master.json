@@ -1,0 +1,2801 @@
+[
+  {
+    "id": "01-1936-01",
+    "domain": "01_mathematical-foundations",
+    "year": 1936,
+    "title": "On Computable Numbers, with an Application to the Entscheidungsproblem",
+    "authors": "Alan Turing",
+    "link": "https://doi.org/10.1112/plms/s2-42.1.230",
+    "core_idea": "Defines the Turing machine — the minimal formal model of computation — and proves some problems are undecidable.",
+    "why_it_matters": "Establishes the ceiling of what any intelligence, biological or artificial, can compute; every result below inherits this frame.",
+    "keywords": [
+      "computability",
+      "turing-machine",
+      "foundations"
+    ]
+  },
+  {
+    "id": "01-1943-02",
+    "domain": "01_mathematical-foundations",
+    "year": 1943,
+    "title": "A Logical Calculus of the Ideas Immanent in Nervous Activity",
+    "authors": "Warren McCulloch, Walter Pitts",
+    "link": "https://doi.org/10.1007/BF02478259",
+    "core_idea": "Neurons as threshold logic units; networks of them compute any logical proposition.",
+    "why_it_matters": "First proof that neural substrate ⇒ computation; the founding bridge between brain and mathematics.",
+    "keywords": [
+      "mcculloch-pitts",
+      "threshold-logic",
+      "neuro-ai-bridge"
+    ]
+  },
+  {
+    "id": "01-1948-03",
+    "domain": "01_mathematical-foundations",
+    "year": 1948,
+    "title": "A Mathematical Theory of Communication",
+    "authors": "Claude Shannon",
+    "link": "https://doi.org/10.1002/j.1538-7305.1948.tb01338.x",
+    "core_idea": "Information = reduction of uncertainty (entropy); source coding and channel coding theorems; the bit.",
+    "why_it_matters": "The vocabulary of every loss function (cross-entropy = Shannon information) and of compression-as-understanding. The single most-used equation in LLM training.",
+    "keywords": [
+      "information-theory",
+      "entropy",
+      "compression"
+    ]
+  },
+  {
+    "id": "01-1964-04",
+    "domain": "01_mathematical-foundations",
+    "year": 1964,
+    "title": "A Formal Theory of Inductive Inference",
+    "authors": "Ray Solomonoff",
+    "link": "https://doi.org/10.1016/S0019-9958(64)90231-7",
+    "core_idea": "Predict the future by Bayesian mixture over all computable hypotheses, weighted by 2^(−description length) (algorithmic probability).",
+    "why_it_matters": "The mathematically ideal — though uncomputable — learner; modern sequence models are its practical approximation.",
+    "keywords": [
+      "solomonoff-induction",
+      "algorithmic-probability",
+      "prediction"
+    ]
+  },
+  {
+    "id": "01-1965-05",
+    "domain": "01_mathematical-foundations",
+    "year": 1965,
+    "title": "Three Approaches to the Quantitative Definition of Information",
+    "authors": "Andrey Kolmogorov",
+    "link": "https://doi.org/10.1109/TIT.1965.1053769",
+    "core_idea": "Kolmogorov complexity: the length of the shortest program that outputs an object.",
+    "why_it_matters": "\"Understanding = compression\" made precise; ties Occam's razor to computability.",
+    "keywords": [
+      "kolmogorov-complexity",
+      "compression",
+      "occam"
+    ]
+  },
+  {
+    "id": "01-1978-06",
+    "domain": "01_mathematical-foundations",
+    "year": 1978,
+    "title": "Modeling by Shortest Data Description",
+    "authors": "Jorma Rissanen",
+    "link": "https://doi.org/10.1016/0005-1098(78)90005-5",
+    "core_idea": "Minimum Description Length (MDL): prefer the model that compresses the data plus model code best.",
+    "why_it_matters": "Practical model-selection principle uniting compression and generalization; ancestor of bits-per-byte evals.",
+    "keywords": [
+      "mdl",
+      "model-selection",
+      "compression"
+    ]
+  },
+  {
+    "id": "01-1971-07",
+    "domain": "01_mathematical-foundations",
+    "year": 1971,
+    "title": "On the Uniform Convergence of Relative Frequencies to Probabilities (VC theory)",
+    "authors": "Vladimir Vapnik, Alexey Chervonenkis",
+    "link": "https://doi.org/10.1137/S0040585X97975476 (theory overview)",
+    "core_idea": "Generalization is controlled by the capacity (VC dimension) of the hypothesis class, not just sample count.",
+    "why_it_matters": "Classical generalization theory — and the benchmark modern deep learning spectacularly violated (see Zhang 2017), forcing new theory.",
+    "keywords": [
+      "vc-dimension",
+      "generalization-theory",
+      "capacity"
+    ]
+  },
+  {
+    "id": "01-1982-08",
+    "domain": "01_mathematical-foundations",
+    "year": 1982,
+    "title": "Simplified Neuron Model as a Principal Component Analyzer",
+    "authors": "Erkki Oja",
+    "link": "https://doi.org/10.1007/BF00275687",
+    "core_idea": "A single neuron with Hebbian plasticity plus normalization converges to the first principal component of its input.",
+    "why_it_matters": "Local, biologically plausible rules can compute global statistics — dimensionality reduction for free.",
+    "keywords": [
+      "pca",
+      "hebbian",
+      "unsupervised"
+    ]
+  },
+  {
+    "id": "01-1982-09",
+    "domain": "01_mathematical-foundations",
+    "year": 1982,
+    "title": "Neural Networks and Physical Systems with Emergent Collective Computational Abilities",
+    "authors": "John Hopfield",
+    "link": "https://doi.org/10.1126/science.186.4566.4595",
+    "core_idea": "Recurrent binary networks as energy minima = content-addressable memory; physics (spin glasses) applied to neural systems.",
+    "why_it_matters": "Founded the statistical-mechanics view of neural networks; modern \"attention as associative memory\" results trace here (Nobel Prize 2024, shared with Hinton).",
+    "keywords": [
+      "hopfield",
+      "energy-based",
+      "associative-memory",
+      "statistical-mechanics"
+    ]
+  },
+  {
+    "id": "01-1984-10",
+    "domain": "01_mathematical-foundations",
+    "year": 1984,
+    "title": "A Theory of the Learnable",
+    "authors": "Leslie Valiant",
+    "link": "https://doi.org/10.1145/1968.1972",
+    "core_idea": "PAC learning: learnable = efficiently learnable to arbitrary accuracy with high probability.",
+    "why_it_matters": "Put learning itself on computational footing — learning has complexity classes like computation does.",
+    "keywords": [
+      "pac-learning",
+      "learnability",
+      "complexity"
+    ]
+  },
+  {
+    "id": "01-1985-11",
+    "domain": "01_mathematical-foundations",
+    "year": 1985,
+    "title": "A Learning Algorithm for Boltzmann Machines",
+    "authors": "David Ackley, Geoffrey Hinton, Terrence Sejnowski",
+    "link": "https://doi.org/10.1016/0005-1098(85)90020-5",
+    "core_idea": "Stochastic energy-based networks trained by contrasting data and model statistics.",
+    "why_it_matters": "First usable learning rule for hidden-unit networks; ancestor of contrastive divergence, wake-sleep, and modern self-supervised losses.",
+    "keywords": [
+      "boltzmann-machine",
+      "energy-based",
+      "unsupervised"
+    ]
+  },
+  {
+    "id": "01-1986-12",
+    "domain": "01_mathematical-foundations",
+    "year": 1986,
+    "title": "Learning Representations by Back-Propagating Errors",
+    "authors": "David Rumelhart, Geoffrey Hinton, Ronald Williams",
+    "link": "https://www.nature.com/articles/323533a0",
+    "core_idea": "Compute gradients of error through layers via the chain rule, making internal representations trainable.",
+    "why_it_matters": "The learning algorithm of the entire deep learning era; still how every LLM trains.",
+    "keywords": [
+      "backpropagation",
+      "gradient-descent",
+      "representations"
+    ]
+  },
+  {
+    "id": "01-1988-13",
+    "domain": "01_mathematical-foundations",
+    "year": 1988,
+    "title": "The Space of Interactions in Neural Network Models (statistical mechanics of learning)",
+    "authors": "Elizabeth Gardner",
+    "link": "https://doi.org/10.1088/0305-4470/21/1/030",
+    "core_idea": "Compute the volume of parameter space consistent with a training set — capacity thresholds and phase transitions in learning.",
+    "why_it_matters": "Learning has thermodynamic phase transitions; this lens predicts grokking-like phenomena decades early.",
+    "keywords": [
+      "statistical-mechanics",
+      "capacity",
+      "phase-transitions"
+    ]
+  },
+  {
+    "id": "01-1989-14",
+    "domain": "01_mathematical-foundations",
+    "year": 1989,
+    "title": "Multilayer Feedforward Networks Are Universal Approximators",
+    "authors": "Kurt Hornik, Maxwell Stinchcombe, Halbert White",
+    "link": "https://doi.org/10.1016/0893-6080(89)90020-8",
+    "core_idea": "One hidden layer with enough units approximates any continuous function (independently: Cybenko 1989).",
+    "why_it_matters": "Guarantees representational sufficiency — but says nothing about depth efficiency or learnability (see Poole 2017).",
+    "keywords": [
+      "universal-approximation",
+      "expressivity"
+    ]
+  },
+  {
+    "id": "01-1995-15",
+    "domain": "01_mathematical-foundations",
+    "year": 1995,
+    "title": "An Information-Maximization Approach to Blind Separation and Blind Deconvolution",
+    "authors": "Anthony Bell, Terrence Sejnowski",
+    "link": "https://doi.org/10.1162/neco.1995.7.6.1129",
+    "core_idea": "Maximize output entropy (InfoMax) and the network discovers independent sources — without labels.",
+    "why_it_matters": "Information-theoretic self-supervision works; direct ancestor of contrastive and predictive self-supervised learning.",
+    "keywords": [
+      "infomax",
+      "ica",
+      "self-supervised"
+    ]
+  },
+  {
+    "id": "01-1996-16",
+    "domain": "01_mathematical-foundations",
+    "year": 1996,
+    "title": "The Lack of A Priori Distinctions Between Learning Algorithms (No Free Lunch)",
+    "authors": "David Wolpert",
+    "link": "https://doi.org/10.1162/neco.1996.8.7.1341",
+    "core_idea": "Averaged over all possible problems, no learner beats random guessing.",
+    "why_it_matters": "Generalization must come from inductive bias matched to the world's structure — explains why architecture and priors matter.",
+    "keywords": [
+      "no-free-lunch",
+      "inductive-bias"
+    ]
+  },
+  {
+    "id": "01-1998-17",
+    "domain": "01_mathematical-foundations",
+    "year": 1998,
+    "title": "Collective Dynamics of 'Small-World' Networks",
+    "authors": "Duncan Watts, Steven Strogatz",
+    "link": "https://doi.org/10.1038/30918",
+    "core_idea": "Networks interpolating regular/random achieve high clustering with short path lengths (small-world).",
+    "why_it_matters": "The architecture of brains, and increasingly of ML systems (MoE routing, agent swarms); a recurring mathematical pattern.",
+    "keywords": [
+      "network-science",
+      "small-world",
+      "mathematical-patterns"
+    ]
+  },
+  {
+    "id": "01-1999-18",
+    "domain": "01_mathematical-foundations",
+    "year": 1999,
+    "title": "Emergence of Scaling in Random Networks",
+    "authors": "Albert-László Barabási, Réka Albert",
+    "link": "https://doi.org/10.1126/science.286.5439.509",
+    "core_idea": "Growth + preferential attachment produces power-law degree distributions (scale-free networks).",
+    "why_it_matters": "Power laws appear in language (Zipf), brains, and model scaling — one generating mechanism, many systems.",
+    "keywords": [
+      "scale-free",
+      "power-laws",
+      "network-science"
+    ]
+  },
+  {
+    "id": "01-1987-19",
+    "domain": "01_mathematical-foundations",
+    "year": 1987,
+    "title": "Self-Organized Criticality: An Explanation of 1/f Noise",
+    "authors": "Per Bak, Chao Tang, Kurt Wiesenfeld",
+    "link": "https://doi.org/10.1103/PhysRevLett.58.381",
+    "core_idea": "Driven dissipative systems self-tune to a critical point between order and chaos, producing scale-invariant avalanches.",
+    "why_it_matters": "Candidate explanation for brain criticality (domain 04) and for why edge-of-chaos dynamics keep recurring in learning systems.",
+    "keywords": [
+      "criticality",
+      "self-organization",
+      "power-laws"
+    ]
+  },
+  {
+    "id": "01-1999-20",
+    "domain": "01_mathematical-foundations",
+    "year": 1999,
+    "title": "The Information Bottleneck Method",
+    "authors": "Naftali Tishby, Fernando Pereira, William Bialek",
+    "link": "https://doi.org/10.1109/ISIT.1999.770759",
+    "core_idea": "Optimal representations maximally compress X about irrelevant detail while preserving information about relevance variable Y; formally rate-distortion with a relevance constraint.",
+    "why_it_matters": "The leading formal account of what a \"good representation\" is; frames deep learning as progressive information compression.",
+    "keywords": [
+      "information-bottleneck",
+      "representations",
+      "rate-distortion"
+    ]
+  },
+  {
+    "id": "01-2014-21",
+    "domain": "01_mathematical-foundations",
+    "year": 2014,
+    "title": "An Exact Mapping Between the Variational Renormalization Group and Deep Learning",
+    "authors": "Pankaj Mehta, David Schwab",
+    "link": "https://arxiv.org/abs/1410.3831",
+    "core_idea": "Stacked restricted Boltzmann machines perform the variational renormalization group exactly.",
+    "why_it_matters": "Physics' tool for scale-dependent structure (RG) ≈ deep learning's stacked abstraction; concrete support for \"deep = multi-scale\".",
+    "keywords": [
+      "renormalization",
+      "physics",
+      "multiscale",
+      "mathematical-patterns"
+    ]
+  },
+  {
+    "id": "01-2015-22",
+    "domain": "01_mathematical-foundations",
+    "year": 2015,
+    "title": "Deep Learning and the Information Bottleneck Principle",
+    "authors": "Naftali Tishby, Noga Zaslavsky",
+    "link": "https://arxiv.org/abs/1503.02406",
+    "core_idea": "Deep networks should first fit (memorize) then compress representations — phases observed via mutual-information probes.",
+    "why_it_matters": "Predicted a two-phase training dynamic later echoing in grokking (F10).",
+    "keywords": [
+      "information-bottleneck",
+      "compression-phase"
+    ]
+  },
+  {
+    "id": "01-2016-23",
+    "domain": "01_mathematical-foundations",
+    "year": 2016,
+    "title": "Group Equivariant Convolutional Networks",
+    "authors": "Taco Cohen, Max Welling",
+    "link": "https://arxiv.org/abs/1602.07576",
+    "core_idea": "Build symmetry (translation, rotation equivariance) into architecture rather than learning it from data.",
+    "why_it_matters": "Symmetry is the strongest inductive bias physics knows; equivariant nets show architectural priors can replace data volume.",
+    "keywords": [
+      "symmetry",
+      "equivariance",
+      "inductive-bias"
+    ]
+  },
+  {
+    "id": "01-2016-24",
+    "domain": "01_mathematical-foundations",
+    "year": 2016,
+    "title": "Exponential Expressivity in Deep Neural Networks through Transient Chaos",
+    "authors": "Ben Poole, Surya Ganguli, Maithra Raghu (with \"On the Expressivity of Deep Neural Networks\", Raghu et al. 2017)",
+    "link": "https://arxiv.org/abs/1606.05340 (NeurIPS 2016); companion: https://arxiv.org/abs/1611.08087",
+    "core_idea": "Depth yields exponential gains in expressivity for representing compositional functions, beyond what width can buy.",
+    "why_it_matters": "Why we stack layers instead of widening flat ones; why hierarchies (brains included) are deep.",
+    "keywords": [
+      "expressivity",
+      "depth",
+      "compositionality"
+    ]
+  },
+  {
+    "id": "01-2017-25",
+    "domain": "01_mathematical-foundations",
+    "year": 2017,
+    "title": "Understanding Deep Learning Requires Rethinking Generalization",
+    "authors": "Chiyuan Zhang, Samy Bengio, Moritz Hardt, Benjamin Recht, Oriol Vinyals",
+    "link": "https://arxiv.org/abs/1611.03530",
+    "core_idea": "Deep nets can fit random labels perfectly, so generalization cannot follow from classical capacity control alone.",
+    "why_it_matters": "Broke VC-style theory of deep learning; opened implicit-regularization and double-descent research lines.",
+    "keywords": [
+      "generalization",
+      "implicit-regularization",
+      "overparameterization"
+    ]
+  },
+  {
+    "id": "01-2017-26",
+    "domain": "01_mathematical-foundations",
+    "year": 2017,
+    "title": "Opening the Black Box of Deep Neural Networks via Information",
+    "authors": "Ravid Shwartz-Ziv, Naftali Tishby",
+    "link": "https://arxiv.org/abs/1703.00810",
+    "core_idea": "Empirically observes the fit-then-compress information phases during SGD training.",
+    "why_it_matters": "Made information-plane analysis famous — and triggered the field's sharpest theory debate.",
+    "keywords": [
+      "information-bottleneck",
+      "empirical"
+    ]
+  },
+  {
+    "id": "01-2018-27",
+    "domain": "01_mathematical-foundations",
+    "year": 2018,
+    "title": "On the Information Bottleneck Theory of Deep Learning",
+    "authors": "Andrew Saxe et al.",
+    "link": "https://arxiv.org/abs/1801.04540 (ICLR 2018)",
+    "core_idea": "Compression phases largely vanish with ReLU/unbounded activations and realistic datasets; IB theory is not the mechanism.",
+    "why_it_matters": "The decisive rebuttal — science working; the field now treats IB as a design principle, not a law.",
+    "keywords": [
+      "information-bottleneck",
+      "critique"
+    ]
+  },
+  {
+    "id": "01-2018-28",
+    "domain": "01_mathematical-foundations",
+    "year": 2018,
+    "title": "Neural Tangent Kernel: Convergence and Generalization in Neural Networks",
+    "authors": "Arthur Jacot, Franck Gabriel, Clément Hongler",
+    "link": "https://arxiv.org/abs/1806.07572",
+    "core_idea": "In the infinite-width limit, training a network equals kernel regression with a fixed kernel (NTK).",
+    "why_it_matters": "Makes one training regime exactly solvable — and marks its boundary: NTK-lazy networks do NOT learn features.",
+    "keywords": [
+      "ntk",
+      "kernel-regime",
+      "theory"
+    ]
+  },
+  {
+    "id": "01-2019-29",
+    "domain": "01_mathematical-foundations",
+    "year": 2019,
+    "title": "On Lazy Training in Differentiable Programming",
+    "authors": "Lénaïc Chizat, Edouard Oyallon, Francis Bach",
+    "link": "https://arxiv.org/abs/1906.11248",
+    "core_idea": "Two regimes: lazy (kernel-like, features fixed) vs rich (feature learning); initialization scale selects the regime.",
+    "why_it_matters": "Feature learning — the rich regime — is what makes deep learning work; connects to grokking transitions.",
+    "keywords": [
+      "lazy-vs-rich",
+      "feature-learning"
+    ]
+  },
+  {
+    "id": "01-2019-30",
+    "domain": "01_mathematical-foundations",
+    "year": 2019,
+    "title": "Reconciling Modern Machine-Learning Practice and the Classical Bias–Variance Trade-Off",
+    "authors": "Mikhail Belkin, Daniel Hsu, Siyuan Ma, Soumik Mandal",
+    "link": "https://doi.org/10.1073/pnas.1803071116",
+    "core_idea": "Double descent: test error descends, peaks at the interpolation threshold, then descends again as overparameterization grows.",
+    "why_it_matters": "The modern generalization curve; explains why billion-parameter models on \"small\" data behave well.",
+    "keywords": [
+      "double-descent",
+      "overparameterization",
+      "generalization"
+    ]
+  },
+  {
+    "id": "01-2019-31",
+    "domain": "01_mathematical-foundations",
+    "year": 2019,
+    "title": "Deep Double Descent: Where Bigger Models and More Data Hurt",
+    "authors": "Preetum Nakkiran et al.",
+    "link": "https://arxiv.org/abs/1912.02292",
+    "core_idea": "Double descent is ubiquitous across model size, data size, and training time in modern deep learning.",
+    "why_it_matters": "Practical warning: more parameters/data can hurt before they help; scale results have regime boundaries.",
+    "keywords": [
+      "double-descent",
+      "empirical"
+    ]
+  },
+  {
+    "id": "01-2018-32",
+    "domain": "01_mathematical-foundations",
+    "year": 2018,
+    "title": "Visualizing the Loss Landscape of Neural Nets",
+    "authors": "Hao Li, Zheng Xu, Gavin Taylor, Christoph Studer, Tom Goldstein",
+    "link": "https://arxiv.org/abs/1712.09913 (NeurIPS 2018)",
+    "core_idea": "Filter-normalized visualization shows residual nets have trainable convex-ish valleys; without skip connections landscapes are chaotic.",
+    "why_it_matters": "Explains why residual connections (ResNet, transformer) made depth trainable — geometry, not just gradients.",
+    "keywords": [
+      "loss-landscape",
+      "optimization",
+      "residuals"
+    ]
+  },
+  {
+    "id": "01-2020-33",
+    "domain": "01_mathematical-foundations",
+    "year": 2020,
+    "title": "Neural Collapse: An Analysis of the Modes of Neural Network Classifiers",
+    "authors": "Vardan Papyan, X. Y. Han, David Donoho",
+    "link": "https://doi.org/10.1073/pnas.2015509117",
+    "core_idea": "At training's end, last-layer features collapse to class means arranged as a simplex ETF — a sharp geometric universal.",
+    "why_it_matters": "2025 work unifies grokking and information bottleneck via neural collapse; a concrete geometry of \"converged\" learning.",
+    "keywords": [
+      "neural-collapse",
+      "geometry",
+      "classifiers"
+    ]
+  },
+  {
+    "id": "01-2020-34",
+    "domain": "01_mathematical-foundations",
+    "year": 2020,
+    "title": "Scaling Laws for Neural Language Models",
+    "authors": "Jared Kaplan et al. (OpenAI)",
+    "link": "https://arxiv.org/abs/2001.08361",
+    "core_idea": "Loss follows smooth power laws in parameters, data, and compute, across 6+ orders of magnitude.",
+    "why_it_matters": "Made scaling a predictive engineering discipline: you can read next year's loss off this year's curves.",
+    "keywords": [
+      "scaling-laws",
+      "power-laws",
+      "llm"
+    ]
+  },
+  {
+    "id": "01-2022-35",
+    "domain": "01_mathematical-foundations",
+    "year": 2022,
+    "title": "Training Compute-Optimal Large Language Models (Chinchilla)",
+    "authors": "Jordan Hoffmann et al. (DeepMind)",
+    "link": "https://arxiv.org/abs/2203.15556",
+    "core_idea": "For fixed compute, parameters and tokens should scale equally (~20 tokens/parameter) — most 2021-era models were badly undertrained.",
+    "why_it_matters": "The recipe behind every efficient model since (LLaMA etc.); GPT-3-sized results from 4× smaller models.",
+    "keywords": [
+      "chinchilla",
+      "scaling-laws",
+      "compute-optimal"
+    ]
+  },
+  {
+    "id": "01-2022-36",
+    "domain": "01_mathematical-foundations",
+    "year": 2022,
+    "title": "Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets",
+    "authors": "Alethea Power et al.",
+    "link": "https://arxiv.org/abs/2201.02177",
+    "core_idea": "Networks memorize quickly but suddenly generalize long after overfitting, when trained past the point of zero training loss.",
+    "why_it_matters": "Separates memorization from understanding in time; a lab model of \"aha moment\" learning.",
+    "keywords": [
+      "grokking",
+      "generalization",
+      "phase-transition"
+    ]
+  },
+  {
+    "id": "01-2022-37",
+    "domain": "01_mathematical-foundations",
+    "year": 2022,
+    "title": "Towards Understanding Grokking: An Effective Theory of Representation Learning",
+    "authors": "Ziming Liu, Ouail Kitouni, Mike Nolte, Eric Michaud, Max Tegmark, Mike Williams",
+    "link": "https://arxiv.org/abs/2205.10343 (NeurIPS 2022)",
+    "core_idea": "Grokking = delayed generalization explained by a effective-theory of representation learning dynamics.",
+    "why_it_matters": "First mechanistic theory; predicts when grokking happens from dataset properties.",
+    "keywords": [
+      "grokking",
+      "theory"
+    ]
+  },
+  {
+    "id": "01-2023-38",
+    "domain": "01_mathematical-foundations",
+    "year": 2023,
+    "title": "Omnigrok: Grokking Beyond Algorithmic Data",
+    "authors": "Ziming Liu, Eric Michaud, Max Tegmark",
+    "link": "https://arxiv.org/abs/2210.01117 (ICLR 2023)",
+    "core_idea": "Grokking occurs on image datasets too; driven by weight-norm scale — \"LU mechanism\": memorize large-norm, generalize small-norm.",
+    "why_it_matters": "Grokking is general, and controllable via weight decay — a knob for generalization.",
+    "keywords": [
+      "grokking",
+      "weight-decay"
+    ]
+  },
+  {
+    "id": "01-2023-39",
+    "domain": "01_mathematical-foundations",
+    "year": 2023,
+    "title": "Progress Measures for Grokking via Mechanistic Interpretability",
+    "authors": "Neel Nanda, Lawrence Chan, Tom Lieberum, Jess Smith, Jacob Steinhardt",
+    "link": "https://arxiv.org/abs/2305.01677 (ICLR 2024)",
+    "core_idea": "Reverse-engineers a grokking network: it transitions from memorization to a generalizing Fourier/multiplication circuit; restricted-set \"pre-grokking\" progress measures predict the transition.",
+    "why_it_matters": "The cleanest causal story of emergent generalization inside a network; mechanistic interpretability's flagship result.",
+    "keywords": [
+      "grokking",
+      "mechanistic-interpretability",
+      "circuits"
+    ]
+  },
+  {
+    "id": "01-2024-40",
+    "domain": "01_mathematical-foundations",
+    "year": 2024,
+    "title": "Grokking as the Transition from Lazy to Rich Training Dynamics",
+    "authors": "Kaifeng Lyu, Zhiyuan Li, et al. (ICLR 2024)",
+    "link": "https://arxiv.org/abs/2310.06110",
+    "core_idea": "Networks grok when they escape the lazy kernel regime into rich feature learning late in training.",
+    "why_it_matters": "Unifies grokking with the NTK/lazy-rich framework — one theory for both phenomena.",
+    "keywords": [
+      "grokking",
+      "lazy-vs-rich",
+      "theory"
+    ]
+  },
+  {
+    "id": "01-2025-41",
+    "domain": "01_mathematical-foundations",
+    "year": 2025,
+    "title": "Grokking Explained: A Statistical Phenomenon",
+    "authors": "(authors: see paper)",
+    "link": "https://arxiv.org/abs/2502.01774",
+    "core_idea": "Grokking reinterpreted as a distribution shift between training and test data rather than an optimization mystery.",
+    "why_it_matters": "The 2025 theory pivot: grokking may be statistical, not dynamical — with direct implications for what \"generalization\" means for LLM evals.",
+    "keywords": [
+      "grokking",
+      "distribution-shift",
+      "theory-2025"
+    ]
+  },
+  {
+    "id": "01-2025-42",
+    "domain": "01_mathematical-foundations",
+    "year": 2025,
+    "title": "A Survey on Grokking",
+    "authors": "(survey; ACM Computing Surveys)",
+    "link": "https://dl.acm.org/doi/10.1145/3814603",
+    "core_idea": "Systematizes all grokking explanations: norm-based, circuit-formation, statistical, physics-based (glass relaxation).",
+    "why_it_matters": "Entry point to the whole grokking literature; includes 2025 evidence of grokking during 7B-parameter pretraining (OLMoE).",
+    "keywords": [
+      "grokking",
+      "survey"
+    ]
+  },
+  {
+    "id": "01-2025-43",
+    "domain": "01_mathematical-foundations",
+    "year": 2025,
+    "title": "Superposition Yields Robust Neural Scaling",
+    "authors": "(NeurIPS 2025; Anthropic toy-model based)",
+    "link": "https://neurips.cc/virtual/2025/poster/116346",
+    "core_idea": "Neural scaling laws arise mechanistically from superposition — networks storing more features than neurons in interference-prone ways.",
+    "why_it_matters": "First mechanistic account of WHY scaling laws exist, linking interpretability (domain 03) with scaling theory.",
+    "keywords": [
+      "scaling-laws",
+      "superposition",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "01-2026-44",
+    "domain": "01_mathematical-foundations",
+    "year": 2026,
+    "title": "A Limit Theory of Foundation Models",
+    "authors": "(authors: see paper)",
+    "link": "https://arxiv.org/abs/2604.24037",
+    "core_idea": "A rigorous mathematical limit theory for foundation models, extending scaling-law analysis to data quality and training strategies.",
+    "why_it_matters": "Theoretical frontier (as of 2026): scaling laws are becoming a full limit theory rather than curve fits.",
+    "keywords": [
+      "limit-theory",
+      "scaling-laws",
+      "theory-2026"
+    ]
+  },
+  {
+    "id": "01-2023-45",
+    "domain": "01_mathematical-foundations",
+    "year": 2023,
+    "title": "Scaling Data-Constrained Language Models",
+    "authors": "Niklas Muennighoff et al.",
+    "link": "https://arxiv.org/abs/2305.16264",
+    "core_idea": "Repeating data helps up to ~4 epochs, then returns diminish sharply; unique tokens dominate value.",
+    "why_it_matters": "The data side of scaling laws — governs planning when internet text runs out; motivates synthetic data and RL data loops.",
+    "keywords": [
+      "data-scaling",
+      "epochs",
+      "chinchilla"
+    ]
+  },
+  {
+    "id": "01-2005-46",
+    "domain": "01_mathematical-foundations",
+    "year": 2005,
+    "title": "Universal Artificial Intelligence / AIXI",
+    "authors": "Marcus Hutter (book); with Shane Legg",
+    "link": "https://arxiv.org/abs/0909.0801 (Legg & Hutter, \"Universal Intelligence: A Definition of Machine Intelligence\", 2007)",
+    "core_idea": "Intelligence = expected reward maximization over all computable environments weighted by algorithmic probability (AIXI); uncomputable but defines the optimum.",
+    "why_it_matters": "The formal reference point every practical intelligence (including LLMs) is measured against; Legg-Hutter gives the field's cleanest intelligence definition.",
+    "keywords": [
+      "aixi",
+      "universal-intelligence",
+      "definitions"
+    ]
+  },
+  {
+    "id": "01-2019-47",
+    "domain": "01_mathematical-foundations",
+    "year": 2019,
+    "title": "On the Measure of Intelligence",
+    "authors": "François Chollet",
+    "link": "https://arxiv.org/abs/1911.01547",
+    "core_idea": "Intelligence = skill-acquisition efficiency over novel tasks, not skill itself; introduces the ARC benchmark built on core knowledge priors.",
+    "why_it_matters": "Corrects the benchmark-culture error (skill ≠ intelligence); ARC-AGI remains the reference test for generalization (domain 05).",
+    "keywords": [
+      "intelligence-definition",
+      "arc",
+      "generalization"
+    ]
+  },
+  {
+    "id": "02-1949-01",
+    "domain": "02_deep-learning-canon",
+    "year": 1949,
+    "title": "The Organization of Behavior",
+    "authors": "Donald Hebb",
+    "link": "Wiley (book)",
+    "core_idea": "\"Neurons that fire together wire together\" — cell assemblies form via correlated activity.",
+    "why_it_matters": "The first learning rule; Oja's PCA (domain 01) and all Hebbian methods descend from it.",
+    "keywords": [
+      "hebb",
+      "plasticity",
+      "cell-assemblies"
+    ]
+  },
+  {
+    "id": "02-1958-02",
+    "domain": "02_deep-learning-canon",
+    "year": 1958,
+    "title": "The Perceptron: A Probabilistic Model",
+    "authors": "Frank Rosenblatt",
+    "link": "https://doi.org/10.1103/PhysRevLett.58.381 → correct: Psychological Review 65(6): https://doi.org/10.1037/h0042519",
+    "core_idea": "A learnable threshold neuron with a convergence proof for linearly separable data.",
+    "why_it_matters": "First artificial neural network trained by a rule; launched (and, with Minsky, froze) the field.",
+    "keywords": [
+      "perceptron",
+      "linear-models",
+      "origins"
+    ]
+  },
+  {
+    "id": "02-1969-03",
+    "domain": "02_deep-learning-canon",
+    "year": 1969,
+    "title": "Perceptrons",
+    "authors": "Marvin Minsky, Seymour Papert",
+    "link": "MIT Press (book)",
+    "core_idea": "Proves single-layer perceptrons cannot compute XOR; (over-)read as killing neural networks.",
+    "why_it_matters": "First AI winter trigger; its real lesson — depth or hidden layers are necessary — took 17 years to answer (backprop).",
+    "keywords": [
+      "perceptrons-book",
+      "xor",
+      "ai-winter"
+    ]
+  },
+  {
+    "id": "02-1986-04",
+    "domain": "02_deep-learning-canon",
+    "year": 1986,
+    "title": "Learning Internal Representations by Error Propagation (PDP, vol. 1)",
+    "authors": "David Rumelhart, Geoffrey Hinton, Ronald Williams",
+    "link": "MIT Press (chapter); companion: Rumelhart, Hinton & Williams, Nature 323 (1986)",
+    "core_idea": "Multilayer networks trained end-to-end by backpropagated error signals.",
+    "why_it_matters": "Reopened the field; every gradient-trained system since (all of them) uses this.",
+    "keywords": [
+      "backpropagation",
+      "pdp",
+      "representations"
+    ]
+  },
+  {
+    "id": "02-1989-05",
+    "domain": "02_deep-learning-canon",
+    "year": 1989,
+    "title": "Generalization and Network Design Strategies",
+    "authors": "Yann LeCun (constraint-based / weight sharing)",
+    "link": "Technical report, University of Toronto",
+    "core_idea": "\"Gradient-Based Learning Applied to Document Recognition\" (LeCun, Bottou, Bengio, Haffner, Proc. IEEE) industrialized it as LeNet-5.",
+    "why_it_matters": "The convolutional prior — the strongest demonstration that architecture = inductive bias (domain 01, F2); banks read checks with this in the 1990s.",
+    "keywords": [
+      "cnn",
+      "weight-sharing",
+      "lenet"
+    ]
+  },
+  {
+    "id": "02-1991-06",
+    "domain": "02_deep-learning-canon",
+    "year": 1991,
+    "title": "Untersuchungen zu dynamischen neuronalen Netzen (vanishing gradients)",
+    "authors": "Sepp Hochreiter (diploma thesis, advisor J. Schmidhuber)",
+    "link": "http://www.idsia.ch/~juergen/fundamentaldeeplearningproblem.html (overview)",
+    "core_idea": "Gradients through deep/squashing activations decay or explode exponentially — the \"fundamental deep learning problem.\"",
+    "why_it_matters": "Named the obstacle that residuates every architecture decision for 25 years (LSTM, ReLU, residuals, normalization).",
+    "keywords": [
+      "vanishing-gradients",
+      "depth-problem"
+    ]
+  },
+  {
+    "id": "02-1997-07",
+    "domain": "02_deep-learning-canon",
+    "year": 1997,
+    "title": "Long Short-Term Memory",
+    "authors": "Sepp Hochreiter, Jürgen Schmidhuber",
+    "link": "https://doi.org/10.1162/neco.1997.9.8.1735",
+    "core_idea": "Gated memory cells let gradients persist across hundreds of timesteps.",
+    "why_it_matters": "THE sequence model 1997–2017 (translation, speech); gates and state-carrying cells reincarnate as the transformer's residual stream with memory roles.",
+    "keywords": [
+      "lstm",
+      "recurrence",
+      "memory",
+      "gating"
+    ]
+  },
+  {
+    "id": "02-1992-08",
+    "domain": "02_deep-learning-canon",
+    "year": 1992,
+    "title": "Q-Learning",
+    "authors": "Christopher Watkins, Peter Dayan",
+    "link": "https://doi.org/10.1007/BF00992698 (Watkins & Dayan 1992, Machine Learning)",
+    "core_idea": "Learn action values by bootstrapping temporal-difference errors — no model of the world needed.",
+    "why_it_matters": "The bridge to neuroscience: dopamine neurons compute exactly this signal (Schultz 1997, domain 04); foundation of all value-based RL.",
+    "keywords": [
+      "q-learning",
+      "reinforcement-learning",
+      "td-error"
+    ]
+  },
+  {
+    "id": "02-2012-09",
+    "domain": "02_deep-learning-canon",
+    "year": 2012,
+    "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+    "authors": "Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton",
+    "link": "https://doi.org/10.1145/3065386 (NeurIPS 2012)",
+    "core_idea": "GPU-trained deep CNN cuts ImageNet error nearly in half (16.4% vs 26.2%).",
+    "why_it_matters": "The big bang of the modern era — proof that scale (data × compute × depth) wins; ignited the decade of deep learning.",
+    "keywords": [
+      "alexnet",
+      "imagenet",
+      "gpus",
+      "deep-learning-big-bang"
+    ]
+  },
+  {
+    "id": "02-2013-10",
+    "domain": "02_deep-learning-canon",
+    "year": 2013,
+    "title": "Distributed Representations of Words and Phrases (word2vec)",
+    "authors": "Tomas Mikolov et al.",
+    "link": "https://arxiv.org/abs/1310.4546 (NeurIPS 2013)",
+    "core_idea": "Skip-gram with negative sampling learns vector embeddings where directions carry meaning (king − man + woman ≈ queen).",
+    "why_it_matters": "Meaning as geometry — the first widely-used demonstration that prediction-trained vectors encode semantics; the \"embedding\" concept every LLM uses internally.",
+    "keywords": [
+      "word2vec",
+      "embeddings",
+      "distributional-semantics"
+    ]
+  },
+  {
+    "id": "02-2013-11",
+    "domain": "02_deep-learning-canon",
+    "year": 2013,
+    "title": "Auto-Encoding Variational Bayes",
+    "authors": "Diederik Kingma, Max Welling",
+    "link": "https://arxiv.org/abs/1312.6114 (ICLR 2014)",
+    "core_idea": "Variational inference made amenable by reparameterization; encoder/decoder learn probabilistic latent representations.",
+    "why_it_matters": "Founded deep generative modeling; the ELBO objective returns in diffusion theory and in \"analysis-by-synthesis\" brain models (domain 04).",
+    "keywords": [
+      "vae",
+      "generative",
+      "variational-inference"
+    ]
+  },
+  {
+    "id": "02-2014-12",
+    "domain": "02_deep-learning-canon",
+    "year": 2014,
+    "title": "Sequence to Sequence Learning with Neural Networks",
+    "authors": "Ilya Sutskever, Oriol Vinyals, Quoc Le",
+    "link": "https://arxiv.org/abs/1409.3215 (NeurIPS 2014)",
+    "core_idea": "Encode a sentence into a fixed vector, then decode it into another language.",
+    "why_it_matters": "Established the encoder-decoder paradigm — and its fixed-vector bottleneck, which attention (next entry) was invented to remove.",
+    "keywords": [
+      "seq2seq",
+      "encoder-decoder",
+      "translation"
+    ]
+  },
+  {
+    "id": "02-2014-13",
+    "domain": "02_deep-learning-canon",
+    "year": 2014,
+    "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+    "authors": "Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
+    "link": "https://arxiv.org/abs/1409.0473 (ICLR 2015)",
+    "core_idea": "Attention: the decoder dynamically looks back at all encoder states instead of one vector.",
+    "why_it_matters": "Invented attention as a soft, differentiable lookup — the mechanism the transformer made foundational (domain 03).",
+    "keywords": [
+      "attention",
+      "nmt",
+      "alignment"
+    ]
+  },
+  {
+    "id": "02-2014-14",
+    "domain": "02_deep-learning-canon",
+    "year": 2014,
+    "title": "Generative Adversarial Networks",
+    "authors": "Ian Goodfellow et al.",
+    "link": "https://arxiv.org/abs/1406.2661 (NeurIPS 2014)",
+    "core_idea": "Generator and discriminator locked in adversarial minimax; sample generation without explicit likelihoods.",
+    "why_it_matters": "Adversarial self-play as a learning signal — concept recycled in debate-based alignment and adversarial eval (domain 05); also the instability case study that made the field take training dynamics seriously.",
+    "keywords": [
+      "gan",
+      "adversarial",
+      "generative"
+    ]
+  },
+  {
+    "id": "02-2014-15",
+    "domain": "02_deep-learning-canon",
+    "year": 2014,
+    "title": "Adam: A Method for Stochastic Optimization",
+    "authors": "Diederik Kingma, Jimmy Ba",
+    "link": "https://arxiv.org/abs/1412.6980 (ICLR 2015)",
+    "core_idea": "Per-parameter adaptive moments; robust default step sizes.",
+    "why_it_matters": "The optimization workhorse (with AdamW variant) behind essentially all deep learning including LLM pretraining.",
+    "keywords": [
+      "adam",
+      "optimization",
+      "sgd"
+    ]
+  },
+  {
+    "id": "02-2015-16",
+    "domain": "02_deep-learning-canon",
+    "year": 2015,
+    "title": "Batch Normalization: Accelerating Deep Network Training",
+    "authors": "Sergey Ioffe, Christian Szegedy",
+    "link": "https://arxiv.org/abs/1502.03167 (ICML 2015)",
+    "core_idea": "Normalize layer inputs per minibatch to stabilize activation statistics.",
+    "why_it_matters": "Made very deep training stable; its successor LayerNorm/RMSNorm is a fixed component of every transformer block.",
+    "keywords": [
+      "normalization",
+      "training-stability"
+    ]
+  },
+  {
+    "id": "02-2015-17",
+    "domain": "02_deep-learning-canon",
+    "year": 2015,
+    "title": "Deep Residual Learning for Image Recognition",
+    "authors": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
+    "link": "https://arxiv.org/abs/1512.03385 (CVPR 2016)",
+    "core_idea": "Learn residual functions with identity shortcuts → 100+ layer networks trainable.",
+    "why_it_matters": "The residual stream is the transformer's backbone; loss-landscape geometry (domain 01, F7) explains WHY it works. Arguably the most reused architectural idea in history.",
+    "keywords": [
+      "resnet",
+      "residuals",
+      "skip-connections"
+    ]
+  },
+  {
+    "id": "02-2015-18",
+    "domain": "02_deep-learning-canon",
+    "year": 2015,
+    "title": "Human-Level Control Through Deep Reinforcement Learning",
+    "authors": "Volodymyr Mnih et al. (DeepMind)",
+    "link": "https://doi.org/10.1038/nature14236 (Nature 518)",
+    "core_idea": "Deep Q-network: CNN + Q-learning + experience replay + target networks learns Atari from raw pixels.",
+    "why_it_matters": "First human-level learning from raw perception; experience replay explicitly borrowed from hippocampal replay (domain 04) — the neuro-AI transfer landmark.",
+    "keywords": [
+      "dqn",
+      "atari",
+      "experience-replay",
+      "deep-rl"
+    ]
+  },
+  {
+    "id": "02-2014-19",
+    "domain": "02_deep-learning-canon",
+    "year": 2014,
+    "title": "Neural Turing Machines",
+    "authors": "Alex Graves, Greg Wayne, Ivo Danihelka",
+    "link": "https://arxiv.org/abs/1410.5401",
+    "core_idea": "Differentiable external memory addressed by content and location.",
+    "why_it_matters": "Opened the external-memory line (DNC 2016) — memory as an architectural component rather than emergent state; feeds directly into RAG and agent memory design (domain 05).",
+    "keywords": [
+      "ntm",
+      "external-memory",
+      "differentiable"
+    ]
+  },
+  {
+    "id": "02-2016-20",
+    "domain": "02_deep-learning-canon",
+    "year": 2016,
+    "title": "Mastering the Game of Go with Deep Neural Networks and Tree Search (AlphaGo)",
+    "authors": "David Silver et al. (DeepMind)",
+    "link": "https://doi.org/10.1038/nature16961 (Nature 529)",
+    "core_idea": "Policy/value networks guided Monte-Carlo tree search; trained on human games then self-play.",
+    "why_it_matters": "Search + learned evaluation beats pure scale; the template that returns in reasoning models (o1/R1 style test-time search, domain 03).",
+    "keywords": [
+      "alphago",
+      "search",
+      "self-play",
+      "planning"
+    ]
+  },
+  {
+    "id": "02-2017-21",
+    "domain": "02_deep-learning-canon",
+    "year": 2017,
+    "title": "Mastering Chess and Shogi by Self-Play (AlphaZero) / [2020] MuZero",
+    "authors": "David Silver, Julian Schrittwieser et al.",
+    "link": "https://doi.org/10.1038/s41586-020-03051-4 (MuZero, Nature 2020); arXiv 1712.01815 (AlphaZero)",
+    "core_idea": "AlphaZero: self-play alone reaches superhuman Go/chess/shogi. MuZero: learns a latent world model and plans in it — no rules given.",
+    "why_it_matters": "MuZero is the proof-of-concept that LEARNED world models + planning scale — the thesis of modern world-model research (domain 05).",
+    "keywords": [
+      "alphazero",
+      "muzero",
+      "self-play",
+      "world-models",
+      "planning"
+    ]
+  },
+  {
+    "id": "02-2018-22",
+    "domain": "02_deep-learning-canon",
+    "year": 2018,
+    "title": "Representation Learning with Contrastive Predictive Coding",
+    "authors": "Aaron van den Oord, Yazhe Li, Oriol Vinyals",
+    "link": "https://arxiv.org/abs/1807.03748",
+    "core_idea": "InfoNCE: learn representations by identifying the true future among negatives — maximizes mutual information.",
+    "why_it_matters": "The single loss behind SimCLR/MoCo/CLIP and many RL representation methods; predictive coding's engineering counterpart (domain 04).",
+    "keywords": [
+      "infonce",
+      "contrastive",
+      "predictive"
+    ]
+  },
+  {
+    "id": "02-2020-23",
+    "domain": "02_deep-learning-canon",
+    "year": 2020,
+    "title": "A Simple Framework for Contrastive Learning of Visual Representations (SimCLR)",
+    "authors": "Ting Chen, Simon Kornblith, Mohammad Norouzi, Geoffrey Hinton",
+    "link": "https://arxiv.org/abs/2002.05709 (ICML 2020)",
+    "core_idea": "Augment-crop-contrast with big batches and projection heads alone learns strong visual features.",
+    "why_it_matters": "Showed the recipe, not the architecture, drives self-supervised vision; killed the label bottleneck for pretraining.",
+    "keywords": [
+      "simclr",
+      "contrastive",
+      "self-supervised"
+    ]
+  },
+  {
+    "id": "02-2020-24",
+    "domain": "02_deep-learning-canon",
+    "year": 2020,
+    "title": "Momentum Contrast for Unsupervised Visual Representation Learning (MoCo)",
+    "authors": "Kaiming He et al.",
+    "link": "https://arxiv.org/abs/1911.05722 (CVPR 2020)",
+    "core_idea": "Dictionary-as-queue with momentum encoder makes contrastive learning practical without huge batches.",
+    "why_it_matters": "With SimCLR, established that contrastive pretraining transfers to detection/segmentation beyond supervised ImageNet pretraining — a capability transfer precedent for all foundation models.",
+    "keywords": [
+      "moco",
+      "contrastive"
+    ]
+  },
+  {
+    "id": "02-2021-25",
+    "domain": "02_deep-learning-canon",
+    "year": 2021,
+    "title": "Learning Transferable Visual Models From Natural Language Supervision (CLIP)",
+    "authors": "Alec Radford et al. (OpenAI)",
+    "link": "https://arxiv.org/abs/2103.00020 (ICML 2021)",
+    "core_idea": "Contrastively align images and text captions at web scale → zero-shot classification by prompting.",
+    "why_it_matters": "Multimodal grounding; zero-shot transfer as a paradigm; the backbone of image generators' text encoders and multimodal LLMs.",
+    "keywords": [
+      "clip",
+      "multimodal",
+      "zero-shot",
+      "grounding"
+    ]
+  },
+  {
+    "id": "02-2015-26",
+    "domain": "02_deep-learning-canon",
+    "year": 2015,
+    "title": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+    "authors": "Jascha Sohl-Dickstein et al.",
+    "link": "https://arxiv.org/abs/1503.03585 (ICML 2015)",
+    "core_idea": "Generate by slowly destroying structure with diffusion, then learn to reverse the noising process.",
+    "why_it_matters": "Planted diffusion; with DDPM (Ho et al. 2020, arXiv 2006.11239) became the dominant generative paradigm — and by 2025 a serious language-modeling paradigm (diffusion LLMs, domain 05).",
+    "keywords": [
+      "diffusion",
+      "generative",
+      "nonequilibrium"
+    ]
+  },
+  {
+    "id": "02-2017-27",
+    "domain": "02_deep-learning-canon",
+    "year": 2017,
+    "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+    "authors": "Noam Shazeer et al.",
+    "link": "https://arxiv.org/abs/1701.06538 (ICLR 2017)",
+    "core_idea": "Route each token to a few expert FFNs — parameters grow without proportional compute.",
+    "why_it_matters": "Decoupling parameters from FLOPs; the backbone of frontier open models (Mixtral, DeepSeek-V3, domain 03).",
+    "keywords": [
+      "moe",
+      "sparsity",
+      "conditional-computation"
+    ]
+  },
+  {
+    "id": "03-2017-01",
+    "domain": "03_llm-architecture-training",
+    "year": 2017,
+    "title": "Attention Is All You Need",
+    "authors": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan Gomez, Łukasz Kaiser, Illia Polosukhin",
+    "link": "https://arxiv.org/abs/1706.03762 (NeurIPS 2017)",
+    "core_idea": "Drop recurrence entirely; stacked multi-head self-attention + FFN with positional encodings, trained fully in parallel.",
+    "why_it_matters": "The substrate of every LLM; parallelism over sequence position is what made internet-scale training tractable.",
+    "keywords": [
+      "transformer",
+      "attention",
+      "architecture"
+    ]
+  },
+  {
+    "id": "03-2018-02",
+    "domain": "03_llm-architecture-training",
+    "year": 2018,
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "authors": "Jacob Devlin et al. (Google)",
+    "link": "https://arxiv.org/abs/1810.04805 (NAACL 2019)",
+    "core_idea": "Masked-language-model pretraining, bidirectional, then fine-tune per task.",
+    "why_it_matters": "Pretrain-then-adapt became the NLP paradigm; held every GLUE record on release.",
+    "keywords": [
+      "bert",
+      "masked-lm",
+      "pretraining"
+    ]
+  },
+  {
+    "id": "03-2018-03",
+    "domain": "03_llm-architecture-training",
+    "year": 2018,
+    "title": "Improving Language Understanding by Generative Pre-Training (GPT-1)",
+    "authors": "Alec Radford et al. (OpenAI)",
+    "link": "https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf",
+    "core_idea": "Unidirectional (causal) LM pretraining + light task heads.",
+    "why_it_matters": "Chose generation over masking — the path that scaled into GPT-2/3 and everything since.",
+    "keywords": [
+      "gpt",
+      "causal-lm",
+      "pretraining"
+    ]
+  },
+  {
+    "id": "03-2019-04",
+    "domain": "03_llm-architecture-training",
+    "year": 2019,
+    "title": "Language Models are Unsupervised Multitask Learners (GPT-2)",
+    "authors": "Alec Radford et al. (OpenAI)",
+    "link": "https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
+    "core_idea": "1.5B parameters, web text (WebText) → coherent multi-paragraph text, zero-shot task behavior.",
+    "why_it_matters": "First public evidence that scale alone induces task abilities without supervision — staged release foreshadowed the capability-safety debate.",
+    "keywords": [
+      "gpt-2",
+      "zero-shot",
+      "scaling"
+    ]
+  },
+  {
+    "id": "03-2020-05",
+    "domain": "03_llm-architecture-training",
+    "year": 2020,
+    "title": "Language Models are Few-Shot Learners (GPT-3)",
+    "authors": "Tom Brown et al. (OpenAI)",
+    "link": "https://arxiv.org/abs/2005.14165 (NeurIPS 2020)",
+    "core_idea": "175B parameters; in-context learning — tasks solved via prompts/examples with NO weight updates.",
+    "why_it_matters": "In-context learning is the property that turned LLMs into a general-purpose interface; launched the entire prompt-based ecosystem.",
+    "keywords": [
+      "gpt-3",
+      "in-context-learning",
+      "few-shot",
+      "scaling"
+    ]
+  },
+  {
+    "id": "03-2020-06",
+    "domain": "03_llm-architecture-training",
+    "year": 2020,
+    "title": "Scaling Laws for Neural Language Models",
+    "authors": "Jared Kaplan et al.",
+    "link": "https://arxiv.org/abs/2001.08361",
+    "core_idea": "See domain 01 — power-law loss across N, D, C.",
+    "why_it_matters": "GPT-3's training budget was set by this curve; scaling became engineering.",
+    "keywords": [
+      "scaling-laws"
+    ]
+  },
+  {
+    "id": "03-2022-07",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "Training Compute-Optimal Large Language Models (Chinchilla)",
+    "authors": "Jordan Hoffmann et al.",
+    "link": "https://arxiv.org/abs/2203.15556",
+    "core_idea": "See domain 01 — ~20 tokens/parameter at fixed compute.",
+    "why_it_matters": "Explained GPT-3-class models as undertrained; rewrote every lab's training recipe.",
+    "keywords": [
+      "chinchilla",
+      "compute-optimal"
+    ]
+  },
+  {
+    "id": "03-2020-08",
+    "domain": "03_llm-architecture-training",
+    "year": 2020,
+    "title": "Exploring the Limits of Transfer Learning? (T5: Text-to-Text Transfer Transformer)",
+    "authors": "Colin Raffel et al.",
+    "link": "https://arxiv.org/abs/1910.10683 (JMLR 2020)",
+    "core_idea": "Cast every NLP task as text-to-text; systematic ablations of scale/data/Architectures.",
+    "why_it_matters": "The field's cleanest ablation study; unified interface precursor to instruction models.",
+    "keywords": [
+      "t5",
+      "text-to-text",
+      "ablations"
+    ]
+  },
+  {
+    "id": "03-2022-09",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "Training language models to follow instructions with human feedback (InstructGPT)",
+    "authors": "Long Ouyang et al. (OpenAI)",
+    "link": "https://arxiv.org/abs/2203.02155",
+    "core_idea": "SFT on demonstrations → RLHF (PPO) with a learned reward model from pairwise human preferences.",
+    "why_it_matters": "The RLHF pipeline; ChatGPT's recipe. Aligned models differ from base models through this stage, not pretraining.",
+    "keywords": [
+      "rlhf",
+      "instructgpt",
+      "alignment",
+      "ppo"
+    ]
+  },
+  {
+    "id": "03-2017-10",
+    "domain": "03_llm-architecture-training",
+    "year": 2017,
+    "title": "Deep Reinforcement Learning from Human Preferences",
+    "authors": "Paul Christiano et al.",
+    "link": "https://arxiv.org/abs/1706.03741 (NeurIPS 2017)",
+    "core_idea": "Learn reward from human preference comparisons instead of hand-crafted rewards.",
+    "why_it_matters": "The conceptual seed of RLHF, seven years before ChatGPT; also the seed of reward-hacking concerns.",
+    "keywords": [
+      "rlhf",
+      "preferences",
+      "reward-model"
+    ]
+  },
+  {
+    "id": "03-2022-11",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "Constitutional AI: Harmlessness from AI Feedback",
+    "authors": "Yuntao Bai et al. (Anthropic)",
+    "link": "https://arxiv.org/abs/2212.08073",
+    "core_idea": "Replace human preference labels with AI feedback guided by an explicit written constitution + chain-of-thought critique.",
+    "why_it_matters": "RLAIF — supervision that scales with compute rather than human labelers; alignment-as-specified-principles.",
+    "keywords": [
+      "constitutional-ai",
+      "rlaif",
+      "alignment"
+    ]
+  },
+  {
+    "id": "03-2023-12",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "LIMA: Less Is More for Alignment",
+    "authors": "Zhou et al.",
+    "link": "https://arxiv.org/abs/2305.11206 (NeurIPS 2023)",
+    "core_idea": "1,000 curated SFT examples on a strong base ≈ RLHF-level chat quality.",
+    "why_it_matters": "Alignment is mostly SURFACE behavior elicitation — the knowledge comes from pretraining; contradicting \"alignment teaches capabilities.\"",
+    "keywords": [
+      "lima",
+      "sft",
+      "surface-alignment"
+    ]
+  },
+  {
+    "id": "03-2022-13",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+    "authors": "Jason Wei et al. (Google)",
+    "link": "https://arxiv.org/abs/2201.11903 (NeurIPS 2022)",
+    "core_idea": "Few-shot exemplars WITH intermediate steps dramatically unlock math/logic at large scale.",
+    "why_it_matters": "Reasoning as a prompting-recoverable ability; token-space computation begins here → o1/R1.",
+    "keywords": [
+      "chain-of-thought",
+      "reasoning",
+      "prompting"
+    ]
+  },
+  {
+    "id": "03-2022-14",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "Large Language Models are Zero-Shot Reasoners (“Let’s think step by step”)",
+    "authors": "Takeshi Kojima et al.",
+    "link": "https://arxiv.org/abs/2205.11916 (NeurIPS 2022)",
+    "core_idea": "A single zero-shot phrase triggers stepwise reasoning — no exemplars.",
+    "why_it_matters": "Reasoning capacity was already in the weights; prompting merely allocates tokens to it.",
+    "keywords": [
+      "zero-shot-cot",
+      "reasoning"
+    ]
+  },
+  {
+    "id": "03-2023-15",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "Self-Consistency Improves Chain of Thought Reasoning",
+    "authors": "Xuezhi Wang et al.",
+    "link": "https://arxiv.org/abs/2203.11171 (ICLR 2023)",
+    "core_idea": "Sample many reasoning paths, majority-vote answers.",
+    "why_it_matters": "Simplest test-time-compute scaling; the \"ensemble over thoughts\" ancestor of search-based reasoning.",
+    "keywords": [
+      "self-consistency",
+      "test-time-compute"
+    ]
+  },
+  {
+    "id": "03-2022-16",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "authors": "Shunyu Yao et al.",
+    "link": "https://arxiv.org/abs/2210.03629 (ICLR 2023)",
+    "core_idea": "Interleave chain-of-thought with tool/environment actions; reasoning plans actions, observations update reasoning.",
+    "why_it_matters": "The agent loop — nearly every deployed agent framework (tool use, browsing, code agents) is ReAct-shaped.",
+    "keywords": [
+      "react",
+      "agents",
+      "tool-use"
+    ]
+  },
+  {
+    "id": "03-2023-17",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "Tree of Thoughts: Deliberate Problem Solving with LLMs",
+    "authors": "Shunyu Yao et al. (Princeton/DeepMind)",
+    "link": "https://arxiv.org/abs/2305.10601 (NeurIPS 2023)",
+    "core_idea": "Explore a TREE of thought branches with LLM-guided search (BFS/DFS), value judgments, backtracking.",
+    "why_it_matters": "Explicit search over reasoning — MuZero's template in token space; big gains on planning-type tasks.",
+    "keywords": [
+      "tree-of-thoughts",
+      "search",
+      "planning"
+    ]
+  },
+  {
+    "id": "03-2020-18",
+    "domain": "03_llm-architecture-training",
+    "year": 2020,
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (RAG)",
+    "authors": "Patrick Lewis et al.",
+    "link": "https://arxiv.org/abs/2005.11401 (NeurIPS 2020)",
+    "core_idea": "Differentiable retrieval into a non-parametric memory (vector index) fused with generation.",
+    "why_it_matters": "Separates knowledge from weights — cheaper updates, fewer hallucinations, provenance; the backbone of enterprise LLM deployment.",
+    "keywords": [
+      "rag",
+      "retrieval",
+      "memory"
+    ]
+  },
+  {
+    "id": "03-2021-19",
+    "domain": "03_llm-architecture-training",
+    "year": 2021,
+    "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "authors": "Edward Hu et al.",
+    "link": "https://arxiv.org/abs/2106.09685 (ICLR 2022)",
+    "core_idea": "Freeze weights; learn low-rank update matrices — adapter quality at a fraction of memory.",
+    "why_it_matters": "Fine-tuning democratized (consumer GPUs); weight-deltas as shareable artifacts; the substrate of open-model customization.",
+    "keywords": [
+      "lora",
+      "peft",
+      "fine-tuning"
+    ]
+  },
+  {
+    "id": "03-2022-20",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "FlashAttention: Fast and Memory-Efficient Exact Attention",
+    "authors": "Tri Dao et al.",
+    "link": "https://arxiv.org/abs/2205.14135 (NeurIPS 2022)",
+    "core_idea": "IO-aware exact attention — tiling that never materializes the N×N matrix.",
+    "why_it_matters": "Attention memory wall broken via systems thinking; enabled long-context training; template for kernel-level AI engineering (FlashAttention-2/3).",
+    "keywords": [
+      "flashattention",
+      "kernels",
+      "efficiency"
+    ]
+  },
+  {
+    "id": "03-2021-21",
+    "domain": "03_llm-architecture-training",
+    "year": 2021,
+    "title": "RoFormer: Rotary Position Embedding (RoPE)",
+    "authors": "Jianlin Su et al.",
+    "link": "https://arxiv.org/abs/2104.09864",
+    "core_idea": "Rotate query/key vectors by position-dependent angles — relative positions via complex-rotation structure.",
+    "why_it_matters": "The default positional scheme of modern LLMs; RoPE-scaling tricks (NTK, YaRN) drive long-context extension.",
+    "keywords": [
+      "rope",
+      "positional-encoding",
+      "long-context"
+    ]
+  },
+  {
+    "id": "03-2022-22",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "Switch Transformers: Scaling to Trillion Parameter Models",
+    "authors": "William Fedus, Barret Zohar, Noam Shazeer",
+    "link": "https://arxiv.org/abs/2101.03961 (JMLR 2022)",
+    "core_idea": "Simplified top-1 MoE routing; trillion parameters with stable training.",
+    "why_it_matters": "MoE made routine; with Mixtral (2024) and DeepSeek-V3 (2024), sparse routing became the open-frontier default — capability per training-FLOP.",
+    "keywords": [
+      "moe",
+      "switch",
+      "conditional-computation"
+    ]
+  },
+  {
+    "id": "03-2024-23",
+    "domain": "03_llm-architecture-training",
+    "year": 2024,
+    "title": "DeepSeek-V3 Technical Report",
+    "authors": "DeepSeek-AI",
+    "link": "https://arxiv.org/abs/2412.19437",
+    "core_idea": "671B-total/37B-active MoE; Multi-head Latent Attention; FP8 training; 14.8T tokens for ~2.8M H800-GPU-hours (~$5.6M).",
+    "why_it_matters": "Frontier capability at 1/20th the cost of Western equivalents; engineering recipe ( MLA, FP8, complementary-triangle MoE load balancing) now the open standard.",
+    "keywords": [
+      "deepseek",
+      "moe",
+      "efficiency",
+      "fp8"
+    ]
+  },
+  {
+    "id": "03-2023-24",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "LLaMA: Open and Efficient Foundation Language Models",
+    "authors": "Hugo Touvron et al. (Meta)",
+    "link": "https://arxiv.org/abs/2302.13971",
+    "core_idea": "Chinchilla-optimal small models (7–65B) trained on curated public data match much larger models.",
+    "why_it_matters": "Open weights + efficient recipe → the entire open-ecosystem (Alpaca, Vicuna, Mistral lineage); weights-as-artifacts era.",
+    "keywords": [
+      "llama",
+      "open-weights",
+      "chinchilla"
+    ]
+  },
+  {
+    "id": "03-2023-25",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "Direct Preference Optimization (DPO)",
+    "authors": "Rafael Rafailov et al.",
+    "link": "https://arxiv.org/abs/2305.18290 (NeurIPS 2023)",
+    "core_idea": "Optimize preferences directly with a classification-style loss — no reward model, no PPO.",
+    "why_it_matters": "RLHF-quality alignment with supervised-training simplicity; default in open post-training stacks.",
+    "keywords": [
+      "dpo",
+      "preference-optimization"
+    ]
+  },
+  {
+    "id": "03-2024-26",
+    "domain": "03_llm-architecture-training",
+    "year": 2024,
+    "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning (GRPO)",
+    "authors": "Zhihong Shao et al.",
+    "link": "https://arxiv.org/abs/2402.03300",
+    "core_idea": "Group Relative Policy Optimization — PPO without a separate critic; advantages from group-relative rewards.",
+    "why_it_matters": "The RL algorithm that made reasoning-RL cheap enough to run at scale; foundation of R1.",
+    "keywords": [
+      "grpo",
+      "rl",
+      "reasoning"
+    ]
+  },
+  {
+    "id": "03-2025-27",
+    "domain": "03_llm-architecture-training",
+    "year": 2025,
+    "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "authors": "Daya Guo et al. (Nature, October 2025)",
+    "link": "https://doi.org/10.1038/s41586-025-09422-z",
+    "core_idea": "Pure RL with verifiable rewards (no SFT data, GRPO) elicits emergent reasoning behaviors — self-verification, reflection, long chains; test-time compute allocated by problem difficulty.",
+    "why_it_matters": "The defining result of 2025: reasoning is TRAINABLE BY RL ALONE at scale; R1-distill series moved open models to frontier reasoning; second scaling axis (inference compute) mainstreamed.",
+    "keywords": [
+      "deepseek-r1",
+      "rlvr",
+      "reasoning",
+      "test-time-compute"
+    ]
+  },
+  {
+    "id": "03-2024-28",
+    "domain": "03_llm-architecture-training",
+    "year": 2024,
+    "title": "Scaling LLM Test-Time Compute Optimally Can Be More Effective than Scaling Model Parameters",
+    "authors": "Charlie Snell, Jaehoon Lee, Sanjeev Raghavan, Avirup Sil (UC Berkeley)",
+    "link": "https://arxiv.org/abs/2408.03314 (ICLR 2025)",
+    "core_idea": "On hard math, a small model + optimized test-time search beats a 14× larger model.",
+    "why_it_matters": "Compute-optimal inference — a NEW scaling law axis; the theoretical spine of 2025's reasoning-model economics.",
+    "keywords": [
+      "test-time-compute",
+      "inference-scaling"
+    ]
+  },
+  {
+    "id": "03-2025-29",
+    "domain": "03_llm-architecture-training",
+    "year": 2025,
+    "title": "s1: Simple Test-Time Scaling",
+    "authors": "Muennighoff et al. (Stanford)",
+    "link": "https://arxiv.org/abs/2501.19393",
+    "core_idea": "1K curated examples + \"budget forcing\" (extend/suppress \"Wait\" tokens) makes a 32B model rival far larger reasoning models.",
+    "why_it_matters": "Test-time compute control reduced to token-budget steering — embarrassingly effective; reasoning supervision needs are tiny.",
+    "keywords": [
+      "s1",
+      "budget-forcing",
+      "test-time-compute"
+    ]
+  },
+  {
+    "id": "03-2025-30",
+    "domain": "03_llm-architecture-training",
+    "year": 2025,
+    "title": "The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models",
+    "authors": "Parshin Shojaee et al. (Apple)",
+    "link": "https://arxiv.org/abs/2506.06941",
+    "core_idea": "On puzzle environments with controlled complexity, reasoning models' accuracy collapses beyond a complexity threshold; effort declines as problems near the frontier.",
+    "why_it_matters": "The strongest 2025 critique of \"thinking\" — pattern-matching vs. true search; frames the evaluation frontier (procedural, contamination-free benchmarks like ARC-AGI).",
+    "keywords": [
+      "illusion-of-thinking",
+      "evaluation",
+      "limits"
+    ]
+  },
+  {
+    "id": "03-2022-31",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "In-Context Learning and Induction Heads",
+    "authors": "Catherine Olsson et al. (Anthropic)",
+    "link": "https://arxiv.org/abs/2209.11895 (Transformer Circuits)",
+    "core_idea": "Identifies induction heads — two-attention-head circuits implementing \"copy pattern A→B, complete A→? with B\" — as the mechanism behind much in-context learning; forms during a training phase change.",
+    "why_it_matters": "First circuit-level account of an emergent capability; mechanistic interpretability's flagship (with Nanda's grokking circuit, domain 01).",
+    "keywords": [
+      "induction-heads",
+      "circuits",
+      "interpretability",
+      "icl"
+    ]
+  },
+  {
+    "id": "03-2022-32",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "Toy Models of Superposition",
+    "authors": "Nelson Elhage et al. (Anthropic)",
+    "link": "https://transformer-circuits.pub/2022/toy-models/index.html",
+    "core_idea": "Networks store MORE features than neurons via nearly-orthogonal directions — polysemantic neurons are a consequence, not a bug.",
+    "why_it_matters": "Explains why interpretability is hard AND why scaling works (superposition ↔ scaling laws, domain 01 F8/2025 mechanism); foundation of sparse-autoencoder feature research.",
+    "keywords": [
+      "superposition",
+      "features",
+      "interpretability"
+    ]
+  },
+  {
+    "id": "03-2023-33",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning",
+    "authors": "Trenton Bricken et al. (Anthropic)",
+    "link": "https://transformer-circuits.pub/2023/monosemanticity/index.html",
+    "core_idea": "Sparse autoencoders extract monosemantic features (e.g., \"Golden Gate Bridge\", \"code errors\") from polysemantic layers.",
+    "why_it_matters": "Made features concrete and steerable (feature activation = behavior control); scaling monosemanticity (Templeton et al. 2024) extracted millions of features from Claude — interpretability became an engineering discipline.",
+    "keywords": [
+      "sae",
+      "features",
+      "monosemanticity",
+      "steering"
+    ]
+  },
+  {
+    "id": "03-2025-34",
+    "domain": "03_llm-architecture-training",
+    "year": 2025,
+    "title": "On the Biology of a Large Language Model (circuit tracing)",
+    "authors": "Anthropic Interpretability Team",
+    "link": "https://www.anthropic.com/research/tracing-thoughts-language-model",
+    "core_idea": "Attribution graphs trace how individual prompts flow through features and circuits in Claude — planning in poems, multi-step reasoning observed directly.",
+    "why_it_matters": "(As of 2026) the state of the art in opening the black box; moves interpretability from \"what's stored\" to \"how it computes\" — the microscope for F9's emergence questions.",
+    "keywords": [
+      "circuit-tracing",
+      "interpretability",
+      "attribution"
+    ]
+  },
+  {
+    "id": "03-2023-35",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "Faith and Fate: Limits of Transformers on Compositionality",
+    "authors": "Nouha Dziri et al.",
+    "link": "https://arxiv.org/abs/2305.18654 (NeurIPS 2023)",
+    "core_idea": "On multi-step compositional tasks transformers form parallel \"shortcut\" circuits whose error compounds exponentially with depth — they don't do serial abstraction natively.",
+    "why_it_matters": "Explains why chain-of-thought (externalizing steps into tokens) is necessary, not stylistic; motivates search and tool use.",
+    "keywords": [
+      "compositionality",
+      "limits",
+      "shortcuts"
+    ]
+  },
+  {
+    "id": "03-2020-36",
+    "domain": "03_llm-architecture-training",
+    "year": 2020,
+    "title": "The Curious Case of Neural Text Degeneration (nucleus sampling)",
+    "authors": "Ari Holtzman et al.",
+    "link": "https://arxiv.org/abs/1904.09751 (ICLR 2020)",
+    "core_idea": "Greedy/beam text is degenerate; sampling from the nucleus (top-p mass) is human-like.",
+    "why_it_matters": "Sampling strategy is cognition-relevant: model distribution's tail matters; still the default decoding knob in every deployed LLM.",
+    "keywords": [
+      "decoding",
+      "nucleus-sampling"
+    ]
+  },
+  {
+    "id": "03-2023-37",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "GPT-4 Technical Report",
+    "authors": "OpenAI",
+    "link": "https://arxiv.org/abs/2303.08774",
+    "core_idea": "Multimodal, scaled-up transformer; passes professional exams; (details withheld).",
+    "why_it_matters": "System-scale evidence of continued scaling returns + multimodality; began the closed-frontier era (benchmarks-first disclosure).",
+    "keywords": [
+      "gpt-4",
+      "system-report",
+      "multimodal"
+    ]
+  },
+  {
+    "id": "03-2025-38",
+    "domain": "03_llm-architecture-training",
+    "year": 2025,
+    "title": "Advances and Open Problems for LLMs (survey)",
+    "authors": "(authors: see paper)",
+    "link": "https://arxiv.org/abs/2503.22732",
+    "core_idea": "Analyzes 27 top models (2023–2025): reasoning saturation, data constraints, efficiency frontiers, evaluation crisis.",
+    "why_it_matters": "Best single map of the field's state as of early 2025 — use as the \"what's actually open\" reference.",
+    "keywords": [
+      "survey",
+      "open-problems",
+      "llm-2025"
+    ]
+  },
+  {
+    "id": "04-1952-01",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1952,
+    "title": "A Quantitative Description of Membrane Current and Its Application to Conduction and Excitation in Nerve",
+    "authors": "Alan Hodgkin, Andrew Huxley",
+    "link": "https://doi.org/10.1113/jphysiol.1952.sp004764 (J. Physiol.)",
+    "core_idea": "Coupled differential equations reproducing the action potential from ion-channel dynamics.",
+    "why_it_matters": "Proof that computation can be *derived* from biophysics — the template for mechanistic explanation that AI's interpretability now imitates.",
+    "keywords": [
+      "hodgkin-huxley",
+      "biophysics",
+      "spiking"
+    ]
+  },
+  {
+    "id": "04-1962-02",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1962,
+    "title": "Receptive Fields, Binocular Interaction and Functional Architecture in the Cat's Visual Cortex",
+    "authors": "David Hubel, Torsten Wiesel",
+    "link": "https://doi.org/10.1113/jphysiol.1962.sp006837",
+    "core_idea": "Cortical neurons are arranged in hierarchical feature detectors — simple cells feed complex cells with invariance.",
+    "why_it_matters": "The direct biological inspiration for CNNs (LeCun 1989) — hierarchy + feature + invariance was observed in cortex 27 years before AlexNet.",
+    "keywords": [
+      "receptive-fields",
+      "hierarchy",
+      "vision",
+      "cnn-inspiration"
+    ]
+  },
+  {
+    "id": "04-1978-03",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1978,
+    "title": "The Hippocampus as a Cognitive Map",
+    "authors": "John O'Keefe, Lynn Nadel",
+    "link": "Oxford University Press (book; place cells: O'Keefe & Dostrovsky 1971)",
+    "core_idea": "Place cells encode location; hippocampus implements a map-like relational memory, not a warehouse.",
+    "why_it_matters": "Memory as structured, relational, spatial — the design reference for vector stores, agent spatial reasoning, and episodic memory architectures.",
+    "keywords": [
+      "hippocampus",
+      "place-cells",
+      "cognitive-maps",
+      "memory"
+    ]
+  },
+  {
+    "id": "04-1982-04",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1982,
+    "title": "Vision: A Computational Investigation into the Human Representation and Processing of Visual Information",
+    "authors": "David Marr",
+    "link": "MIT Press (book, posthumous 1982)",
+    "core_idea": "Any intelligent system must be understood at three levels — computation (what/why), algorithm (how), implementation (substrate) — and levels are separable.",
+    "why_it_matters": "The discipline that keeps AI honest: transformer = one algorithmic answer; LLM scaling debates are arguments at Marr's computational level.",
+    "keywords": [
+      "marr-levels",
+      "computational-theory",
+      "methodology"
+    ]
+  },
+  {
+    "id": "04-1994-05",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1994,
+    "title": "Reactivation of Hippocampal Ensemble Memories During Sleep",
+    "authors": "Matthew Wilson, Bruce McNaughton",
+    "link": "https://doi.org/10.1126/science.1851943 (Wilson & McNaughton 1994, Science)",
+    "core_idea": "Sequences of place-cell activity from waking experience are replayed during sleep.",
+    "why_it_matters": "Offline consolidation as a computation — the biological justification for experience replay in RL (DQN) and for offline training phases generally.",
+    "keywords": [
+      "replay",
+      "sleep",
+      "consolidation",
+      "hippocampus"
+    ]
+  },
+  {
+    "id": "04-1996-06",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1996,
+    "title": "Emergence of Simple-Cell Receptive Field Properties by Learning a Sparse Code for Natural Images",
+    "authors": "Bruno Olshausen, David Field",
+    "link": "https://doi.org/10.1038/381607a0 (Nature 381)",
+    "core_idea": "Optimizing for SPARSE codes of natural images reproduces V1 receptive fields — no teacher, no labels.",
+    "why_it_matters": "The brain's sensory code is shaped by efficient coding of environmental statistics; the direct ancestor of sparse autoencoder features in LLM interpretability (domain 03, F8).",
+    "keywords": [
+      "sparse-coding",
+      "efficient-coding",
+      "unsupervised",
+      "v1"
+    ]
+  },
+  {
+    "id": "04-1997-07",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1997,
+    "title": "A Neural Substrate of Prediction and Reward (dopamine neurons)",
+    "authors": "Wolfram Schultz, Peter Dayan, Read Montague",
+    "link": "https://doi.org/10.1126/science.275.5306.1593 (Science 275)",
+    "core_idea": "Dopamine neurons do not signal reward — they signal REWARD PREDICTION ERROR, exactly the TD error of Q-learning.",
+    "why_it_matters": "The single most celebrated neuro↔AI bridge: a learning algorithm (TD, domain 02) was discovered in neurons before it was standard in machines (or rather, matched after) — reward prediction errors drive both.",
+    "keywords": [
+      "dopamine",
+      "td-error",
+      "reinforcement-learning",
+      "prediction-error"
+    ]
+  },
+  {
+    "id": "04-1999-08",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1999,
+    "title": "Predictive Coding in the Visual Cortex: A Functional Interpretation of Some Extra-Classical Receptive-Field Effects",
+    "authors": "Rajesh Rao, Dana Ballard",
+    "link": "https://doi.org/10.1038/1480 (Nature Neuroscience)",
+    "core_idea": "Cortex transmits prediction ERRORS up the hierarchy (feedback carries predictions); explains end-stopping and contextual effects.",
+    "why_it_matters": "Bandwidth-efficient, learned, hierarchical inference — the brain runs a self-supervised predictive model; the blueprint for predictive-processing architectures and a candidate biologically plausible learning rule.",
+    "keywords": [
+      "predictive-coding",
+      "hierarchy",
+      "feedback",
+      "prediction-error"
+    ]
+  },
+  {
+    "id": "04-2003-09",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2003,
+    "title": "A Neural Global Workspace Theory of Conscious (and Unconscious) Processing",
+    "authors": "Stanislas Dehaene, Jean-Pierre Changeux (building on Baars' Global Workspace 1988)",
+    "link": "https://doi.org/10.1016/S1053-8119(03)00067-7 (with Baars 2003 Neuron: \"A neuronal global workspace model\")",
+    "core_idea": "Conscious access = broadcasting of a winner-take-all selection through a global workspace — a shared, capacity-limited bottleneck routed to many processors.",
+    "why_it_matters": "A concrete architecture pattern (bottleneck + broadcast) that inspired MoE-style routing, LLM context as workspace, and modular agent designs (Goyal & Bengio 2020).",
+    "keywords": [
+      "global-workspace",
+      "consciousness",
+      "broadcast",
+      "bottleneck"
+    ]
+  },
+  {
+    "id": "04-2004-10",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2004,
+    "title": "An Information-Theoretic Measure of Consciousness (Integrated Information Theory)",
+    "authors": "Giulio Tononi",
+    "link": "https://doi.org/10.1186/1471-2202-5-42 (BMC Neuroscience)",
+    "core_idea": "Consciousness corresponds to integrated information (Φ) — the causal irreducibility of a system's parts.",
+    "why_it_matters": "Influential formal program linking substrate structure to experience; CONTested (adversarial testing 2023 favored recurrent processing over IIT) — include as theory-design lesson: formal elegance ≠ empirical validity.",
+    "keywords": [
+      "iit",
+      "consciousness",
+      "integrated-information"
+    ]
+  },
+  {
+    "id": "04-2004-11",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2004,
+    "title": "Neuronal Circuits of the Neocortex: The Canonical Microcircuit",
+    "authors": "Rodney Douglas, Kevan Martin",
+    "link": "https://doi.org/10.1146/annurev.neuro.26.041002.131126 (Annu. Rev. Neurosci.)",
+    "core_idea": "Cortex is a repeated canonical circuit (6 layers, characteristic recurrence and inhibition) whose connectivity is stereotyped across areas.",
+    "why_it_matters": "Nature's answer to architecture reuse: one repeated block, specialized by input/output, prefigures layer-stacking universality (transformer blocks).",
+    "keywords": [
+      "microcircuit",
+      "cortex",
+      "canonical-architecture"
+    ]
+  },
+  {
+    "id": "04-2005-12",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2005,
+    "title": "Microstructure of a Spatial Map in the Entorhinal Cortex (grid cells)",
+    "authors": "Torkel Hafting, Marianne Fyhn, Sturla Molden, May-Britt Moser, Edvard Moser",
+    "link": "https://doi.org/10.1038/nature03721 (Nature 436)",
+    "core_idea": "Entorhinal grid cells fire on hexagonal tessellations — a metric spatial code.",
+    "why_it_matters": "Nobel-recognized discovery of an elegant internal coordinate system; grid-cell-like codes emerge in RL agents (Banino 2018) — convergent evolution of representation between brains and networks.",
+    "keywords": [
+      "grid-cells",
+      "entorhinal",
+      "spatial-coding"
+    ]
+  },
+  {
+    "id": "04-2005-13",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2005,
+    "title": "Uncertainty, Neuromodulation, and Attention (ACh & NE)",
+    "authors": "Angela Yu, Peter Dayan",
+    "link": "https://doi.org/10.1016/j.neuron.2005.04.014 (Neuron 46)",
+    "core_idea": "Acetylcholine signals expected uncertainty; norepinephrine signals unexpected uncertainty — neuromodulators encode uncertainty types, gating learning and attention.",
+    "why_it_matters": "Global state control as architecture: neuromodulation is a broadcast hyperparameter system — the biological template for meta-learners, adaptive optimizers, and context conditioning in ML.",
+    "keywords": [
+      "neuromodulation",
+      "uncertainty",
+      "ach",
+      "ne",
+      "gain-control"
+    ]
+  },
+  {
+    "id": "04-2006-14",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2006,
+    "title": "Small-World Brain Networks",
+    "authors": "Danielle Bassett, Ed Bullmore",
+    "link": "https://doi.org/10.1016/j.brainresrev.2006.03.011 (and Watts–Strogatz 1998, domain 01)",
+    "core_idea": "Human brain graphs combine high local clustering with short global path lengths — optimal for segregated AND integrated processing.",
+    "why_it_matters": "Network-architecture lesson for AI: mixture-of-experts routing, agent topologies, and MoE load-balancing are engineering rediscoveries of small-world design.",
+    "keywords": [
+      "connectome",
+      "small-world",
+      "network-topology"
+    ]
+  },
+  {
+    "id": "04-2006-15",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2006,
+    "title": "Neuronal Avalanches in Neocortical Circuits",
+    "authors": "John Beggs, Dietmar Plenz",
+    "link": "https://doi.org/10.1523/JNEUROSCI.23-35-11167.2003 (J. Neurosci. 2003); see also Kinouchi & Copelli 2006, Nat. Phys.",
+    "core_idea": "Cortical activity propagates in power-law-distributed avalanches — signatures of operation near a critical point.",
+    "why_it_matters": "Evidence the brain self-tunes to criticality (maximal dynamic range, information transmission) — matching self-organized criticality in physics (domain 01, F11) and edge-of-chaos results in RNN/attention dynamics.",
+    "keywords": [
+      "criticality",
+      "avalanches",
+      "power-laws"
+    ]
+  },
+  {
+    "id": "04-2008-16",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2008,
+    "title": "Representational Similarity Analysis (RSA): Connecting Computational Models with Brains",
+    "authors": "Nikolaus Kriegeskorte, Marieke Mur, Peter Bandettini",
+    "link": "https://doi.org/10.3389/neuro.06.039.2008 (Frontiers in Systems Neuroscience; concept formalizing Edelman 1998)",
+    "core_idea": "Compare representations via geometry of pairwise distances — model-agnostic comparison between brains, behavior, and machines.",
+    "why_it_matters": "The measurement tool of representational convergence: CNN layers ↔ visual cortex correspondences (later Yamins et al. 2014) were established this way; reusable for comparing your model's internal geometry to anything.",
+    "keywords": [
+      "rsa",
+      "representational-geometry",
+      "neuro-ai-comparison"
+    ]
+  },
+  {
+    "id": "04-2006-17",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2006,
+    "title": "Sleep and Synaptic Homeostasis",
+    "authors": "Giulio Tononi, Chiara Cirelli",
+    "link": "https://doi.org/10.1016/j.neuron.2006.04.016 (Neuron; hypothesis 2003–2006)",
+    "core_idea": "Sleep globally downscales synaptic strengths — renormalizing after a day of potentiation, preserving relative weights.",
+    "why_it_matters": "A biological analogue of normalization and weight decay — \"forget the noise, keep the signal\"; a design hint for continual-learning systems that consolidate by re-normalizing.",
+    "keywords": [
+      "sleep",
+      "homeostasis",
+      "synaptic-scaling"
+    ]
+  },
+  {
+    "id": "04-2018-18",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2018,
+    "title": "Prioritized Memory Access Reveals Planning Networks in the Brain",
+    "authors": "Marcelo Mattar, Nathaniel Daw",
+    "link": "https://doi.org/10.1038/s41593-018-0232-z (Nature Neuroscience)",
+    "core_idea": "What to replay is itself a computation: expected reward gain × shortcut-to-decision determine replay priority.",
+    "why_it_matters": "Explains WHY experience replay works and when: prioritized replay is information-theoretically optimal curriculum — directly transferable to RL buffer design and agent memory management.",
+    "keywords": [
+      "replay",
+      "planning",
+      "prioritization",
+      "rl-bridge"
+    ]
+  },
+  {
+    "id": "04-2017-19",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2017,
+    "title": "Dendritic Error Backpropagation in Deep Cortical Microcircuits",
+    "authors": "João Sacramento, Rui Ponte Costa, Yoshua Bengio, Walter Senn",
+    "link": "https://doi.org/10.1038/s41593-017-0020-0 (Nature Neuroscience)",
+    "core_idea": "Layer-specific dendritic compartments can carry error signals locally, approximating backprop in a biologically plausible cortical circuit.",
+    "why_it_matters": "Existence proof that error-driven deep learning might be implementable in wetware — and a template for local-learning-rule hardware (neuromorphic, optical).",
+    "keywords": [
+      "dendrites",
+      "local-learning",
+      "backprop-plausibility"
+    ]
+  },
+  {
+    "id": "04-2016-20",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2016,
+    "title": "Random Feedback Weights Support Learning in Deep Neural Networks (feedback alignment)",
+    "authors": "Timothy Lillicrap, Daniel Cownden, Douglas Tweed, Colin Akerman",
+    "link": "https://doi.org/10.1038/ncomms13276 (Nature Communications)",
+    "core_idea": "Backward weights need not be symmetric — networks adapt their forward weights to whatever feedback channel exists.",
+    "why_it_matters": "Kills the \"backprop is biologically impossible\" objection in its simplest form; enables training on hardware where exact reverse passes are impractical.",
+    "keywords": [
+      "feedback-alignment",
+      "local-learning",
+      "plausibility"
+    ]
+  },
+  {
+    "id": "04-2016-21",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2016,
+    "title": "Towards an Integration of Deep Learning and Neuroscience",
+    "authors": "Adam Marblestone, Greg Wayne, Konrad Kording",
+    "link": "https://doi.org/10.3389/fncom.2016.00094 (Frontiers in Computational Neuroscience)",
+    "core_idea": "Systematic map of what neuroscience could contribute to deep learning: memory, attention, continual learning — with the transfer direction specified.",
+    "why_it_matters": "The reference agenda for neuro→AI borrowing; use as a checklist against your architecture design.",
+    "keywords": [
+      "neuro-ai",
+      "integration",
+      "agenda"
+    ]
+  },
+  {
+    "id": "04-2017-22",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2017,
+    "title": "Neuroscience-Inspired Artificial Intelligence",
+    "authors": "Demis Hassabis, Dharshan Kumaran, Courtney Summerfield, Matthew Botvinick",
+    "link": "https://doi.org/10.1016/j.neuron.2017.06.011 (Neuron 95)",
+    "core_idea": "Historical and forward synthesis: reliving the neuro→AI pipeline that produced CNNs/RL/attention, and what remains untapped (meta-learning, memory consolidation).",
+    "why_it_matters": "The manifesto of the field from DeepMind's cofounder — argues AGI likely requires re-engagement with brain mechanisms.",
+    "keywords": [
+      "neuro-ai",
+      "manifesto",
+      "hassabis"
+    ]
+  },
+  {
+    "id": "04-2018-23",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2018,
+    "title": "Prefrontal Cortex as a Meta-Reinforcement Learning System",
+    "authors": "Jane Wang, Zeb Kurth-Nelson, Dharshan Kumaran, ... Matthew Botvinick, Demis Hassabis",
+    "link": "https://doi.org/10.1038/s41593-018-0147-8 (Nature Neuroscience 21)",
+    "core_idea": "The brain's prefrontal system implements meta-RL: slow synaptic learning (outside) shapes a fast in-context learner (inside) — and the same dynamics emerge in recurrent ANNs trained on task distributions.",
+    "why_it_matters": "Unifies biological and artificial in-context learning: prefrontal meta-RL ≈ transformer ICL (domain 03, F7); tells you when learned recurrent state beats weight updates.",
+    "keywords": [
+      "meta-learning",
+      "prefrontal",
+      "icl-parallel"
+    ]
+  },
+  {
+    "id": "04-2019-24",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2019,
+    "title": "High-Dimensional Geometry of Population Responses",
+    "authors": "Stringer, C. et al. (Carsen Stringer, Marius Pachitariu, Nicholas Steinmetz, ... Kenneth Harris)",
+    "link": "https://doi.org/10.1038/s41586-019-1346-5 (\"High-dimensional geometry of population responses in visual cortex\", Nature)",
+    "core_idea": "Cortical populations track many stimulus variables (near-power-law eigenspectrum) while remaining decodable — high-dimensional but smooth, no collapse.",
+    "why_it_matters": "Empirical geometry that neural networks should match; connects to superposition (domain 03, F8) and neural collapse (domain 01) — three views of representation geometry across substrates.",
+    "keywords": [
+      "population-geometry",
+      "manifold",
+      "representational-dimension"
+    ]
+  },
+  {
+    "id": "04-2020-25",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2020,
+    "title": "Inductive Biases for Higher-Level Cognition",
+    "authors": "Anirudh Goyal, Yoshua Bengio",
+    "link": "https://arxiv.org/abs/2011.09192",
+    "core_idea": "Transplant Global-Workspace-style inductive biases (bottleneck, modules, broadcast, attention control) into deep nets for combinatorial generalization.",
+    "why_it_matters": "The most concrete GWT-to-architecture pipeline — directly relevant to modular/multi-agent LLM system design (domain 05).",
+    "keywords": [
+      "global-workspace",
+      "inductive-bias",
+      "modularity"
+    ]
+  },
+  {
+    "id": "04-2025-26",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2025,
+    "title": "A Survey on Neuro-Mimetic Deep Learning via Predictive Coding",
+    "authors": "Tommaso Salvatori et al.",
+    "link": "arXiv (2025; PubMed-indexed — search \"Salvatori predictive coding survey\")",
+    "core_idea": "Comprehensive survey of predictive coding as a learning algorithm — approximating backprop with local errors, with efficiency gains on edge hardware.",
+    "why_it_matters": "The 2025 state of a serious backprop alternative: local, online, event-friendly — candidate learning rule for neuromorphic and continually-learning systems (domain 05).",
+    "keywords": [
+      "predictive-coding",
+      "survey",
+      "backprop-alternative",
+      "2025"
+    ]
+  },
+  {
+    "id": "05-2012-01",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2012,
+    "title": "Perceptions as Hypotheses: Saccades as Experiments",
+    "authors": "Karl Friston, Rick Adams, Laurent Perrinet, Michael Breakspear",
+    "link": "https://doi.org/10.1098/rstb.2011.0426 (Phil. Trans. R. Soc. B)",
+    "core_idea": "Under active inference, perception and action both minimize the same free-energy functional — the brain literally acts to test its perceptual hypotheses.",
+    "why_it_matters": "The founding statement that one objective (expected free energy) can drive perception, planning, and curiosity — a template for agents that need no separate reward function. Kept short here; neuroscience context in domain 04.",
+    "keywords": [
+      "active-inference",
+      "free-energy",
+      "perception-action"
+    ]
+  },
+  {
+    "id": "05-2018-02",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2018,
+    "title": "World Models",
+    "authors": "David Ha, Jürgen Schmidhuber",
+    "link": "https://arxiv.org/abs/1803.10122 (NeurIPS 2018)",
+    "core_idea": "Train a tiny VAE world model and an RNN predictor of its latent dynamics, then evolve a small controller inside hallucinated dreams instead of the real environment.",
+    "why_it_matters": "First striking demonstration that a *learned internal simulator* can be the training ground for behavior — the conceptual seed of Dreamer and of all latent-imagination agents.",
+    "keywords": [
+      "world-models",
+      "dreaming",
+      "evolution",
+      "v-m-c"
+    ]
+  },
+  {
+    "id": "05-2019-03",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2019,
+    "title": "Learning Latent Dynamics for Planning from Pixels (PlaNet) / [2020] Dream to Control (Dreamer)",
+    "authors": "Danijar Hafner, Timothy Lillicrap, et al.",
+    "link": "https://arxiv.org/abs/1811.04551 (PlaNet, ICML 2019); https://arxiv.org/abs/1912.01603 (Dreamer, ICLR 2020)",
+    "core_idea": "PlaNet learns a recurrent state-space model from pixels and plans in it; Dreamer makes it sample-efficient by backpropagating value through imagined trajectories (latent imagination) with a replay of only real interactions.",
+    "why_it_matters": "Converts RL from trial-and-error in reality to *learning inside a learned model* — the efficiency route to agents that cannot afford millions of real mistakes.",
+    "keywords": [
+      "world-models",
+      "latent-planning",
+      "model-based-rl",
+      "dreamer"
+    ]
+  },
+  {
+    "id": "05-2020-04",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2020,
+    "title": "Scaling Active Inference",
+    "authors": "Alex Tschantz, Beren Millidge, Anil K. Seth, Christopher L. Buckley",
+    "link": "https://arxiv.org/abs/1911.10601 (PLoS Computational Biology)",
+    "core_idea": "Deep active-inference agents (expected free energy = extrinsic value + epistemic value) match or beat model-free RL on standard domains and solve tasks RL cannot without reward shaping.",
+    "why_it_matters": "Shows active inference is an engineering-viable alternative to reward-based RL — intrinsic curiosity falls out of the objective rather than being bolted on.",
+    "keywords": [
+      "active-inference",
+      "epistemic-value",
+      "curiosity",
+      "deep-rl"
+    ]
+  },
+  {
+    "id": "05-2023-05",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Mastering Diverse Domains through World Models (DreamerV3)",
+    "authors": "Danijar Hafner, Jurgis Pasukonis, Jimmy Ba, Timothy Lillicrap",
+    "link": "https://arxiv.org/abs/2301.04104",
+    "core_idea": "A single fixed hyperparameter set masters 150+ tasks across benchmarks, and becomes the first agent to collect a Minecraft diamond from scratch, with no human data.",
+    "why_it_matters": "First evidence that one world-model-based learner can scale across wildly different domains — a concrete counter-proposal to \"one benchmark per specialized RL stack\".",
+    "keywords": [
+      "dreamer-v3",
+      "world-models",
+      "minecraft",
+      "generality"
+    ]
+  },
+  {
+    "id": "05-2022-06",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2022,
+    "title": "A Path Towards Autonomous Machine Intelligence (JEPA position paper)",
+    "authors": "Yann LeCun",
+    "link": "https://openreview.net/pdf?id=BZ5a1r-kVsf",
+    "core_idea": "An architecture blueprint (Joint Embedding Predictive Architecture) in which agents predict in *abstract representation space*, not pixels, using a hierarchy of world models plus a configurator and intrinsic cost.",
+    "why_it_matters": "The most detailed published alternative to the generative-next-token path: prediction without generation, planning in latent space, energy-based inference — and it now anchors a real research program (I-JEPA, V-JEPA).",
+    "keywords": [
+      "jepa",
+      "latent-prediction",
+      "world-models",
+      "position-paper"
+    ]
+  },
+  {
+    "id": "05-2023-07",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture (I-JEPA)",
+    "authors": "Mahmoud Assran, Quentin Duval, Ishan Misra, et al. (Meta)",
+    "link": "https://arxiv.org/abs/2301.08243 (CVPR 2023)",
+    "core_idea": "Predict representations of masked image regions from other regions, in embedding space — no pixel reconstruction, no hand-crafted augmentations.",
+    "why_it_matters": "First large-scale working instance of LeCun's blueprint: representation learning by latent prediction beats generative and contrastive pipelines, validating \"predict abstractions, not pixels\".",
+    "keywords": [
+      "i-jepa",
+      "self-supervised",
+      "latent-prediction"
+    ]
+  },
+  {
+    "id": "05-2024-08",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2024,
+    "title": "Revisiting Feature Prediction for Learning Visual Representations from Video (V-JEPA)",
+    "authors": "Adrien Bardes, Quentin Garrido, Jean Ponce, et al. (Meta)",
+    "link": "https://arxiv.org/abs/2404.08471",
+    "core_idea": "Extends JEPA to video: predict latent features of temporally masked frames; the model develops intuitive physics (object permanence, action prediction) without labels.",
+    "why_it_matters": "Moves world models toward the pretraining-scale regime — a video-prediction substrate that downstream agents and robotics stacks can build on.",
+    "keywords": [
+      "v-jepa",
+      "video",
+      "intuitive-physics",
+      "self-supervised"
+    ]
+  },
+  {
+    "id": "05-2016-09",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2016,
+    "title": "Hybrid Computing Using a Neural Network with Dynamic External Memory (DNC)",
+    "authors": "Alex Graves, Greg Wayne, Ivo Danihelka, et al. (DeepMind)",
+    "link": "https://doi.org/10.1038/nature20101 (Nature)",
+    "core_idea": "A neural controller with a differentiable, addressable external memory matrix it learns to read, write, and allocate — inference and manipulation by pure gradient descent.",
+    "why_it_matters": "Memory as an explicit architectural component (not emergent state) — the ancestor of RAG indexes, agent episodic stores, and test-time-memory architectures.",
+    "keywords": [
+      "dnc",
+      "external-memory",
+      "differentiable-memory"
+    ]
+  },
+  {
+    "id": "05-2016-10",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2016,
+    "title": "Learning to Reinforcement Learn",
+    "authors": "Jane X. Wang, Zeb Kurth-Nelson, Dhruva Tirumala, et al. (DeepMind)",
+    "link": "https://arxiv.org/abs/1611.05763",
+    "core_idea": "An RNN meta-trained across many tasks learns implicit RL algorithms in its recurrent dynamics — including exploration strategies adapted to each new task at test time.",
+    "why_it_matters": "Demonstrates that learning-to-learn can emerge in weights + activation state rather than hand-designed updates; the pre-LLM statement of \"pretraining then adapting\" for decision-making.",
+    "keywords": [
+      "meta-rl",
+      "rnn",
+      "learning-to-learn"
+    ]
+  },
+  {
+    "id": "05-2016-11",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2016,
+    "title": "HyperNetworks",
+    "authors": "David Ha, Andrew Dai, Quoc V. Le",
+    "link": "https://arxiv.org/abs/1609.09106 (ICLR 2017)",
+    "core_idea": "One network generates the weights of another, so model structure itself becomes a learned, dynamically adaptable function of context.",
+    "why_it_matters": "Weights stop being fixed parameters and become *state* — the conceptual root of fast weights, hypernetwork adapters, and test-time weight adaptation.",
+    "keywords": [
+      "hypernetworks",
+      "weight-generation",
+      "fast-weights"
+    ]
+  },
+  {
+    "id": "05-2017-12",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2017,
+    "title": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks (MAML)",
+    "authors": "Chelsea Finn, Pieter Abbeel, Sergey Levine",
+    "link": "https://arxiv.org/abs/1703.03400 (ICML 2017)",
+    "core_idea": "Optimize initial parameters explicitly so that a few gradient steps on a new task yield good performance — learn an initialization, not a solution.",
+    "why_it_matters": "The canonical formalization of \"learn to adapt in k steps\"; the reference point every sample-efficient-adaptation scheme (including LLM-tuning-as-meta-learning analogies) is measured against.",
+    "keywords": [
+      "maml",
+      "meta-learning",
+      "few-shot-adaptation"
+    ]
+  },
+  {
+    "id": "05-2020-13",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2020,
+    "title": "Hopfield Networks is All You Need",
+    "authors": "Hubert Ramsauer, Bernhard Schäfl, Johannes Lehner, et al. (Hochreiter group)",
+    "link": "https://arxiv.org/abs/2008.02217 (ICLR 2021)",
+    "core_idea": "Transformer attention is mathematically equivalent to one update step of a modern (exponential-capacity) Hopfield network retrieving a stored pattern.",
+    "why_it_matters": "Reframes attention as *associative memory retrieval* — connecting transformers to the Hopfield energy-based lineage (domain 01) and licensing energy-based, memory-centric alternatives to softmax attention.",
+    "keywords": [
+      "hopfield",
+      "associative-memory",
+      "attention-theory",
+      "energy-based"
+    ]
+  },
+  {
+    "id": "05-2001-14",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2001,
+    "title": "The \"Echo State\" Approach to Analysing and Training Recurrent Neural Networks",
+    "authors": "Herbert Jaeger",
+    "link": "GMD Report 148, German National Research Center for Information Technology",
+    "core_idea": "Keep a large random recurrent reservoir fixed and train only a linear readout — the \"echo state\" property makes the reservoir a fading memory of its input history.",
+    "why_it_matters": "Established reservoir computing: dynamics as a fixed feature map, learning confined to a cheap output layer — the low-energy predecessor of today's frozen-backbone + small-adapter designs.",
+    "keywords": [
+      "echo-state",
+      "reservoir-computing",
+      "rcc"
+    ]
+  },
+  {
+    "id": "05-2018-15",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2018,
+    "title": "Neural Ordinary Differential Equations",
+    "authors": "Ricky T. Q. Chen, Yulia Rubanova, Jesse Bettencourt, David Duvenaud",
+    "link": "https://arxiv.org/abs/1806.07366 (NeurIPS 2018)",
+    "core_idea": "Define network depth as a continuous ODE solved by standard numerical integrators, with gradients via the adjoint method at constant memory cost.",
+    "why_it_matters": "Makes *continuous time* a first-class modeling axis — the mathematical basis for liquid networks and for architectures that trade discrete layers for physical-time dynamics.",
+    "keywords": [
+      "neural-ode",
+      "continuous-time",
+      "adjoint-method"
+    ]
+  },
+  {
+    "id": "05-2023-16",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "RWKV: Reinventing RNNs for the Transformer Era",
+    "authors": "Bo Peng, Eric Alcaide, et al.",
+    "link": "https://arxiv.org/abs/2305.13048 (EMNLP Findings 2023)",
+    "core_idea": "An RNN that can be trained in parallel like a transformer (linear attention reformulated as a recurrence) and runs in constant memory at inference.",
+    "why_it_matters": "Proof that recurrence and parallel training are not mutually exclusive — a streaming, deployable alternative to quadratic attention born in the open-source community.",
+    "keywords": [
+      "rwkv",
+      "rnn",
+      "linear-attention",
+      "streaming"
+    ]
+  },
+  {
+    "id": "05-2023-17",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Hyena Hierarchy: Towards Larger Convolutional Language Models",
+    "authors": "Michael Poli, Stefano Massaroli, Eric Nguyen, et al.",
+    "link": "https://arxiv.org/abs/2302.10866 (ICML 2023)",
+    "core_idea": "Replace attention with long implicit convolutions gated by a small MLP, yielding subquadratic scaling to hundreds of thousands of context tokens.",
+    "why_it_matters": "Showed the attention kernel itself is replaceable at language-model scale — the long-convolution branch of the post-transformer zoo that Mamba later overshadowed.",
+    "keywords": [
+      "hyena",
+      "long-convolutions",
+      "subquadratic"
+    ]
+  },
+  {
+    "id": "05-2023-18",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+    "authors": "Albert Gu, Tri Dao",
+    "link": "https://arxiv.org/abs/2312.00752",
+    "core_idea": "Make state-space parameters input-dependent (selective), so the model chooses what to remember or forget — transformer-class quality at linear time and constant per-token memory.",
+    "why_it_matters": "The flagship non-transformer backbone: streaming/edge inference, million-token contexts, and DNA/audio modeling — and the template the whole 2024+ SSM ecosystem (Jamba, hybrid stacks) builds on.",
+    "keywords": [
+      "mamba",
+      "state-space-models",
+      "selective",
+      "linear-time"
+    ]
+  },
+  {
+    "id": "05-2024-19",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2024,
+    "title": "xLSTM: Extended Long Short-Term Memory",
+    "authors": "Maximilian Beck, Korbinian Pöppel, Markus Spanring, et al. (Hochreiter group)",
+    "link": "https://arxiv.org/abs/2405.04517",
+    "core_idea": "Modernizes the LSTM with exponential gating and matrix memory (sLSTM, mLSTM), restoring the classic cell's competitiveness with transformers and Mamba.",
+    "why_it_matters": "The recurrence line did not die in 2017 — a direct counter-demonstration that gated recurrence, properly upgraded, belongs in the architecture search space.",
+    "keywords": [
+      "xlstm",
+      "recurrence",
+      "gated-memory"
+    ]
+  },
+  {
+    "id": "05-2024-20",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2024,
+    "title": "KAN: Kolmogorov-Arnold Networks",
+    "authors": "Ziming Liu, Yixuan Wang, Sachin Vaidya, et al.",
+    "link": "https://arxiv.org/abs/2404.19756",
+    "core_idea": "Put learnable activation functions on edges (B-splines) instead of fixed activations on nodes, exploiting the Kolmogorov-Arnold representation theorem.",
+    "why_it_matters": "Small KANs discover symbolic, interpretable formulas where MLPs fit opaque surfaces — an architecture whose inductive bias points toward compositional and scientific discovery, not just benchmark loss.",
+    "keywords": [
+      "kan",
+      "learnable-activations",
+      "symbolic",
+      "interpretability"
+    ]
+  },
+  {
+    "id": "05-2024-21",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2024,
+    "title": "Learning to (Learn at Test Time): RNNs with Expressive Hidden States (TTT layers)",
+    "authors": "Yu Sun, Xinhao Li, Karan Dalal, et al. (Stanford)",
+    "link": "https://arxiv.org/abs/2407.04620",
+    "core_idea": "Make the RNN hidden state itself a small neural network whose update rule is a step of self-supervised learning — the sequence layer literally trains its memory during the forward pass.",
+    "why_it_matters": "Unifies fast weights, meta-learning, and long-context modeling: adaptation stops being a separate fine-tuning phase and becomes part of inference.",
+    "keywords": [
+      "ttt",
+      "test-time-training",
+      "fast-weights",
+      "hidden-state"
+    ]
+  },
+  {
+    "id": "05-2025-22",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2025,
+    "title": "Titans: Learning to Memorize at Test Time",
+    "authors": "Ali Behrouz et al. (Google)",
+    "link": "https://arxiv.org/abs/2501.00663",
+    "core_idea": "A neural long-term memory module that *surprises-based* writes and forgets at test time, coordinated with short-term attention in a hybrid architecture that scales beyond 2M context.",
+    "why_it_matters": "Memory management (what to store, when to forget) becomes an architectural, learned-in-place mechanism — a direct answer to the context-window economics of long-horizon agents.",
+    "keywords": [
+      "titans",
+      "test-time-memory",
+      "surprise",
+      "long-context"
+    ]
+  },
+  {
+    "id": "05-2025-23",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2025,
+    "title": "Large Language Diffusion Models (LLaDA)",
+    "authors": "Shen Nie, Fengqi Zhu, Chao Du, et al. (Ant Group, Renmin University)",
+    "link": "https://arxiv.org/abs/2502.09992",
+    "core_idea": "An 8B-parameter diffusion LM trained from scratch with masked-diffusion pretraining and instruction tuning that rivals LLaMA3-8B on many benchmarks.",
+    "why_it_matters": "First convincing evidence that the *generative paradigm itself* (any-order parallel denoising vs left-to-right factorization) is swappable at language-model scale, with built-in infilling and controllability.",
+    "keywords": [
+      "llada",
+      "diffusion-lm",
+      "masked-diffusion",
+      "parallel-generation"
+    ]
+  },
+  {
+    "id": "05-2025-24",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2025,
+    "title": "Commercial diffusion language models: Mercury and Gemini Diffusion",
+    "authors": "Inception Labs; Google DeepMind",
+    "link": "https://www.inceptionlabs.ai/blog/introducing-mercury; https://deepmind.google/models/gemini-diffusion (ecosystem milestone, not a paper)",
+    "core_idea": "Mercury (2025-02) ships the first commercial-scale diffusion LLM at 1000+ tokens/sec on H100s; Gemini Diffusion (2025-05) is Google DeepMind's research-preview diffusion model with comparable speed.",
+    "why_it_matters": "Parallel diffusion decoding turns generation speed from a serial-token constraint into a hardware-parallel one — the first deployed crack in autoregressive orthodoxy.",
+    "keywords": [
+      "diffusion-lm",
+      "mercury",
+      "gemini-diffusion",
+      "commercial-milestone"
+    ]
+  },
+  {
+    "id": "05-2021-25",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2021,
+    "title": "Liquid Time-Constant Networks",
+    "authors": "Ramin Hasani, Mathias Lechner, et al. (MIT)",
+    "link": "https://arxiv.org/abs/2006.04439 (AAAI 2021)",
+    "core_idea": "Neural ODEs whose time constants are states, so each neuron adapts its own clock to the input — closed-form variants (CfC) make them cheap enough for deployment.",
+    "why_it_matters": "Networks that natively handle irregular sampling and time-warped streams (robotics, wearables, edge sensing) — where fixed-clock discrete stacks waste computation.",
+    "keywords": [
+      "liquid-networks",
+      "neural-ode",
+      "time-constants",
+      "edge"
+    ]
+  },
+  {
+    "id": "05-1997-26",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 1997,
+    "title": "Networks of Spiking Neurons: The Third Generation of Neural Network Models",
+    "authors": "Wolfgang Maass",
+    "link": "https://doi.org/10.1016/S0893-6080(97)00011-7 (Neural Networks)",
+    "core_idea": "Neurons that communicate by discrete spikes are computationally more powerful than sigmoid units — even with the same analog noise — when time is used as a resource.",
+    "why_it_matters": "The theoretical charter for event-driven, sparse, energy-cheap computation; every neuromorphic hardware claim descends from it. (Cross-ref domain 04 for the neuroscience side; not yet covered there as of 2026-10.)",
+    "keywords": [
+      "spiking-neurons",
+      "third-generation",
+      "neuromorphic"
+    ]
+  },
+  {
+    "id": "05-2018-27",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2018,
+    "title": "Loihi: A Neuromorphic Manycore Processor with On-Chip Learning",
+    "authors": "Mike Davies et al. (Intel)",
+    "link": "IEEE Micro 38(1):82-99 (2018)",
+    "core_idea": "A 128-core chip with asynchronous spiking neurons and programmable on-chip plasticity rules, consuming milliwatts on workloads that cost GPUs watts.",
+    "why_it_matters": "Physical proof that learning can run at 3-5 orders of magnitude lower energy than GPU training/inference — the hardware existence theorem for always-on embedded intelligence.",
+    "keywords": [
+      "loihi",
+      "neuromorphic-hardware",
+      "on-chip-learning",
+      "efficiency"
+    ]
+  },
+  {
+    "id": "05-2023-28",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "SpikeGPT: Generative Pre-trained Language Model with Spiking Neural Networks",
+    "authors": "Rui-Jie Zhu, Qihang Zhao, Guoqi Li, Jason K. Eshraghian",
+    "link": "https://arxiv.org/abs/2302.13939 (IJCAI 2023)",
+    "core_idea": "A GPT-style language model (up to 345M params) built on spiking RWKV neurons, generating text with binary event-driven activations at roughly 20x less energy than an equivalent dense model.",
+    "why_it_matters": "The bridge paper: modern generative LLM architecture rendered in spiking form — connects the LLM world to neuromorphic hardware deployment rather than toy tasks.",
+    "keywords": [
+      "spikegpt",
+      "spiking-lm",
+      "rwkv",
+      "energy-efficiency"
+    ]
+  },
+  {
+    "id": "05-2018-29",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2018,
+    "title": "DeepProbLog: Neural Probabilistic Logic Programming",
+    "authors": "Robin Manhaeve, Sebastijan Dumančić, Angelika Kimmig, Thomas Demeester, Luc De Raedt",
+    "link": "https://arxiv.org/abs/1805.10860 (NeurIPS 2018)",
+    "core_idea": "Embed neural networks as probabilistic predicates inside a differentiable logic program, so gradients flow through logical inference itself.",
+    "why_it_matters": "The cleanest mechanism for systematic compositionality: symbols guarantee rule structure while sub-symbolic nets supply perception — exactly the generalization pattern pure LLMs still miss.",
+    "keywords": [
+      "deepproblog",
+      "neural-symbolic",
+      "probabilistic-logic"
+    ]
+  },
+  {
+    "id": "05-2019-30",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2019,
+    "title": "The Neuro-Symbolic Concept Learner: Interpreting Scenes, Words, and Sentences from Natural Supervision",
+    "authors": "Jiayuan Mao, Chuang Gan, Pushmeet Kohli, Joshua Tenenbaum, Jiajun Wu",
+    "link": "https://arxiv.org/abs/1904.12584 (ICLR 2019; NS-VQA)",
+    "core_idea": "A visual parser turns pixels into object programs, a semantic parser turns questions into symbolic programs, and answering is program execution — no program annotations.",
+    "why_it_matters": "Demonstrates human-like data efficiency and zero-shot recombination on VQA by splitting perception (neural) from reasoning (symbolic) — the architecture pattern behind 2024-25 neuro-symbolic ARC solvers.",
+    "keywords": [
+      "neuro-symbolic",
+      "program-induction",
+      "vqa",
+      "compositionality"
+    ]
+  },
+  {
+    "id": "05-2011-31",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2011,
+    "title": "Abandoning Objectives: Evolution Through the Search for Novelty Alone",
+    "authors": "Joel Lehman, Kenneth O. Stanley",
+    "link": "https://doi.org/10.1162/EVCO_a_00025 (Evolutionary Computation)",
+    "core_idea": "Searching only for behavioral novelty — with no objective function at all — sometimes finds solutions that objective-driven search never reaches (e.g., the deceptive-maze robot).",
+    "why_it_matters": "Formalizes that objectives can actively mislead: stepping stones to intelligence may only be discoverable by open-ended, novelty-seeking search — a design principle for generating what we cannot specify.",
+    "keywords": [
+      "novelty-search",
+      "open-endedness",
+      "deception",
+      "evolution"
+    ]
+  },
+  {
+    "id": "05-2017-32",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2017,
+    "title": "Evolution Strategies as a Scalable Alternative to Reinforcement Learning",
+    "authors": "Tim Salimans, Jonathan Ho, Xi Chen, et al. (OpenAI)",
+    "link": "https://arxiv.org/abs/1703.03864",
+    "core_idea": "Black-box evolution of policy parameters, parallelized across thousands of gradient-free workers, matches deep RL on MuJoCo while sidestepping backprop-through-time entirely.",
+    "why_it_matters": "Learning without gradients is embarrassingly parallel and non-differentiable-stack-friendly — the fallback optimizer for world models, agents, and hardware where gradients do not flow.",
+    "keywords": [
+      "evolution-strategies",
+      "gradient-free",
+      "scalable-rl"
+    ]
+  },
+  {
+    "id": "05-2019-33",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2019,
+    "title": "Paired Open-Ended Trailblazer (POET)",
+    "authors": "Rui Wang, Joel Lehman, et al.",
+    "link": "https://arxiv.org/abs/1901.01753",
+    "core_idea": "Endlessly generate new environments and their solvers together, transferring agents between paired challenges to keep difficulty at each learner's frontier.",
+    "why_it_matters": "The first working engine of open-ended co-evolution of tasks and solutions — an automatic curriculum generator, and a concrete answer to \"where does an endless training signal come from?\".",
+    "keywords": [
+      "poet",
+      "open-endedness",
+      "curriculum-generation",
+      "co-evolution"
+    ]
+  },
+  {
+    "id": "05-2018-34",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2018,
+    "title": "Emergence of Linguistic Communication from Referential Games",
+    "authors": "Angeliki Lazaridou, Alexander Peysakhovich, Marco Baroni (with 2016 antecedents)",
+    "link": "https://arxiv.org/abs/1712.10364 (ICLR 2018)",
+    "core_idea": "Two agents invent a discrete language to solve referential games; grounded, compositional-ish protocols emerge from pure cooperation pressure, but drift toward non-human languages without inductive biases.",
+    "why_it_matters": "The experimental base camp for emergent communication: tells you exactly which pressures (grounding, population, ease) make shared symbolic systems arise — and which make them alien.",
+    "keywords": [
+      "emergent-communication",
+      "referential-games",
+      "multi-agent"
+    ]
+  },
+  {
+    "id": "05-2023-35",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+    "authors": "Joon Sung Park, Joseph O'Brien, Carrie Cai, et al. (Stanford)",
+    "link": "https://arxiv.org/abs/2304.03442 (UIST 2023)",
+    "core_idea": "25 LLM agents with memory streams, reflection, and planning in a sandbox town produce believable social behavior (party planning, relationship formation) evaluated by human raters.",
+    "why_it_matters": "The founding demo of society-scale simulation: LLMs as substrate for social-science experiments, agent economies, and synthetic populations — collective intelligence built from generative individuals.",
+    "keywords": [
+      "generative-agents",
+      "simulation",
+      "social-behavior",
+      "memory-streams"
+    ]
+  },
+  {
+    "id": "05-2024-36",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2024,
+    "title": "Multi-agent LLM ecosystems: swarms, MCP, agent-to-agent protocols",
+    "authors": "ecosystem development (no single paper)",
+    "link": "https://modelcontextprotocol.io (MCP spec, Anthropic 2024; ecosystem docs)",
+    "core_idea": "A practical stack crystallizes around standard tool protocols (MCP, 2024), agent swarms/orchestration frameworks, and emerging agent-to-agent communication formats across vendors.",
+    "why_it_matters": "Multi-agent intelligence is becoming *infrastructure* rather than research demo — standard interfaces let heterogeneous agents compose, which is the precondition for agent economies and collective systems that outgrow any single model.",
+    "keywords": [
+      "multi-agent-llm",
+      "mcp",
+      "protocols",
+      "agent-swarms",
+      "ecosystem"
+    ]
+  },
+  {
+    "id": "05-2022-37",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2022,
+    "title": "STaR: Bootstrapping Reasoning With Reasoning",
+    "authors": "Eric Zelikman, Yuhuai Wu, Jesse Mu, Noah D. Goodman (Stanford)",
+    "link": "https://arxiv.org/abs/2203.14465 (NeurIPS 2022)",
+    "core_idea": "Generate rationales, keep only those that produce correct final answers, fine-tune on them, and re-generate — reasoning ability bootstraps itself upward from a few seeds.",
+    "why_it_matters": "The origin loop of LLM self-improvement: the STaR pattern (generate, filter by outcome, train, repeat) is the direct ancestor of rejection-sampling fine-tuning and RLVR-era reasoning training.",
+    "keywords": [
+      "star",
+      "bootstrapping",
+      "rationale-generation",
+      "self-improvement"
+    ]
+  },
+  {
+    "id": "05-2023-38",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+    "authors": "Timo Schick, Jane Dwivedi-Yu, Roberto Dessì, et al. (Meta)",
+    "link": "https://arxiv.org/abs/2302.04761 (NeurIPS 2023)",
+    "core_idea": "A model self-annotates where inserting an API call (calculator, search, QA) would reduce its own perplexity, then fine-tunes on those insertions — tool use learned, not prompted.",
+    "why_it_matters": "The model becomes the dispatcher that decides *when* computation should leave its weights — the learning-side foundation of function calling and of agents that offload exact work to tools.",
+    "keywords": [
+      "toolformer",
+      "tool-use",
+      "api-calls",
+      "self-annotation"
+    ]
+  },
+  {
+    "id": "05-2023-39",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+    "authors": "Noah Shinn, Federico Cassano, Beck Labash, et al.",
+    "link": "https://arxiv.org/abs/2303.11366 (NeurIPS 2023)",
+    "core_idea": "Agents that fail a task store a *verbal* self-diagnosis in episodic memory and retry with that lesson in context — episodic control implemented in language instead of weights.",
+    "why_it_matters": "Cheap, gradient-free self-improvement: converting execution feedback into natural-language policy updates is now the standard inner loop of serious agent frameworks.",
+    "keywords": [
+      "reflexion",
+      "verbal-rl",
+      "self-critique",
+      "episodic-memory"
+    ]
+  },
+  {
+    "id": "05-2023-40",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+    "authors": "Guanzhi Wang, Yuqi Xie, Yunfan Jiang, et al. (NVIDIA, Caltech)",
+    "link": "https://arxiv.org/abs/2305.16291 (TMLR 2024)",
+    "core_idea": "An LLM agent in Minecraft writes its own actions as code, verifies them, and stores verified skills in a growing skill library that compounds across tasks without any gradient updates.",
+    "why_it_matters": "The skill-library pattern: continual learning as *accumulated executable artifacts* — the most copied mechanism for making agents improve monotonically in open worlds.",
+    "keywords": [
+      "voyager",
+      "skill-library",
+      "code-as-action",
+      "minecraft",
+      "open-ended"
+    ]
+  },
+  {
+    "id": "05-2025-41",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2025,
+    "title": "Absolute Zero: Reinforced Self-play Reasoning with Zero Data",
+    "authors": "Andrew Zhao, Yiran Wu, Yang Yue, et al. (Tsinghua LeapLab)",
+    "link": "https://arxiv.org/abs/2505.03335 (NeurIPS 2025)",
+    "core_idea": "One model both *proposes* tasks (to maximize its own learnability) and solves them, verified by a code executor — AlphaZero-style self-play for reasoning with zero external data.",
+    "why_it_matters": "A working escape from the human-data bottleneck: the training signal is generated and checked by machine, pointing at open-ended self-improvement loops (and their unsupervised-error risks).",
+    "keywords": [
+      "absolute-zero",
+      "self-play",
+      "rlvr",
+      "zero-data",
+      "code-executor"
+    ]
+  },
+  {
+    "id": "05-2024-42",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2024,
+    "title": "OpenAI o3 on ARC-AGI: reasoning models crack (part of) the generality benchmark",
+    "authors": "OpenAI (system milestone)",
+    "link": "https://arcprize.org/blog/oai-o3-pub-breakthrough (announced 2024-12)",
+    "core_idea": "o3, trained with RL on verifiable tasks plus large test-time search, scored 75.7% (87.5% with 172x compute) on ARC-AGI-Pub — the first big jump on the benchmark that had resisted a decade of approaches.",
+    "why_it_matters": "Evidence that Chollet's skill-acquisition framing (domain 01) responds to RL + test-time search — while costing enormous compute per task, showing \"generality\" and \"efficiency\" are still far from joint. System-scale evidence, flagged as such.",
+    "keywords": [
+      "o3",
+      "arc-agi",
+      "system-report",
+      "test-time-search",
+      "rlvr"
+    ]
+  },
+  {
+    "id": "05-2025-43",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2025,
+    "title": "ARC-AGI-2: the persistent holdout",
+    "authors": "ARC Prize Foundation (benchmark milestone)",
+    "link": "https://arcprize.org/arc-agi-2 (announced 2025-03; see leaderboard)",
+    "core_idea": "A redesigned ARC suite targeting the efficiency gap — tasks tuned so humans still solve most while frontier reasoning models score in the single to low double digits at release.",
+    "why_it_matters": "Even o3-class systems only partially crack ARC-AGI-1 at extreme cost, and ARC-AGI-2 re-opens the gap: a live yardstick separating \"skill at scale\" from general, *sample-efficient* intelligence (Chollet 2019, domain 01).",
+    "keywords": [
+      "arc-agi-2",
+      "benchmark",
+      "sample-efficiency",
+      "generality-gap"
+    ]
+  },
+  {
+    "id": "05-2018-44",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2018,
+    "title": "AI Safety via Debate",
+    "authors": "Geoffrey Irving, Paul Christiano, Dario Amodei (OpenAI)",
+    "link": "https://arxiv.org/abs/1807.03764",
+    "core_idea": "Two adversarial AI debaters with a human judging only the transcript can, in principle, supervise capabilities beyond the judge's own — amplifying oversight instead of capability alone.",
+    "why_it_matters": "The core mechanism candidate for supervising smarter-than-human systems: supervision scales with computation spent on debate, not with judge expertise.",
+    "keywords": [
+      "debate",
+      "scalable-oversight",
+      "amplification"
+    ]
+  },
+  {
+    "id": "05-2022-45",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2022,
+    "title": "Measuring Progress on Scalable Oversight for Large Language Models",
+    "authors": "Samuel R. Bowman et al.",
+    "link": "https://arxiv.org/abs/2211.03540",
+    "core_idea": "A unified evaluation suite (weak-strong pairings, sandwiching, debate, market-making) for the concrete question: can weak overseers extract truthful behavior from stronger models?",
+    "why_it_matters": "Turns oversight from philosophy into benchmark engineering — defines the measurable race between model capability and our ability to check it.",
+    "keywords": [
+      "scalable-oversight",
+      "evaluation",
+      "weak-oversseer",
+      "sandwiching"
+    ]
+  },
+  {
+    "id": "05-2023-46",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision",
+    "authors": "Collin Burns, Pavel Izmailov, Jan Hendrik Kirchner, et al. (OpenAI)",
+    "link": "https://arxiv.org/abs/2312.09390",
+    "core_idea": "Fine-tuning a strong model on labels from a much weaker one recovers most of the strong model's capability — and sometimes beats the weak supervisor's own ceiling.",
+    "why_it_matters": "Empirical hope that humans can keep steering superhuman models via weak signals (if generalization conditions hold) — the working hypothesis behind 2025-26 oversight plans for self-improving systems.",
+    "keywords": [
+      "weak-to-strong",
+      "superalignment",
+      "generalization"
+    ]
+  }
+]

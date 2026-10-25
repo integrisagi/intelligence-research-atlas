@@ -1,0 +1,411 @@
+[
+  {
+    "id": "02-1949-01",
+    "domain": "02_deep-learning-canon",
+    "year": 1949,
+    "title": "The Organization of Behavior",
+    "authors": "Donald Hebb",
+    "link": "Wiley (book)",
+    "core_idea": "\"Neurons that fire together wire together\" — cell assemblies form via correlated activity.",
+    "why_it_matters": "The first learning rule; Oja's PCA (domain 01) and all Hebbian methods descend from it.",
+    "keywords": [
+      "hebb",
+      "plasticity",
+      "cell-assemblies"
+    ]
+  },
+  {
+    "id": "02-1958-02",
+    "domain": "02_deep-learning-canon",
+    "year": 1958,
+    "title": "The Perceptron: A Probabilistic Model",
+    "authors": "Frank Rosenblatt",
+    "link": "https://doi.org/10.1103/PhysRevLett.58.381 → correct: Psychological Review 65(6): https://doi.org/10.1037/h0042519",
+    "core_idea": "A learnable threshold neuron with a convergence proof for linearly separable data.",
+    "why_it_matters": "First artificial neural network trained by a rule; launched (and, with Minsky, froze) the field.",
+    "keywords": [
+      "perceptron",
+      "linear-models",
+      "origins"
+    ]
+  },
+  {
+    "id": "02-1969-03",
+    "domain": "02_deep-learning-canon",
+    "year": 1969,
+    "title": "Perceptrons",
+    "authors": "Marvin Minsky, Seymour Papert",
+    "link": "MIT Press (book)",
+    "core_idea": "Proves single-layer perceptrons cannot compute XOR; (over-)read as killing neural networks.",
+    "why_it_matters": "First AI winter trigger; its real lesson — depth or hidden layers are necessary — took 17 years to answer (backprop).",
+    "keywords": [
+      "perceptrons-book",
+      "xor",
+      "ai-winter"
+    ]
+  },
+  {
+    "id": "02-1986-04",
+    "domain": "02_deep-learning-canon",
+    "year": 1986,
+    "title": "Learning Internal Representations by Error Propagation (PDP, vol. 1)",
+    "authors": "David Rumelhart, Geoffrey Hinton, Ronald Williams",
+    "link": "MIT Press (chapter); companion: Rumelhart, Hinton & Williams, Nature 323 (1986)",
+    "core_idea": "Multilayer networks trained end-to-end by backpropagated error signals.",
+    "why_it_matters": "Reopened the field; every gradient-trained system since (all of them) uses this.",
+    "keywords": [
+      "backpropagation",
+      "pdp",
+      "representations"
+    ]
+  },
+  {
+    "id": "02-1989-05",
+    "domain": "02_deep-learning-canon",
+    "year": 1989,
+    "title": "Generalization and Network Design Strategies",
+    "authors": "Yann LeCun (constraint-based / weight sharing)",
+    "link": "Technical report, University of Toronto",
+    "core_idea": "\"Gradient-Based Learning Applied to Document Recognition\" (LeCun, Bottou, Bengio, Haffner, Proc. IEEE) industrialized it as LeNet-5.",
+    "why_it_matters": "The convolutional prior — the strongest demonstration that architecture = inductive bias (domain 01, F2); banks read checks with this in the 1990s.",
+    "keywords": [
+      "cnn",
+      "weight-sharing",
+      "lenet"
+    ]
+  },
+  {
+    "id": "02-1991-06",
+    "domain": "02_deep-learning-canon",
+    "year": 1991,
+    "title": "Untersuchungen zu dynamischen neuronalen Netzen (vanishing gradients)",
+    "authors": "Sepp Hochreiter (diploma thesis, advisor J. Schmidhuber)",
+    "link": "http://www.idsia.ch/~juergen/fundamentaldeeplearningproblem.html (overview)",
+    "core_idea": "Gradients through deep/squashing activations decay or explode exponentially — the \"fundamental deep learning problem.\"",
+    "why_it_matters": "Named the obstacle that residuates every architecture decision for 25 years (LSTM, ReLU, residuals, normalization).",
+    "keywords": [
+      "vanishing-gradients",
+      "depth-problem"
+    ]
+  },
+  {
+    "id": "02-1997-07",
+    "domain": "02_deep-learning-canon",
+    "year": 1997,
+    "title": "Long Short-Term Memory",
+    "authors": "Sepp Hochreiter, Jürgen Schmidhuber",
+    "link": "https://doi.org/10.1162/neco.1997.9.8.1735",
+    "core_idea": "Gated memory cells let gradients persist across hundreds of timesteps.",
+    "why_it_matters": "THE sequence model 1997–2017 (translation, speech); gates and state-carrying cells reincarnate as the transformer's residual stream with memory roles.",
+    "keywords": [
+      "lstm",
+      "recurrence",
+      "memory",
+      "gating"
+    ]
+  },
+  {
+    "id": "02-1992-08",
+    "domain": "02_deep-learning-canon",
+    "year": 1992,
+    "title": "Q-Learning",
+    "authors": "Christopher Watkins, Peter Dayan",
+    "link": "https://doi.org/10.1007/BF00992698 (Watkins & Dayan 1992, Machine Learning)",
+    "core_idea": "Learn action values by bootstrapping temporal-difference errors — no model of the world needed.",
+    "why_it_matters": "The bridge to neuroscience: dopamine neurons compute exactly this signal (Schultz 1997, domain 04); foundation of all value-based RL.",
+    "keywords": [
+      "q-learning",
+      "reinforcement-learning",
+      "td-error"
+    ]
+  },
+  {
+    "id": "02-2012-09",
+    "domain": "02_deep-learning-canon",
+    "year": 2012,
+    "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+    "authors": "Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton",
+    "link": "https://doi.org/10.1145/3065386 (NeurIPS 2012)",
+    "core_idea": "GPU-trained deep CNN cuts ImageNet error nearly in half (16.4% vs 26.2%).",
+    "why_it_matters": "The big bang of the modern era — proof that scale (data × compute × depth) wins; ignited the decade of deep learning.",
+    "keywords": [
+      "alexnet",
+      "imagenet",
+      "gpus",
+      "deep-learning-big-bang"
+    ]
+  },
+  {
+    "id": "02-2013-10",
+    "domain": "02_deep-learning-canon",
+    "year": 2013,
+    "title": "Distributed Representations of Words and Phrases (word2vec)",
+    "authors": "Tomas Mikolov et al.",
+    "link": "https://arxiv.org/abs/1310.4546 (NeurIPS 2013)",
+    "core_idea": "Skip-gram with negative sampling learns vector embeddings where directions carry meaning (king − man + woman ≈ queen).",
+    "why_it_matters": "Meaning as geometry — the first widely-used demonstration that prediction-trained vectors encode semantics; the \"embedding\" concept every LLM uses internally.",
+    "keywords": [
+      "word2vec",
+      "embeddings",
+      "distributional-semantics"
+    ]
+  },
+  {
+    "id": "02-2013-11",
+    "domain": "02_deep-learning-canon",
+    "year": 2013,
+    "title": "Auto-Encoding Variational Bayes",
+    "authors": "Diederik Kingma, Max Welling",
+    "link": "https://arxiv.org/abs/1312.6114 (ICLR 2014)",
+    "core_idea": "Variational inference made amenable by reparameterization; encoder/decoder learn probabilistic latent representations.",
+    "why_it_matters": "Founded deep generative modeling; the ELBO objective returns in diffusion theory and in \"analysis-by-synthesis\" brain models (domain 04).",
+    "keywords": [
+      "vae",
+      "generative",
+      "variational-inference"
+    ]
+  },
+  {
+    "id": "02-2014-12",
+    "domain": "02_deep-learning-canon",
+    "year": 2014,
+    "title": "Sequence to Sequence Learning with Neural Networks",
+    "authors": "Ilya Sutskever, Oriol Vinyals, Quoc Le",
+    "link": "https://arxiv.org/abs/1409.3215 (NeurIPS 2014)",
+    "core_idea": "Encode a sentence into a fixed vector, then decode it into another language.",
+    "why_it_matters": "Established the encoder-decoder paradigm — and its fixed-vector bottleneck, which attention (next entry) was invented to remove.",
+    "keywords": [
+      "seq2seq",
+      "encoder-decoder",
+      "translation"
+    ]
+  },
+  {
+    "id": "02-2014-13",
+    "domain": "02_deep-learning-canon",
+    "year": 2014,
+    "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+    "authors": "Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio",
+    "link": "https://arxiv.org/abs/1409.0473 (ICLR 2015)",
+    "core_idea": "Attention: the decoder dynamically looks back at all encoder states instead of one vector.",
+    "why_it_matters": "Invented attention as a soft, differentiable lookup — the mechanism the transformer made foundational (domain 03).",
+    "keywords": [
+      "attention",
+      "nmt",
+      "alignment"
+    ]
+  },
+  {
+    "id": "02-2014-14",
+    "domain": "02_deep-learning-canon",
+    "year": 2014,
+    "title": "Generative Adversarial Networks",
+    "authors": "Ian Goodfellow et al.",
+    "link": "https://arxiv.org/abs/1406.2661 (NeurIPS 2014)",
+    "core_idea": "Generator and discriminator locked in adversarial minimax; sample generation without explicit likelihoods.",
+    "why_it_matters": "Adversarial self-play as a learning signal — concept recycled in debate-based alignment and adversarial eval (domain 05); also the instability case study that made the field take training dynamics seriously.",
+    "keywords": [
+      "gan",
+      "adversarial",
+      "generative"
+    ]
+  },
+  {
+    "id": "02-2014-15",
+    "domain": "02_deep-learning-canon",
+    "year": 2014,
+    "title": "Adam: A Method for Stochastic Optimization",
+    "authors": "Diederik Kingma, Jimmy Ba",
+    "link": "https://arxiv.org/abs/1412.6980 (ICLR 2015)",
+    "core_idea": "Per-parameter adaptive moments; robust default step sizes.",
+    "why_it_matters": "The optimization workhorse (with AdamW variant) behind essentially all deep learning including LLM pretraining.",
+    "keywords": [
+      "adam",
+      "optimization",
+      "sgd"
+    ]
+  },
+  {
+    "id": "02-2015-16",
+    "domain": "02_deep-learning-canon",
+    "year": 2015,
+    "title": "Batch Normalization: Accelerating Deep Network Training",
+    "authors": "Sergey Ioffe, Christian Szegedy",
+    "link": "https://arxiv.org/abs/1502.03167 (ICML 2015)",
+    "core_idea": "Normalize layer inputs per minibatch to stabilize activation statistics.",
+    "why_it_matters": "Made very deep training stable; its successor LayerNorm/RMSNorm is a fixed component of every transformer block.",
+    "keywords": [
+      "normalization",
+      "training-stability"
+    ]
+  },
+  {
+    "id": "02-2015-17",
+    "domain": "02_deep-learning-canon",
+    "year": 2015,
+    "title": "Deep Residual Learning for Image Recognition",
+    "authors": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
+    "link": "https://arxiv.org/abs/1512.03385 (CVPR 2016)",
+    "core_idea": "Learn residual functions with identity shortcuts → 100+ layer networks trainable.",
+    "why_it_matters": "The residual stream is the transformer's backbone; loss-landscape geometry (domain 01, F7) explains WHY it works. Arguably the most reused architectural idea in history.",
+    "keywords": [
+      "resnet",
+      "residuals",
+      "skip-connections"
+    ]
+  },
+  {
+    "id": "02-2015-18",
+    "domain": "02_deep-learning-canon",
+    "year": 2015,
+    "title": "Human-Level Control Through Deep Reinforcement Learning",
+    "authors": "Volodymyr Mnih et al. (DeepMind)",
+    "link": "https://doi.org/10.1038/nature14236 (Nature 518)",
+    "core_idea": "Deep Q-network: CNN + Q-learning + experience replay + target networks learns Atari from raw pixels.",
+    "why_it_matters": "First human-level learning from raw perception; experience replay explicitly borrowed from hippocampal replay (domain 04) — the neuro-AI transfer landmark.",
+    "keywords": [
+      "dqn",
+      "atari",
+      "experience-replay",
+      "deep-rl"
+    ]
+  },
+  {
+    "id": "02-2014-19",
+    "domain": "02_deep-learning-canon",
+    "year": 2014,
+    "title": "Neural Turing Machines",
+    "authors": "Alex Graves, Greg Wayne, Ivo Danihelka",
+    "link": "https://arxiv.org/abs/1410.5401",
+    "core_idea": "Differentiable external memory addressed by content and location.",
+    "why_it_matters": "Opened the external-memory line (DNC 2016) — memory as an architectural component rather than emergent state; feeds directly into RAG and agent memory design (domain 05).",
+    "keywords": [
+      "ntm",
+      "external-memory",
+      "differentiable"
+    ]
+  },
+  {
+    "id": "02-2016-20",
+    "domain": "02_deep-learning-canon",
+    "year": 2016,
+    "title": "Mastering the Game of Go with Deep Neural Networks and Tree Search (AlphaGo)",
+    "authors": "David Silver et al. (DeepMind)",
+    "link": "https://doi.org/10.1038/nature16961 (Nature 529)",
+    "core_idea": "Policy/value networks guided Monte-Carlo tree search; trained on human games then self-play.",
+    "why_it_matters": "Search + learned evaluation beats pure scale; the template that returns in reasoning models (o1/R1 style test-time search, domain 03).",
+    "keywords": [
+      "alphago",
+      "search",
+      "self-play",
+      "planning"
+    ]
+  },
+  {
+    "id": "02-2017-21",
+    "domain": "02_deep-learning-canon",
+    "year": 2017,
+    "title": "Mastering Chess and Shogi by Self-Play (AlphaZero) / [2020] MuZero",
+    "authors": "David Silver, Julian Schrittwieser et al.",
+    "link": "https://doi.org/10.1038/s41586-020-03051-4 (MuZero, Nature 2020); arXiv 1712.01815 (AlphaZero)",
+    "core_idea": "AlphaZero: self-play alone reaches superhuman Go/chess/shogi. MuZero: learns a latent world model and plans in it — no rules given.",
+    "why_it_matters": "MuZero is the proof-of-concept that LEARNED world models + planning scale — the thesis of modern world-model research (domain 05).",
+    "keywords": [
+      "alphazero",
+      "muzero",
+      "self-play",
+      "world-models",
+      "planning"
+    ]
+  },
+  {
+    "id": "02-2018-22",
+    "domain": "02_deep-learning-canon",
+    "year": 2018,
+    "title": "Representation Learning with Contrastive Predictive Coding",
+    "authors": "Aaron van den Oord, Yazhe Li, Oriol Vinyals",
+    "link": "https://arxiv.org/abs/1807.03748",
+    "core_idea": "InfoNCE: learn representations by identifying the true future among negatives — maximizes mutual information.",
+    "why_it_matters": "The single loss behind SimCLR/MoCo/CLIP and many RL representation methods; predictive coding's engineering counterpart (domain 04).",
+    "keywords": [
+      "infonce",
+      "contrastive",
+      "predictive"
+    ]
+  },
+  {
+    "id": "02-2020-23",
+    "domain": "02_deep-learning-canon",
+    "year": 2020,
+    "title": "A Simple Framework for Contrastive Learning of Visual Representations (SimCLR)",
+    "authors": "Ting Chen, Simon Kornblith, Mohammad Norouzi, Geoffrey Hinton",
+    "link": "https://arxiv.org/abs/2002.05709 (ICML 2020)",
+    "core_idea": "Augment-crop-contrast with big batches and projection heads alone learns strong visual features.",
+    "why_it_matters": "Showed the recipe, not the architecture, drives self-supervised vision; killed the label bottleneck for pretraining.",
+    "keywords": [
+      "simclr",
+      "contrastive",
+      "self-supervised"
+    ]
+  },
+  {
+    "id": "02-2020-24",
+    "domain": "02_deep-learning-canon",
+    "year": 2020,
+    "title": "Momentum Contrast for Unsupervised Visual Representation Learning (MoCo)",
+    "authors": "Kaiming He et al.",
+    "link": "https://arxiv.org/abs/1911.05722 (CVPR 2020)",
+    "core_idea": "Dictionary-as-queue with momentum encoder makes contrastive learning practical without huge batches.",
+    "why_it_matters": "With SimCLR, established that contrastive pretraining transfers to detection/segmentation beyond supervised ImageNet pretraining — a capability transfer precedent for all foundation models.",
+    "keywords": [
+      "moco",
+      "contrastive"
+    ]
+  },
+  {
+    "id": "02-2021-25",
+    "domain": "02_deep-learning-canon",
+    "year": 2021,
+    "title": "Learning Transferable Visual Models From Natural Language Supervision (CLIP)",
+    "authors": "Alec Radford et al. (OpenAI)",
+    "link": "https://arxiv.org/abs/2103.00020 (ICML 2021)",
+    "core_idea": "Contrastively align images and text captions at web scale → zero-shot classification by prompting.",
+    "why_it_matters": "Multimodal grounding; zero-shot transfer as a paradigm; the backbone of image generators' text encoders and multimodal LLMs.",
+    "keywords": [
+      "clip",
+      "multimodal",
+      "zero-shot",
+      "grounding"
+    ]
+  },
+  {
+    "id": "02-2015-26",
+    "domain": "02_deep-learning-canon",
+    "year": 2015,
+    "title": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+    "authors": "Jascha Sohl-Dickstein et al.",
+    "link": "https://arxiv.org/abs/1503.03585 (ICML 2015)",
+    "core_idea": "Generate by slowly destroying structure with diffusion, then learn to reverse the noising process.",
+    "why_it_matters": "Planted diffusion; with DDPM (Ho et al. 2020, arXiv 2006.11239) became the dominant generative paradigm — and by 2025 a serious language-modeling paradigm (diffusion LLMs, domain 05).",
+    "keywords": [
+      "diffusion",
+      "generative",
+      "nonequilibrium"
+    ]
+  },
+  {
+    "id": "02-2017-27",
+    "domain": "02_deep-learning-canon",
+    "year": 2017,
+    "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+    "authors": "Noam Shazeer et al.",
+    "link": "https://arxiv.org/abs/1701.06538 (ICLR 2017)",
+    "core_idea": "Route each token to a few expert FFNs — parameters grow without proportional compute.",
+    "why_it_matters": "Decoupling parameters from FLOPs; the backbone of frontier open models (Mixtral, DeepSeek-V3, domain 03).",
+    "keywords": [
+      "moe",
+      "sparsity",
+      "conditional-computation"
+    ]
+  }
+]

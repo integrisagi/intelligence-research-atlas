@@ -1,0 +1,570 @@
+[
+  {
+    "id": "03-2017-01",
+    "domain": "03_llm-architecture-training",
+    "year": 2017,
+    "title": "Attention Is All You Need",
+    "authors": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan Gomez, Łukasz Kaiser, Illia Polosukhin",
+    "link": "https://arxiv.org/abs/1706.03762 (NeurIPS 2017)",
+    "core_idea": "Drop recurrence entirely; stacked multi-head self-attention + FFN with positional encodings, trained fully in parallel.",
+    "why_it_matters": "The substrate of every LLM; parallelism over sequence position is what made internet-scale training tractable.",
+    "keywords": [
+      "transformer",
+      "attention",
+      "architecture"
+    ]
+  },
+  {
+    "id": "03-2018-02",
+    "domain": "03_llm-architecture-training",
+    "year": 2018,
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "authors": "Jacob Devlin et al. (Google)",
+    "link": "https://arxiv.org/abs/1810.04805 (NAACL 2019)",
+    "core_idea": "Masked-language-model pretraining, bidirectional, then fine-tune per task.",
+    "why_it_matters": "Pretrain-then-adapt became the NLP paradigm; held every GLUE record on release.",
+    "keywords": [
+      "bert",
+      "masked-lm",
+      "pretraining"
+    ]
+  },
+  {
+    "id": "03-2018-03",
+    "domain": "03_llm-architecture-training",
+    "year": 2018,
+    "title": "Improving Language Understanding by Generative Pre-Training (GPT-1)",
+    "authors": "Alec Radford et al. (OpenAI)",
+    "link": "https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf",
+    "core_idea": "Unidirectional (causal) LM pretraining + light task heads.",
+    "why_it_matters": "Chose generation over masking — the path that scaled into GPT-2/3 and everything since.",
+    "keywords": [
+      "gpt",
+      "causal-lm",
+      "pretraining"
+    ]
+  },
+  {
+    "id": "03-2019-04",
+    "domain": "03_llm-architecture-training",
+    "year": 2019,
+    "title": "Language Models are Unsupervised Multitask Learners (GPT-2)",
+    "authors": "Alec Radford et al. (OpenAI)",
+    "link": "https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
+    "core_idea": "1.5B parameters, web text (WebText) → coherent multi-paragraph text, zero-shot task behavior.",
+    "why_it_matters": "First public evidence that scale alone induces task abilities without supervision — staged release foreshadowed the capability-safety debate.",
+    "keywords": [
+      "gpt-2",
+      "zero-shot",
+      "scaling"
+    ]
+  },
+  {
+    "id": "03-2020-05",
+    "domain": "03_llm-architecture-training",
+    "year": 2020,
+    "title": "Language Models are Few-Shot Learners (GPT-3)",
+    "authors": "Tom Brown et al. (OpenAI)",
+    "link": "https://arxiv.org/abs/2005.14165 (NeurIPS 2020)",
+    "core_idea": "175B parameters; in-context learning — tasks solved via prompts/examples with NO weight updates.",
+    "why_it_matters": "In-context learning is the property that turned LLMs into a general-purpose interface; launched the entire prompt-based ecosystem.",
+    "keywords": [
+      "gpt-3",
+      "in-context-learning",
+      "few-shot",
+      "scaling"
+    ]
+  },
+  {
+    "id": "03-2020-06",
+    "domain": "03_llm-architecture-training",
+    "year": 2020,
+    "title": "Scaling Laws for Neural Language Models",
+    "authors": "Jared Kaplan et al.",
+    "link": "https://arxiv.org/abs/2001.08361",
+    "core_idea": "See domain 01 — power-law loss across N, D, C.",
+    "why_it_matters": "GPT-3's training budget was set by this curve; scaling became engineering.",
+    "keywords": [
+      "scaling-laws"
+    ]
+  },
+  {
+    "id": "03-2022-07",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "Training Compute-Optimal Large Language Models (Chinchilla)",
+    "authors": "Jordan Hoffmann et al.",
+    "link": "https://arxiv.org/abs/2203.15556",
+    "core_idea": "See domain 01 — ~20 tokens/parameter at fixed compute.",
+    "why_it_matters": "Explained GPT-3-class models as undertrained; rewrote every lab's training recipe.",
+    "keywords": [
+      "chinchilla",
+      "compute-optimal"
+    ]
+  },
+  {
+    "id": "03-2020-08",
+    "domain": "03_llm-architecture-training",
+    "year": 2020,
+    "title": "Exploring the Limits of Transfer Learning? (T5: Text-to-Text Transfer Transformer)",
+    "authors": "Colin Raffel et al.",
+    "link": "https://arxiv.org/abs/1910.10683 (JMLR 2020)",
+    "core_idea": "Cast every NLP task as text-to-text; systematic ablations of scale/data/Architectures.",
+    "why_it_matters": "The field's cleanest ablation study; unified interface precursor to instruction models.",
+    "keywords": [
+      "t5",
+      "text-to-text",
+      "ablations"
+    ]
+  },
+  {
+    "id": "03-2022-09",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "Training language models to follow instructions with human feedback (InstructGPT)",
+    "authors": "Long Ouyang et al. (OpenAI)",
+    "link": "https://arxiv.org/abs/2203.02155",
+    "core_idea": "SFT on demonstrations → RLHF (PPO) with a learned reward model from pairwise human preferences.",
+    "why_it_matters": "The RLHF pipeline; ChatGPT's recipe. Aligned models differ from base models through this stage, not pretraining.",
+    "keywords": [
+      "rlhf",
+      "instructgpt",
+      "alignment",
+      "ppo"
+    ]
+  },
+  {
+    "id": "03-2017-10",
+    "domain": "03_llm-architecture-training",
+    "year": 2017,
+    "title": "Deep Reinforcement Learning from Human Preferences",
+    "authors": "Paul Christiano et al.",
+    "link": "https://arxiv.org/abs/1706.03741 (NeurIPS 2017)",
+    "core_idea": "Learn reward from human preference comparisons instead of hand-crafted rewards.",
+    "why_it_matters": "The conceptual seed of RLHF, seven years before ChatGPT; also the seed of reward-hacking concerns.",
+    "keywords": [
+      "rlhf",
+      "preferences",
+      "reward-model"
+    ]
+  },
+  {
+    "id": "03-2022-11",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "Constitutional AI: Harmlessness from AI Feedback",
+    "authors": "Yuntao Bai et al. (Anthropic)",
+    "link": "https://arxiv.org/abs/2212.08073",
+    "core_idea": "Replace human preference labels with AI feedback guided by an explicit written constitution + chain-of-thought critique.",
+    "why_it_matters": "RLAIF — supervision that scales with compute rather than human labelers; alignment-as-specified-principles.",
+    "keywords": [
+      "constitutional-ai",
+      "rlaif",
+      "alignment"
+    ]
+  },
+  {
+    "id": "03-2023-12",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "LIMA: Less Is More for Alignment",
+    "authors": "Zhou et al.",
+    "link": "https://arxiv.org/abs/2305.11206 (NeurIPS 2023)",
+    "core_idea": "1,000 curated SFT examples on a strong base ≈ RLHF-level chat quality.",
+    "why_it_matters": "Alignment is mostly SURFACE behavior elicitation — the knowledge comes from pretraining; contradicting \"alignment teaches capabilities.\"",
+    "keywords": [
+      "lima",
+      "sft",
+      "surface-alignment"
+    ]
+  },
+  {
+    "id": "03-2022-13",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+    "authors": "Jason Wei et al. (Google)",
+    "link": "https://arxiv.org/abs/2201.11903 (NeurIPS 2022)",
+    "core_idea": "Few-shot exemplars WITH intermediate steps dramatically unlock math/logic at large scale.",
+    "why_it_matters": "Reasoning as a prompting-recoverable ability; token-space computation begins here → o1/R1.",
+    "keywords": [
+      "chain-of-thought",
+      "reasoning",
+      "prompting"
+    ]
+  },
+  {
+    "id": "03-2022-14",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "Large Language Models are Zero-Shot Reasoners (“Let’s think step by step”)",
+    "authors": "Takeshi Kojima et al.",
+    "link": "https://arxiv.org/abs/2205.11916 (NeurIPS 2022)",
+    "core_idea": "A single zero-shot phrase triggers stepwise reasoning — no exemplars.",
+    "why_it_matters": "Reasoning capacity was already in the weights; prompting merely allocates tokens to it.",
+    "keywords": [
+      "zero-shot-cot",
+      "reasoning"
+    ]
+  },
+  {
+    "id": "03-2023-15",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "Self-Consistency Improves Chain of Thought Reasoning",
+    "authors": "Xuezhi Wang et al.",
+    "link": "https://arxiv.org/abs/2203.11171 (ICLR 2023)",
+    "core_idea": "Sample many reasoning paths, majority-vote answers.",
+    "why_it_matters": "Simplest test-time-compute scaling; the \"ensemble over thoughts\" ancestor of search-based reasoning.",
+    "keywords": [
+      "self-consistency",
+      "test-time-compute"
+    ]
+  },
+  {
+    "id": "03-2022-16",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "authors": "Shunyu Yao et al.",
+    "link": "https://arxiv.org/abs/2210.03629 (ICLR 2023)",
+    "core_idea": "Interleave chain-of-thought with tool/environment actions; reasoning plans actions, observations update reasoning.",
+    "why_it_matters": "The agent loop — nearly every deployed agent framework (tool use, browsing, code agents) is ReAct-shaped.",
+    "keywords": [
+      "react",
+      "agents",
+      "tool-use"
+    ]
+  },
+  {
+    "id": "03-2023-17",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "Tree of Thoughts: Deliberate Problem Solving with LLMs",
+    "authors": "Shunyu Yao et al. (Princeton/DeepMind)",
+    "link": "https://arxiv.org/abs/2305.10601 (NeurIPS 2023)",
+    "core_idea": "Explore a TREE of thought branches with LLM-guided search (BFS/DFS), value judgments, backtracking.",
+    "why_it_matters": "Explicit search over reasoning — MuZero's template in token space; big gains on planning-type tasks.",
+    "keywords": [
+      "tree-of-thoughts",
+      "search",
+      "planning"
+    ]
+  },
+  {
+    "id": "03-2020-18",
+    "domain": "03_llm-architecture-training",
+    "year": 2020,
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (RAG)",
+    "authors": "Patrick Lewis et al.",
+    "link": "https://arxiv.org/abs/2005.11401 (NeurIPS 2020)",
+    "core_idea": "Differentiable retrieval into a non-parametric memory (vector index) fused with generation.",
+    "why_it_matters": "Separates knowledge from weights — cheaper updates, fewer hallucinations, provenance; the backbone of enterprise LLM deployment.",
+    "keywords": [
+      "rag",
+      "retrieval",
+      "memory"
+    ]
+  },
+  {
+    "id": "03-2021-19",
+    "domain": "03_llm-architecture-training",
+    "year": 2021,
+    "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "authors": "Edward Hu et al.",
+    "link": "https://arxiv.org/abs/2106.09685 (ICLR 2022)",
+    "core_idea": "Freeze weights; learn low-rank update matrices — adapter quality at a fraction of memory.",
+    "why_it_matters": "Fine-tuning democratized (consumer GPUs); weight-deltas as shareable artifacts; the substrate of open-model customization.",
+    "keywords": [
+      "lora",
+      "peft",
+      "fine-tuning"
+    ]
+  },
+  {
+    "id": "03-2022-20",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "FlashAttention: Fast and Memory-Efficient Exact Attention",
+    "authors": "Tri Dao et al.",
+    "link": "https://arxiv.org/abs/2205.14135 (NeurIPS 2022)",
+    "core_idea": "IO-aware exact attention — tiling that never materializes the N×N matrix.",
+    "why_it_matters": "Attention memory wall broken via systems thinking; enabled long-context training; template for kernel-level AI engineering (FlashAttention-2/3).",
+    "keywords": [
+      "flashattention",
+      "kernels",
+      "efficiency"
+    ]
+  },
+  {
+    "id": "03-2021-21",
+    "domain": "03_llm-architecture-training",
+    "year": 2021,
+    "title": "RoFormer: Rotary Position Embedding (RoPE)",
+    "authors": "Jianlin Su et al.",
+    "link": "https://arxiv.org/abs/2104.09864",
+    "core_idea": "Rotate query/key vectors by position-dependent angles — relative positions via complex-rotation structure.",
+    "why_it_matters": "The default positional scheme of modern LLMs; RoPE-scaling tricks (NTK, YaRN) drive long-context extension.",
+    "keywords": [
+      "rope",
+      "positional-encoding",
+      "long-context"
+    ]
+  },
+  {
+    "id": "03-2022-22",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "Switch Transformers: Scaling to Trillion Parameter Models",
+    "authors": "William Fedus, Barret Zohar, Noam Shazeer",
+    "link": "https://arxiv.org/abs/2101.03961 (JMLR 2022)",
+    "core_idea": "Simplified top-1 MoE routing; trillion parameters with stable training.",
+    "why_it_matters": "MoE made routine; with Mixtral (2024) and DeepSeek-V3 (2024), sparse routing became the open-frontier default — capability per training-FLOP.",
+    "keywords": [
+      "moe",
+      "switch",
+      "conditional-computation"
+    ]
+  },
+  {
+    "id": "03-2024-23",
+    "domain": "03_llm-architecture-training",
+    "year": 2024,
+    "title": "DeepSeek-V3 Technical Report",
+    "authors": "DeepSeek-AI",
+    "link": "https://arxiv.org/abs/2412.19437",
+    "core_idea": "671B-total/37B-active MoE; Multi-head Latent Attention; FP8 training; 14.8T tokens for ~2.8M H800-GPU-hours (~$5.6M).",
+    "why_it_matters": "Frontier capability at 1/20th the cost of Western equivalents; engineering recipe ( MLA, FP8, complementary-triangle MoE load balancing) now the open standard.",
+    "keywords": [
+      "deepseek",
+      "moe",
+      "efficiency",
+      "fp8"
+    ]
+  },
+  {
+    "id": "03-2023-24",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "LLaMA: Open and Efficient Foundation Language Models",
+    "authors": "Hugo Touvron et al. (Meta)",
+    "link": "https://arxiv.org/abs/2302.13971",
+    "core_idea": "Chinchilla-optimal small models (7–65B) trained on curated public data match much larger models.",
+    "why_it_matters": "Open weights + efficient recipe → the entire open-ecosystem (Alpaca, Vicuna, Mistral lineage); weights-as-artifacts era.",
+    "keywords": [
+      "llama",
+      "open-weights",
+      "chinchilla"
+    ]
+  },
+  {
+    "id": "03-2023-25",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "Direct Preference Optimization (DPO)",
+    "authors": "Rafael Rafailov et al.",
+    "link": "https://arxiv.org/abs/2305.18290 (NeurIPS 2023)",
+    "core_idea": "Optimize preferences directly with a classification-style loss — no reward model, no PPO.",
+    "why_it_matters": "RLHF-quality alignment with supervised-training simplicity; default in open post-training stacks.",
+    "keywords": [
+      "dpo",
+      "preference-optimization"
+    ]
+  },
+  {
+    "id": "03-2024-26",
+    "domain": "03_llm-architecture-training",
+    "year": 2024,
+    "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning (GRPO)",
+    "authors": "Zhihong Shao et al.",
+    "link": "https://arxiv.org/abs/2402.03300",
+    "core_idea": "Group Relative Policy Optimization — PPO without a separate critic; advantages from group-relative rewards.",
+    "why_it_matters": "The RL algorithm that made reasoning-RL cheap enough to run at scale; foundation of R1.",
+    "keywords": [
+      "grpo",
+      "rl",
+      "reasoning"
+    ]
+  },
+  {
+    "id": "03-2025-27",
+    "domain": "03_llm-architecture-training",
+    "year": 2025,
+    "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "authors": "Daya Guo et al. (Nature, October 2025)",
+    "link": "https://doi.org/10.1038/s41586-025-09422-z",
+    "core_idea": "Pure RL with verifiable rewards (no SFT data, GRPO) elicits emergent reasoning behaviors — self-verification, reflection, long chains; test-time compute allocated by problem difficulty.",
+    "why_it_matters": "The defining result of 2025: reasoning is TRAINABLE BY RL ALONE at scale; R1-distill series moved open models to frontier reasoning; second scaling axis (inference compute) mainstreamed.",
+    "keywords": [
+      "deepseek-r1",
+      "rlvr",
+      "reasoning",
+      "test-time-compute"
+    ]
+  },
+  {
+    "id": "03-2024-28",
+    "domain": "03_llm-architecture-training",
+    "year": 2024,
+    "title": "Scaling LLM Test-Time Compute Optimally Can Be More Effective than Scaling Model Parameters",
+    "authors": "Charlie Snell, Jaehoon Lee, Sanjeev Raghavan, Avirup Sil (UC Berkeley)",
+    "link": "https://arxiv.org/abs/2408.03314 (ICLR 2025)",
+    "core_idea": "On hard math, a small model + optimized test-time search beats a 14× larger model.",
+    "why_it_matters": "Compute-optimal inference — a NEW scaling law axis; the theoretical spine of 2025's reasoning-model economics.",
+    "keywords": [
+      "test-time-compute",
+      "inference-scaling"
+    ]
+  },
+  {
+    "id": "03-2025-29",
+    "domain": "03_llm-architecture-training",
+    "year": 2025,
+    "title": "s1: Simple Test-Time Scaling",
+    "authors": "Muennighoff et al. (Stanford)",
+    "link": "https://arxiv.org/abs/2501.19393",
+    "core_idea": "1K curated examples + \"budget forcing\" (extend/suppress \"Wait\" tokens) makes a 32B model rival far larger reasoning models.",
+    "why_it_matters": "Test-time compute control reduced to token-budget steering — embarrassingly effective; reasoning supervision needs are tiny.",
+    "keywords": [
+      "s1",
+      "budget-forcing",
+      "test-time-compute"
+    ]
+  },
+  {
+    "id": "03-2025-30",
+    "domain": "03_llm-architecture-training",
+    "year": 2025,
+    "title": "The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models",
+    "authors": "Parshin Shojaee et al. (Apple)",
+    "link": "https://arxiv.org/abs/2506.06941",
+    "core_idea": "On puzzle environments with controlled complexity, reasoning models' accuracy collapses beyond a complexity threshold; effort declines as problems near the frontier.",
+    "why_it_matters": "The strongest 2025 critique of \"thinking\" — pattern-matching vs. true search; frames the evaluation frontier (procedural, contamination-free benchmarks like ARC-AGI).",
+    "keywords": [
+      "illusion-of-thinking",
+      "evaluation",
+      "limits"
+    ]
+  },
+  {
+    "id": "03-2022-31",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "In-Context Learning and Induction Heads",
+    "authors": "Catherine Olsson et al. (Anthropic)",
+    "link": "https://arxiv.org/abs/2209.11895 (Transformer Circuits)",
+    "core_idea": "Identifies induction heads — two-attention-head circuits implementing \"copy pattern A→B, complete A→? with B\" — as the mechanism behind much in-context learning; forms during a training phase change.",
+    "why_it_matters": "First circuit-level account of an emergent capability; mechanistic interpretability's flagship (with Nanda's grokking circuit, domain 01).",
+    "keywords": [
+      "induction-heads",
+      "circuits",
+      "interpretability",
+      "icl"
+    ]
+  },
+  {
+    "id": "03-2022-32",
+    "domain": "03_llm-architecture-training",
+    "year": 2022,
+    "title": "Toy Models of Superposition",
+    "authors": "Nelson Elhage et al. (Anthropic)",
+    "link": "https://transformer-circuits.pub/2022/toy-models/index.html",
+    "core_idea": "Networks store MORE features than neurons via nearly-orthogonal directions — polysemantic neurons are a consequence, not a bug.",
+    "why_it_matters": "Explains why interpretability is hard AND why scaling works (superposition ↔ scaling laws, domain 01 F8/2025 mechanism); foundation of sparse-autoencoder feature research.",
+    "keywords": [
+      "superposition",
+      "features",
+      "interpretability"
+    ]
+  },
+  {
+    "id": "03-2023-33",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning",
+    "authors": "Trenton Bricken et al. (Anthropic)",
+    "link": "https://transformer-circuits.pub/2023/monosemanticity/index.html",
+    "core_idea": "Sparse autoencoders extract monosemantic features (e.g., \"Golden Gate Bridge\", \"code errors\") from polysemantic layers.",
+    "why_it_matters": "Made features concrete and steerable (feature activation = behavior control); scaling monosemanticity (Templeton et al. 2024) extracted millions of features from Claude — interpretability became an engineering discipline.",
+    "keywords": [
+      "sae",
+      "features",
+      "monosemanticity",
+      "steering"
+    ]
+  },
+  {
+    "id": "03-2025-34",
+    "domain": "03_llm-architecture-training",
+    "year": 2025,
+    "title": "On the Biology of a Large Language Model (circuit tracing)",
+    "authors": "Anthropic Interpretability Team",
+    "link": "https://www.anthropic.com/research/tracing-thoughts-language-model",
+    "core_idea": "Attribution graphs trace how individual prompts flow through features and circuits in Claude — planning in poems, multi-step reasoning observed directly.",
+    "why_it_matters": "(As of 2026) the state of the art in opening the black box; moves interpretability from \"what's stored\" to \"how it computes\" — the microscope for F9's emergence questions.",
+    "keywords": [
+      "circuit-tracing",
+      "interpretability",
+      "attribution"
+    ]
+  },
+  {
+    "id": "03-2023-35",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "Faith and Fate: Limits of Transformers on Compositionality",
+    "authors": "Nouha Dziri et al.",
+    "link": "https://arxiv.org/abs/2305.18654 (NeurIPS 2023)",
+    "core_idea": "On multi-step compositional tasks transformers form parallel \"shortcut\" circuits whose error compounds exponentially with depth — they don't do serial abstraction natively.",
+    "why_it_matters": "Explains why chain-of-thought (externalizing steps into tokens) is necessary, not stylistic; motivates search and tool use.",
+    "keywords": [
+      "compositionality",
+      "limits",
+      "shortcuts"
+    ]
+  },
+  {
+    "id": "03-2020-36",
+    "domain": "03_llm-architecture-training",
+    "year": 2020,
+    "title": "The Curious Case of Neural Text Degeneration (nucleus sampling)",
+    "authors": "Ari Holtzman et al.",
+    "link": "https://arxiv.org/abs/1904.09751 (ICLR 2020)",
+    "core_idea": "Greedy/beam text is degenerate; sampling from the nucleus (top-p mass) is human-like.",
+    "why_it_matters": "Sampling strategy is cognition-relevant: model distribution's tail matters; still the default decoding knob in every deployed LLM.",
+    "keywords": [
+      "decoding",
+      "nucleus-sampling"
+    ]
+  },
+  {
+    "id": "03-2023-37",
+    "domain": "03_llm-architecture-training",
+    "year": 2023,
+    "title": "GPT-4 Technical Report",
+    "authors": "OpenAI",
+    "link": "https://arxiv.org/abs/2303.08774",
+    "core_idea": "Multimodal, scaled-up transformer; passes professional exams; (details withheld).",
+    "why_it_matters": "System-scale evidence of continued scaling returns + multimodality; began the closed-frontier era (benchmarks-first disclosure).",
+    "keywords": [
+      "gpt-4",
+      "system-report",
+      "multimodal"
+    ]
+  },
+  {
+    "id": "03-2025-38",
+    "domain": "03_llm-architecture-training",
+    "year": 2025,
+    "title": "Advances and Open Problems for LLMs (survey)",
+    "authors": "(authors: see paper)",
+    "link": "https://arxiv.org/abs/2503.22732",
+    "core_idea": "Analyzes 27 top models (2023–2025): reasoning saturation, data constraints, efficiency frontiers, evaluation crisis.",
+    "why_it_matters": "Best single map of the field's state as of early 2025 — use as the \"what's actually open\" reference.",
+    "keywords": [
+      "survey",
+      "open-problems",
+      "llm-2025"
+    ]
+  }
+]

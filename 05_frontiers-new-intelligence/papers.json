@@ -1,0 +1,726 @@
+[
+  {
+    "id": "05-2012-01",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2012,
+    "title": "Perceptions as Hypotheses: Saccades as Experiments",
+    "authors": "Karl Friston, Rick Adams, Laurent Perrinet, Michael Breakspear",
+    "link": "https://doi.org/10.1098/rstb.2011.0426 (Phil. Trans. R. Soc. B)",
+    "core_idea": "Under active inference, perception and action both minimize the same free-energy functional — the brain literally acts to test its perceptual hypotheses.",
+    "why_it_matters": "The founding statement that one objective (expected free energy) can drive perception, planning, and curiosity — a template for agents that need no separate reward function. Kept short here; neuroscience context in domain 04.",
+    "keywords": [
+      "active-inference",
+      "free-energy",
+      "perception-action"
+    ]
+  },
+  {
+    "id": "05-2018-02",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2018,
+    "title": "World Models",
+    "authors": "David Ha, Jürgen Schmidhuber",
+    "link": "https://arxiv.org/abs/1803.10122 (NeurIPS 2018)",
+    "core_idea": "Train a tiny VAE world model and an RNN predictor of its latent dynamics, then evolve a small controller inside hallucinated dreams instead of the real environment.",
+    "why_it_matters": "First striking demonstration that a *learned internal simulator* can be the training ground for behavior — the conceptual seed of Dreamer and of all latent-imagination agents.",
+    "keywords": [
+      "world-models",
+      "dreaming",
+      "evolution",
+      "v-m-c"
+    ]
+  },
+  {
+    "id": "05-2019-03",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2019,
+    "title": "Learning Latent Dynamics for Planning from Pixels (PlaNet) / [2020] Dream to Control (Dreamer)",
+    "authors": "Danijar Hafner, Timothy Lillicrap, et al.",
+    "link": "https://arxiv.org/abs/1811.04551 (PlaNet, ICML 2019); https://arxiv.org/abs/1912.01603 (Dreamer, ICLR 2020)",
+    "core_idea": "PlaNet learns a recurrent state-space model from pixels and plans in it; Dreamer makes it sample-efficient by backpropagating value through imagined trajectories (latent imagination) with a replay of only real interactions.",
+    "why_it_matters": "Converts RL from trial-and-error in reality to *learning inside a learned model* — the efficiency route to agents that cannot afford millions of real mistakes.",
+    "keywords": [
+      "world-models",
+      "latent-planning",
+      "model-based-rl",
+      "dreamer"
+    ]
+  },
+  {
+    "id": "05-2020-04",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2020,
+    "title": "Scaling Active Inference",
+    "authors": "Alex Tschantz, Beren Millidge, Anil K. Seth, Christopher L. Buckley",
+    "link": "https://arxiv.org/abs/1911.10601 (PLoS Computational Biology)",
+    "core_idea": "Deep active-inference agents (expected free energy = extrinsic value + epistemic value) match or beat model-free RL on standard domains and solve tasks RL cannot without reward shaping.",
+    "why_it_matters": "Shows active inference is an engineering-viable alternative to reward-based RL — intrinsic curiosity falls out of the objective rather than being bolted on.",
+    "keywords": [
+      "active-inference",
+      "epistemic-value",
+      "curiosity",
+      "deep-rl"
+    ]
+  },
+  {
+    "id": "05-2023-05",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Mastering Diverse Domains through World Models (DreamerV3)",
+    "authors": "Danijar Hafner, Jurgis Pasukonis, Jimmy Ba, Timothy Lillicrap",
+    "link": "https://arxiv.org/abs/2301.04104",
+    "core_idea": "A single fixed hyperparameter set masters 150+ tasks across benchmarks, and becomes the first agent to collect a Minecraft diamond from scratch, with no human data.",
+    "why_it_matters": "First evidence that one world-model-based learner can scale across wildly different domains — a concrete counter-proposal to \"one benchmark per specialized RL stack\".",
+    "keywords": [
+      "dreamer-v3",
+      "world-models",
+      "minecraft",
+      "generality"
+    ]
+  },
+  {
+    "id": "05-2022-06",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2022,
+    "title": "A Path Towards Autonomous Machine Intelligence (JEPA position paper)",
+    "authors": "Yann LeCun",
+    "link": "https://openreview.net/pdf?id=BZ5a1r-kVsf",
+    "core_idea": "An architecture blueprint (Joint Embedding Predictive Architecture) in which agents predict in *abstract representation space*, not pixels, using a hierarchy of world models plus a configurator and intrinsic cost.",
+    "why_it_matters": "The most detailed published alternative to the generative-next-token path: prediction without generation, planning in latent space, energy-based inference — and it now anchors a real research program (I-JEPA, V-JEPA).",
+    "keywords": [
+      "jepa",
+      "latent-prediction",
+      "world-models",
+      "position-paper"
+    ]
+  },
+  {
+    "id": "05-2023-07",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture (I-JEPA)",
+    "authors": "Mahmoud Assran, Quentin Duval, Ishan Misra, et al. (Meta)",
+    "link": "https://arxiv.org/abs/2301.08243 (CVPR 2023)",
+    "core_idea": "Predict representations of masked image regions from other regions, in embedding space — no pixel reconstruction, no hand-crafted augmentations.",
+    "why_it_matters": "First large-scale working instance of LeCun's blueprint: representation learning by latent prediction beats generative and contrastive pipelines, validating \"predict abstractions, not pixels\".",
+    "keywords": [
+      "i-jepa",
+      "self-supervised",
+      "latent-prediction"
+    ]
+  },
+  {
+    "id": "05-2024-08",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2024,
+    "title": "Revisiting Feature Prediction for Learning Visual Representations from Video (V-JEPA)",
+    "authors": "Adrien Bardes, Quentin Garrido, Jean Ponce, et al. (Meta)",
+    "link": "https://arxiv.org/abs/2404.08471",
+    "core_idea": "Extends JEPA to video: predict latent features of temporally masked frames; the model develops intuitive physics (object permanence, action prediction) without labels.",
+    "why_it_matters": "Moves world models toward the pretraining-scale regime — a video-prediction substrate that downstream agents and robotics stacks can build on.",
+    "keywords": [
+      "v-jepa",
+      "video",
+      "intuitive-physics",
+      "self-supervised"
+    ]
+  },
+  {
+    "id": "05-2016-09",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2016,
+    "title": "Hybrid Computing Using a Neural Network with Dynamic External Memory (DNC)",
+    "authors": "Alex Graves, Greg Wayne, Ivo Danihelka, et al. (DeepMind)",
+    "link": "https://doi.org/10.1038/nature20101 (Nature)",
+    "core_idea": "A neural controller with a differentiable, addressable external memory matrix it learns to read, write, and allocate — inference and manipulation by pure gradient descent.",
+    "why_it_matters": "Memory as an explicit architectural component (not emergent state) — the ancestor of RAG indexes, agent episodic stores, and test-time-memory architectures.",
+    "keywords": [
+      "dnc",
+      "external-memory",
+      "differentiable-memory"
+    ]
+  },
+  {
+    "id": "05-2016-10",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2016,
+    "title": "Learning to Reinforcement Learn",
+    "authors": "Jane X. Wang, Zeb Kurth-Nelson, Dhruva Tirumala, et al. (DeepMind)",
+    "link": "https://arxiv.org/abs/1611.05763",
+    "core_idea": "An RNN meta-trained across many tasks learns implicit RL algorithms in its recurrent dynamics — including exploration strategies adapted to each new task at test time.",
+    "why_it_matters": "Demonstrates that learning-to-learn can emerge in weights + activation state rather than hand-designed updates; the pre-LLM statement of \"pretraining then adapting\" for decision-making.",
+    "keywords": [
+      "meta-rl",
+      "rnn",
+      "learning-to-learn"
+    ]
+  },
+  {
+    "id": "05-2016-11",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2016,
+    "title": "HyperNetworks",
+    "authors": "David Ha, Andrew Dai, Quoc V. Le",
+    "link": "https://arxiv.org/abs/1609.09106 (ICLR 2017)",
+    "core_idea": "One network generates the weights of another, so model structure itself becomes a learned, dynamically adaptable function of context.",
+    "why_it_matters": "Weights stop being fixed parameters and become *state* — the conceptual root of fast weights, hypernetwork adapters, and test-time weight adaptation.",
+    "keywords": [
+      "hypernetworks",
+      "weight-generation",
+      "fast-weights"
+    ]
+  },
+  {
+    "id": "05-2017-12",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2017,
+    "title": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks (MAML)",
+    "authors": "Chelsea Finn, Pieter Abbeel, Sergey Levine",
+    "link": "https://arxiv.org/abs/1703.03400 (ICML 2017)",
+    "core_idea": "Optimize initial parameters explicitly so that a few gradient steps on a new task yield good performance — learn an initialization, not a solution.",
+    "why_it_matters": "The canonical formalization of \"learn to adapt in k steps\"; the reference point every sample-efficient-adaptation scheme (including LLM-tuning-as-meta-learning analogies) is measured against.",
+    "keywords": [
+      "maml",
+      "meta-learning",
+      "few-shot-adaptation"
+    ]
+  },
+  {
+    "id": "05-2020-13",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2020,
+    "title": "Hopfield Networks is All You Need",
+    "authors": "Hubert Ramsauer, Bernhard Schäfl, Johannes Lehner, et al. (Hochreiter group)",
+    "link": "https://arxiv.org/abs/2008.02217 (ICLR 2021)",
+    "core_idea": "Transformer attention is mathematically equivalent to one update step of a modern (exponential-capacity) Hopfield network retrieving a stored pattern.",
+    "why_it_matters": "Reframes attention as *associative memory retrieval* — connecting transformers to the Hopfield energy-based lineage (domain 01) and licensing energy-based, memory-centric alternatives to softmax attention.",
+    "keywords": [
+      "hopfield",
+      "associative-memory",
+      "attention-theory",
+      "energy-based"
+    ]
+  },
+  {
+    "id": "05-2001-14",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2001,
+    "title": "The \"Echo State\" Approach to Analysing and Training Recurrent Neural Networks",
+    "authors": "Herbert Jaeger",
+    "link": "GMD Report 148, German National Research Center for Information Technology",
+    "core_idea": "Keep a large random recurrent reservoir fixed and train only a linear readout — the \"echo state\" property makes the reservoir a fading memory of its input history.",
+    "why_it_matters": "Established reservoir computing: dynamics as a fixed feature map, learning confined to a cheap output layer — the low-energy predecessor of today's frozen-backbone + small-adapter designs.",
+    "keywords": [
+      "echo-state",
+      "reservoir-computing",
+      "rcc"
+    ]
+  },
+  {
+    "id": "05-2018-15",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2018,
+    "title": "Neural Ordinary Differential Equations",
+    "authors": "Ricky T. Q. Chen, Yulia Rubanova, Jesse Bettencourt, David Duvenaud",
+    "link": "https://arxiv.org/abs/1806.07366 (NeurIPS 2018)",
+    "core_idea": "Define network depth as a continuous ODE solved by standard numerical integrators, with gradients via the adjoint method at constant memory cost.",
+    "why_it_matters": "Makes *continuous time* a first-class modeling axis — the mathematical basis for liquid networks and for architectures that trade discrete layers for physical-time dynamics.",
+    "keywords": [
+      "neural-ode",
+      "continuous-time",
+      "adjoint-method"
+    ]
+  },
+  {
+    "id": "05-2023-16",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "RWKV: Reinventing RNNs for the Transformer Era",
+    "authors": "Bo Peng, Eric Alcaide, et al.",
+    "link": "https://arxiv.org/abs/2305.13048 (EMNLP Findings 2023)",
+    "core_idea": "An RNN that can be trained in parallel like a transformer (linear attention reformulated as a recurrence) and runs in constant memory at inference.",
+    "why_it_matters": "Proof that recurrence and parallel training are not mutually exclusive — a streaming, deployable alternative to quadratic attention born in the open-source community.",
+    "keywords": [
+      "rwkv",
+      "rnn",
+      "linear-attention",
+      "streaming"
+    ]
+  },
+  {
+    "id": "05-2023-17",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Hyena Hierarchy: Towards Larger Convolutional Language Models",
+    "authors": "Michael Poli, Stefano Massaroli, Eric Nguyen, et al.",
+    "link": "https://arxiv.org/abs/2302.10866 (ICML 2023)",
+    "core_idea": "Replace attention with long implicit convolutions gated by a small MLP, yielding subquadratic scaling to hundreds of thousands of context tokens.",
+    "why_it_matters": "Showed the attention kernel itself is replaceable at language-model scale — the long-convolution branch of the post-transformer zoo that Mamba later overshadowed.",
+    "keywords": [
+      "hyena",
+      "long-convolutions",
+      "subquadratic"
+    ]
+  },
+  {
+    "id": "05-2023-18",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+    "authors": "Albert Gu, Tri Dao",
+    "link": "https://arxiv.org/abs/2312.00752",
+    "core_idea": "Make state-space parameters input-dependent (selective), so the model chooses what to remember or forget — transformer-class quality at linear time and constant per-token memory.",
+    "why_it_matters": "The flagship non-transformer backbone: streaming/edge inference, million-token contexts, and DNA/audio modeling — and the template the whole 2024+ SSM ecosystem (Jamba, hybrid stacks) builds on.",
+    "keywords": [
+      "mamba",
+      "state-space-models",
+      "selective",
+      "linear-time"
+    ]
+  },
+  {
+    "id": "05-2024-19",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2024,
+    "title": "xLSTM: Extended Long Short-Term Memory",
+    "authors": "Maximilian Beck, Korbinian Pöppel, Markus Spanring, et al. (Hochreiter group)",
+    "link": "https://arxiv.org/abs/2405.04517",
+    "core_idea": "Modernizes the LSTM with exponential gating and matrix memory (sLSTM, mLSTM), restoring the classic cell's competitiveness with transformers and Mamba.",
+    "why_it_matters": "The recurrence line did not die in 2017 — a direct counter-demonstration that gated recurrence, properly upgraded, belongs in the architecture search space.",
+    "keywords": [
+      "xlstm",
+      "recurrence",
+      "gated-memory"
+    ]
+  },
+  {
+    "id": "05-2024-20",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2024,
+    "title": "KAN: Kolmogorov-Arnold Networks",
+    "authors": "Ziming Liu, Yixuan Wang, Sachin Vaidya, et al.",
+    "link": "https://arxiv.org/abs/2404.19756",
+    "core_idea": "Put learnable activation functions on edges (B-splines) instead of fixed activations on nodes, exploiting the Kolmogorov-Arnold representation theorem.",
+    "why_it_matters": "Small KANs discover symbolic, interpretable formulas where MLPs fit opaque surfaces — an architecture whose inductive bias points toward compositional and scientific discovery, not just benchmark loss.",
+    "keywords": [
+      "kan",
+      "learnable-activations",
+      "symbolic",
+      "interpretability"
+    ]
+  },
+  {
+    "id": "05-2024-21",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2024,
+    "title": "Learning to (Learn at Test Time): RNNs with Expressive Hidden States (TTT layers)",
+    "authors": "Yu Sun, Xinhao Li, Karan Dalal, et al. (Stanford)",
+    "link": "https://arxiv.org/abs/2407.04620",
+    "core_idea": "Make the RNN hidden state itself a small neural network whose update rule is a step of self-supervised learning — the sequence layer literally trains its memory during the forward pass.",
+    "why_it_matters": "Unifies fast weights, meta-learning, and long-context modeling: adaptation stops being a separate fine-tuning phase and becomes part of inference.",
+    "keywords": [
+      "ttt",
+      "test-time-training",
+      "fast-weights",
+      "hidden-state"
+    ]
+  },
+  {
+    "id": "05-2025-22",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2025,
+    "title": "Titans: Learning to Memorize at Test Time",
+    "authors": "Ali Behrouz et al. (Google)",
+    "link": "https://arxiv.org/abs/2501.00663",
+    "core_idea": "A neural long-term memory module that *surprises-based* writes and forgets at test time, coordinated with short-term attention in a hybrid architecture that scales beyond 2M context.",
+    "why_it_matters": "Memory management (what to store, when to forget) becomes an architectural, learned-in-place mechanism — a direct answer to the context-window economics of long-horizon agents.",
+    "keywords": [
+      "titans",
+      "test-time-memory",
+      "surprise",
+      "long-context"
+    ]
+  },
+  {
+    "id": "05-2025-23",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2025,
+    "title": "Large Language Diffusion Models (LLaDA)",
+    "authors": "Shen Nie, Fengqi Zhu, Chao Du, et al. (Ant Group, Renmin University)",
+    "link": "https://arxiv.org/abs/2502.09992",
+    "core_idea": "An 8B-parameter diffusion LM trained from scratch with masked-diffusion pretraining and instruction tuning that rivals LLaMA3-8B on many benchmarks.",
+    "why_it_matters": "First convincing evidence that the *generative paradigm itself* (any-order parallel denoising vs left-to-right factorization) is swappable at language-model scale, with built-in infilling and controllability.",
+    "keywords": [
+      "llada",
+      "diffusion-lm",
+      "masked-diffusion",
+      "parallel-generation"
+    ]
+  },
+  {
+    "id": "05-2025-24",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2025,
+    "title": "Commercial diffusion language models: Mercury and Gemini Diffusion",
+    "authors": "Inception Labs; Google DeepMind",
+    "link": "https://www.inceptionlabs.ai/blog/introducing-mercury; https://deepmind.google/models/gemini-diffusion (ecosystem milestone, not a paper)",
+    "core_idea": "Mercury (2025-02) ships the first commercial-scale diffusion LLM at 1000+ tokens/sec on H100s; Gemini Diffusion (2025-05) is Google DeepMind's research-preview diffusion model with comparable speed.",
+    "why_it_matters": "Parallel diffusion decoding turns generation speed from a serial-token constraint into a hardware-parallel one — the first deployed crack in autoregressive orthodoxy.",
+    "keywords": [
+      "diffusion-lm",
+      "mercury",
+      "gemini-diffusion",
+      "commercial-milestone"
+    ]
+  },
+  {
+    "id": "05-2021-25",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2021,
+    "title": "Liquid Time-Constant Networks",
+    "authors": "Ramin Hasani, Mathias Lechner, et al. (MIT)",
+    "link": "https://arxiv.org/abs/2006.04439 (AAAI 2021)",
+    "core_idea": "Neural ODEs whose time constants are states, so each neuron adapts its own clock to the input — closed-form variants (CfC) make them cheap enough for deployment.",
+    "why_it_matters": "Networks that natively handle irregular sampling and time-warped streams (robotics, wearables, edge sensing) — where fixed-clock discrete stacks waste computation.",
+    "keywords": [
+      "liquid-networks",
+      "neural-ode",
+      "time-constants",
+      "edge"
+    ]
+  },
+  {
+    "id": "05-1997-26",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 1997,
+    "title": "Networks of Spiking Neurons: The Third Generation of Neural Network Models",
+    "authors": "Wolfgang Maass",
+    "link": "https://doi.org/10.1016/S0893-6080(97)00011-7 (Neural Networks)",
+    "core_idea": "Neurons that communicate by discrete spikes are computationally more powerful than sigmoid units — even with the same analog noise — when time is used as a resource.",
+    "why_it_matters": "The theoretical charter for event-driven, sparse, energy-cheap computation; every neuromorphic hardware claim descends from it. (Cross-ref domain 04 for the neuroscience side; not yet covered there as of 2026-10.)",
+    "keywords": [
+      "spiking-neurons",
+      "third-generation",
+      "neuromorphic"
+    ]
+  },
+  {
+    "id": "05-2018-27",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2018,
+    "title": "Loihi: A Neuromorphic Manycore Processor with On-Chip Learning",
+    "authors": "Mike Davies et al. (Intel)",
+    "link": "IEEE Micro 38(1):82-99 (2018)",
+    "core_idea": "A 128-core chip with asynchronous spiking neurons and programmable on-chip plasticity rules, consuming milliwatts on workloads that cost GPUs watts.",
+    "why_it_matters": "Physical proof that learning can run at 3-5 orders of magnitude lower energy than GPU training/inference — the hardware existence theorem for always-on embedded intelligence.",
+    "keywords": [
+      "loihi",
+      "neuromorphic-hardware",
+      "on-chip-learning",
+      "efficiency"
+    ]
+  },
+  {
+    "id": "05-2023-28",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "SpikeGPT: Generative Pre-trained Language Model with Spiking Neural Networks",
+    "authors": "Rui-Jie Zhu, Qihang Zhao, Guoqi Li, Jason K. Eshraghian",
+    "link": "https://arxiv.org/abs/2302.13939 (IJCAI 2023)",
+    "core_idea": "A GPT-style language model (up to 345M params) built on spiking RWKV neurons, generating text with binary event-driven activations at roughly 20x less energy than an equivalent dense model.",
+    "why_it_matters": "The bridge paper: modern generative LLM architecture rendered in spiking form — connects the LLM world to neuromorphic hardware deployment rather than toy tasks.",
+    "keywords": [
+      "spikegpt",
+      "spiking-lm",
+      "rwkv",
+      "energy-efficiency"
+    ]
+  },
+  {
+    "id": "05-2018-29",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2018,
+    "title": "DeepProbLog: Neural Probabilistic Logic Programming",
+    "authors": "Robin Manhaeve, Sebastijan Dumančić, Angelika Kimmig, Thomas Demeester, Luc De Raedt",
+    "link": "https://arxiv.org/abs/1805.10860 (NeurIPS 2018)",
+    "core_idea": "Embed neural networks as probabilistic predicates inside a differentiable logic program, so gradients flow through logical inference itself.",
+    "why_it_matters": "The cleanest mechanism for systematic compositionality: symbols guarantee rule structure while sub-symbolic nets supply perception — exactly the generalization pattern pure LLMs still miss.",
+    "keywords": [
+      "deepproblog",
+      "neural-symbolic",
+      "probabilistic-logic"
+    ]
+  },
+  {
+    "id": "05-2019-30",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2019,
+    "title": "The Neuro-Symbolic Concept Learner: Interpreting Scenes, Words, and Sentences from Natural Supervision",
+    "authors": "Jiayuan Mao, Chuang Gan, Pushmeet Kohli, Joshua Tenenbaum, Jiajun Wu",
+    "link": "https://arxiv.org/abs/1904.12584 (ICLR 2019; NS-VQA)",
+    "core_idea": "A visual parser turns pixels into object programs, a semantic parser turns questions into symbolic programs, and answering is program execution — no program annotations.",
+    "why_it_matters": "Demonstrates human-like data efficiency and zero-shot recombination on VQA by splitting perception (neural) from reasoning (symbolic) — the architecture pattern behind 2024-25 neuro-symbolic ARC solvers.",
+    "keywords": [
+      "neuro-symbolic",
+      "program-induction",
+      "vqa",
+      "compositionality"
+    ]
+  },
+  {
+    "id": "05-2011-31",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2011,
+    "title": "Abandoning Objectives: Evolution Through the Search for Novelty Alone",
+    "authors": "Joel Lehman, Kenneth O. Stanley",
+    "link": "https://doi.org/10.1162/EVCO_a_00025 (Evolutionary Computation)",
+    "core_idea": "Searching only for behavioral novelty — with no objective function at all — sometimes finds solutions that objective-driven search never reaches (e.g., the deceptive-maze robot).",
+    "why_it_matters": "Formalizes that objectives can actively mislead: stepping stones to intelligence may only be discoverable by open-ended, novelty-seeking search — a design principle for generating what we cannot specify.",
+    "keywords": [
+      "novelty-search",
+      "open-endedness",
+      "deception",
+      "evolution"
+    ]
+  },
+  {
+    "id": "05-2017-32",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2017,
+    "title": "Evolution Strategies as a Scalable Alternative to Reinforcement Learning",
+    "authors": "Tim Salimans, Jonathan Ho, Xi Chen, et al. (OpenAI)",
+    "link": "https://arxiv.org/abs/1703.03864",
+    "core_idea": "Black-box evolution of policy parameters, parallelized across thousands of gradient-free workers, matches deep RL on MuJoCo while sidestepping backprop-through-time entirely.",
+    "why_it_matters": "Learning without gradients is embarrassingly parallel and non-differentiable-stack-friendly — the fallback optimizer for world models, agents, and hardware where gradients do not flow.",
+    "keywords": [
+      "evolution-strategies",
+      "gradient-free",
+      "scalable-rl"
+    ]
+  },
+  {
+    "id": "05-2019-33",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2019,
+    "title": "Paired Open-Ended Trailblazer (POET)",
+    "authors": "Rui Wang, Joel Lehman, et al.",
+    "link": "https://arxiv.org/abs/1901.01753",
+    "core_idea": "Endlessly generate new environments and their solvers together, transferring agents between paired challenges to keep difficulty at each learner's frontier.",
+    "why_it_matters": "The first working engine of open-ended co-evolution of tasks and solutions — an automatic curriculum generator, and a concrete answer to \"where does an endless training signal come from?\".",
+    "keywords": [
+      "poet",
+      "open-endedness",
+      "curriculum-generation",
+      "co-evolution"
+    ]
+  },
+  {
+    "id": "05-2018-34",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2018,
+    "title": "Emergence of Linguistic Communication from Referential Games",
+    "authors": "Angeliki Lazaridou, Alexander Peysakhovich, Marco Baroni (with 2016 antecedents)",
+    "link": "https://arxiv.org/abs/1712.10364 (ICLR 2018)",
+    "core_idea": "Two agents invent a discrete language to solve referential games; grounded, compositional-ish protocols emerge from pure cooperation pressure, but drift toward non-human languages without inductive biases.",
+    "why_it_matters": "The experimental base camp for emergent communication: tells you exactly which pressures (grounding, population, ease) make shared symbolic systems arise — and which make them alien.",
+    "keywords": [
+      "emergent-communication",
+      "referential-games",
+      "multi-agent"
+    ]
+  },
+  {
+    "id": "05-2023-35",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+    "authors": "Joon Sung Park, Joseph O'Brien, Carrie Cai, et al. (Stanford)",
+    "link": "https://arxiv.org/abs/2304.03442 (UIST 2023)",
+    "core_idea": "25 LLM agents with memory streams, reflection, and planning in a sandbox town produce believable social behavior (party planning, relationship formation) evaluated by human raters.",
+    "why_it_matters": "The founding demo of society-scale simulation: LLMs as substrate for social-science experiments, agent economies, and synthetic populations — collective intelligence built from generative individuals.",
+    "keywords": [
+      "generative-agents",
+      "simulation",
+      "social-behavior",
+      "memory-streams"
+    ]
+  },
+  {
+    "id": "05-2024-36",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2024,
+    "title": "Multi-agent LLM ecosystems: swarms, MCP, agent-to-agent protocols",
+    "authors": "ecosystem development (no single paper)",
+    "link": "https://modelcontextprotocol.io (MCP spec, Anthropic 2024; ecosystem docs)",
+    "core_idea": "A practical stack crystallizes around standard tool protocols (MCP, 2024), agent swarms/orchestration frameworks, and emerging agent-to-agent communication formats across vendors.",
+    "why_it_matters": "Multi-agent intelligence is becoming *infrastructure* rather than research demo — standard interfaces let heterogeneous agents compose, which is the precondition for agent economies and collective systems that outgrow any single model.",
+    "keywords": [
+      "multi-agent-llm",
+      "mcp",
+      "protocols",
+      "agent-swarms",
+      "ecosystem"
+    ]
+  },
+  {
+    "id": "05-2022-37",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2022,
+    "title": "STaR: Bootstrapping Reasoning With Reasoning",
+    "authors": "Eric Zelikman, Yuhuai Wu, Jesse Mu, Noah D. Goodman (Stanford)",
+    "link": "https://arxiv.org/abs/2203.14465 (NeurIPS 2022)",
+    "core_idea": "Generate rationales, keep only those that produce correct final answers, fine-tune on them, and re-generate — reasoning ability bootstraps itself upward from a few seeds.",
+    "why_it_matters": "The origin loop of LLM self-improvement: the STaR pattern (generate, filter by outcome, train, repeat) is the direct ancestor of rejection-sampling fine-tuning and RLVR-era reasoning training.",
+    "keywords": [
+      "star",
+      "bootstrapping",
+      "rationale-generation",
+      "self-improvement"
+    ]
+  },
+  {
+    "id": "05-2023-38",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+    "authors": "Timo Schick, Jane Dwivedi-Yu, Roberto Dessì, et al. (Meta)",
+    "link": "https://arxiv.org/abs/2302.04761 (NeurIPS 2023)",
+    "core_idea": "A model self-annotates where inserting an API call (calculator, search, QA) would reduce its own perplexity, then fine-tunes on those insertions — tool use learned, not prompted.",
+    "why_it_matters": "The model becomes the dispatcher that decides *when* computation should leave its weights — the learning-side foundation of function calling and of agents that offload exact work to tools.",
+    "keywords": [
+      "toolformer",
+      "tool-use",
+      "api-calls",
+      "self-annotation"
+    ]
+  },
+  {
+    "id": "05-2023-39",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+    "authors": "Noah Shinn, Federico Cassano, Beck Labash, et al.",
+    "link": "https://arxiv.org/abs/2303.11366 (NeurIPS 2023)",
+    "core_idea": "Agents that fail a task store a *verbal* self-diagnosis in episodic memory and retry with that lesson in context — episodic control implemented in language instead of weights.",
+    "why_it_matters": "Cheap, gradient-free self-improvement: converting execution feedback into natural-language policy updates is now the standard inner loop of serious agent frameworks.",
+    "keywords": [
+      "reflexion",
+      "verbal-rl",
+      "self-critique",
+      "episodic-memory"
+    ]
+  },
+  {
+    "id": "05-2023-40",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+    "authors": "Guanzhi Wang, Yuqi Xie, Yunfan Jiang, et al. (NVIDIA, Caltech)",
+    "link": "https://arxiv.org/abs/2305.16291 (TMLR 2024)",
+    "core_idea": "An LLM agent in Minecraft writes its own actions as code, verifies them, and stores verified skills in a growing skill library that compounds across tasks without any gradient updates.",
+    "why_it_matters": "The skill-library pattern: continual learning as *accumulated executable artifacts* — the most copied mechanism for making agents improve monotonically in open worlds.",
+    "keywords": [
+      "voyager",
+      "skill-library",
+      "code-as-action",
+      "minecraft",
+      "open-ended"
+    ]
+  },
+  {
+    "id": "05-2025-41",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2025,
+    "title": "Absolute Zero: Reinforced Self-play Reasoning with Zero Data",
+    "authors": "Andrew Zhao, Yiran Wu, Yang Yue, et al. (Tsinghua LeapLab)",
+    "link": "https://arxiv.org/abs/2505.03335 (NeurIPS 2025)",
+    "core_idea": "One model both *proposes* tasks (to maximize its own learnability) and solves them, verified by a code executor — AlphaZero-style self-play for reasoning with zero external data.",
+    "why_it_matters": "A working escape from the human-data bottleneck: the training signal is generated and checked by machine, pointing at open-ended self-improvement loops (and their unsupervised-error risks).",
+    "keywords": [
+      "absolute-zero",
+      "self-play",
+      "rlvr",
+      "zero-data",
+      "code-executor"
+    ]
+  },
+  {
+    "id": "05-2024-42",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2024,
+    "title": "OpenAI o3 on ARC-AGI: reasoning models crack (part of) the generality benchmark",
+    "authors": "OpenAI (system milestone)",
+    "link": "https://arcprize.org/blog/oai-o3-pub-breakthrough (announced 2024-12)",
+    "core_idea": "o3, trained with RL on verifiable tasks plus large test-time search, scored 75.7% (87.5% with 172x compute) on ARC-AGI-Pub — the first big jump on the benchmark that had resisted a decade of approaches.",
+    "why_it_matters": "Evidence that Chollet's skill-acquisition framing (domain 01) responds to RL + test-time search — while costing enormous compute per task, showing \"generality\" and \"efficiency\" are still far from joint. System-scale evidence, flagged as such.",
+    "keywords": [
+      "o3",
+      "arc-agi",
+      "system-report",
+      "test-time-search",
+      "rlvr"
+    ]
+  },
+  {
+    "id": "05-2025-43",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2025,
+    "title": "ARC-AGI-2: the persistent holdout",
+    "authors": "ARC Prize Foundation (benchmark milestone)",
+    "link": "https://arcprize.org/arc-agi-2 (announced 2025-03; see leaderboard)",
+    "core_idea": "A redesigned ARC suite targeting the efficiency gap — tasks tuned so humans still solve most while frontier reasoning models score in the single to low double digits at release.",
+    "why_it_matters": "Even o3-class systems only partially crack ARC-AGI-1 at extreme cost, and ARC-AGI-2 re-opens the gap: a live yardstick separating \"skill at scale\" from general, *sample-efficient* intelligence (Chollet 2019, domain 01).",
+    "keywords": [
+      "arc-agi-2",
+      "benchmark",
+      "sample-efficiency",
+      "generality-gap"
+    ]
+  },
+  {
+    "id": "05-2018-44",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2018,
+    "title": "AI Safety via Debate",
+    "authors": "Geoffrey Irving, Paul Christiano, Dario Amodei (OpenAI)",
+    "link": "https://arxiv.org/abs/1807.03764",
+    "core_idea": "Two adversarial AI debaters with a human judging only the transcript can, in principle, supervise capabilities beyond the judge's own — amplifying oversight instead of capability alone.",
+    "why_it_matters": "The core mechanism candidate for supervising smarter-than-human systems: supervision scales with computation spent on debate, not with judge expertise.",
+    "keywords": [
+      "debate",
+      "scalable-oversight",
+      "amplification"
+    ]
+  },
+  {
+    "id": "05-2022-45",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2022,
+    "title": "Measuring Progress on Scalable Oversight for Large Language Models",
+    "authors": "Samuel R. Bowman et al.",
+    "link": "https://arxiv.org/abs/2211.03540",
+    "core_idea": "A unified evaluation suite (weak-strong pairings, sandwiching, debate, market-making) for the concrete question: can weak overseers extract truthful behavior from stronger models?",
+    "why_it_matters": "Turns oversight from philosophy into benchmark engineering — defines the measurable race between model capability and our ability to check it.",
+    "keywords": [
+      "scalable-oversight",
+      "evaluation",
+      "weak-oversseer",
+      "sandwiching"
+    ]
+  },
+  {
+    "id": "05-2023-46",
+    "domain": "05_frontiers-new-intelligence",
+    "year": 2023,
+    "title": "Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision",
+    "authors": "Collin Burns, Pavel Izmailov, Jan Hendrik Kirchner, et al. (OpenAI)",
+    "link": "https://arxiv.org/abs/2312.09390",
+    "core_idea": "Fine-tuning a strong model on labels from a much weaker one recovers most of the strong model's capability — and sometimes beats the weak supervisor's own ceiling.",
+    "why_it_matters": "Empirical hope that humans can keep steering superhuman models via weak signals (if generalization conditions hold) — the working hypothesis behind 2025-26 oversight plans for self-improving systems.",
+    "keywords": [
+      "weak-to-strong",
+      "superalignment",
+      "generalization"
+    ]
+  }
+]

@@ -1,0 +1,403 @@
+[
+  {
+    "id": "04-1952-01",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1952,
+    "title": "A Quantitative Description of Membrane Current and Its Application to Conduction and Excitation in Nerve",
+    "authors": "Alan Hodgkin, Andrew Huxley",
+    "link": "https://doi.org/10.1113/jphysiol.1952.sp004764 (J. Physiol.)",
+    "core_idea": "Coupled differential equations reproducing the action potential from ion-channel dynamics.",
+    "why_it_matters": "Proof that computation can be *derived* from biophysics — the template for mechanistic explanation that AI's interpretability now imitates.",
+    "keywords": [
+      "hodgkin-huxley",
+      "biophysics",
+      "spiking"
+    ]
+  },
+  {
+    "id": "04-1962-02",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1962,
+    "title": "Receptive Fields, Binocular Interaction and Functional Architecture in the Cat's Visual Cortex",
+    "authors": "David Hubel, Torsten Wiesel",
+    "link": "https://doi.org/10.1113/jphysiol.1962.sp006837",
+    "core_idea": "Cortical neurons are arranged in hierarchical feature detectors — simple cells feed complex cells with invariance.",
+    "why_it_matters": "The direct biological inspiration for CNNs (LeCun 1989) — hierarchy + feature + invariance was observed in cortex 27 years before AlexNet.",
+    "keywords": [
+      "receptive-fields",
+      "hierarchy",
+      "vision",
+      "cnn-inspiration"
+    ]
+  },
+  {
+    "id": "04-1978-03",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1978,
+    "title": "The Hippocampus as a Cognitive Map",
+    "authors": "John O'Keefe, Lynn Nadel",
+    "link": "Oxford University Press (book; place cells: O'Keefe & Dostrovsky 1971)",
+    "core_idea": "Place cells encode location; hippocampus implements a map-like relational memory, not a warehouse.",
+    "why_it_matters": "Memory as structured, relational, spatial — the design reference for vector stores, agent spatial reasoning, and episodic memory architectures.",
+    "keywords": [
+      "hippocampus",
+      "place-cells",
+      "cognitive-maps",
+      "memory"
+    ]
+  },
+  {
+    "id": "04-1982-04",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1982,
+    "title": "Vision: A Computational Investigation into the Human Representation and Processing of Visual Information",
+    "authors": "David Marr",
+    "link": "MIT Press (book, posthumous 1982)",
+    "core_idea": "Any intelligent system must be understood at three levels — computation (what/why), algorithm (how), implementation (substrate) — and levels are separable.",
+    "why_it_matters": "The discipline that keeps AI honest: transformer = one algorithmic answer; LLM scaling debates are arguments at Marr's computational level.",
+    "keywords": [
+      "marr-levels",
+      "computational-theory",
+      "methodology"
+    ]
+  },
+  {
+    "id": "04-1994-05",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1994,
+    "title": "Reactivation of Hippocampal Ensemble Memories During Sleep",
+    "authors": "Matthew Wilson, Bruce McNaughton",
+    "link": "https://doi.org/10.1126/science.1851943 (Wilson & McNaughton 1994, Science)",
+    "core_idea": "Sequences of place-cell activity from waking experience are replayed during sleep.",
+    "why_it_matters": "Offline consolidation as a computation — the biological justification for experience replay in RL (DQN) and for offline training phases generally.",
+    "keywords": [
+      "replay",
+      "sleep",
+      "consolidation",
+      "hippocampus"
+    ]
+  },
+  {
+    "id": "04-1996-06",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1996,
+    "title": "Emergence of Simple-Cell Receptive Field Properties by Learning a Sparse Code for Natural Images",
+    "authors": "Bruno Olshausen, David Field",
+    "link": "https://doi.org/10.1038/381607a0 (Nature 381)",
+    "core_idea": "Optimizing for SPARSE codes of natural images reproduces V1 receptive fields — no teacher, no labels.",
+    "why_it_matters": "The brain's sensory code is shaped by efficient coding of environmental statistics; the direct ancestor of sparse autoencoder features in LLM interpretability (domain 03, F8).",
+    "keywords": [
+      "sparse-coding",
+      "efficient-coding",
+      "unsupervised",
+      "v1"
+    ]
+  },
+  {
+    "id": "04-1997-07",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1997,
+    "title": "A Neural Substrate of Prediction and Reward (dopamine neurons)",
+    "authors": "Wolfram Schultz, Peter Dayan, Read Montague",
+    "link": "https://doi.org/10.1126/science.275.5306.1593 (Science 275)",
+    "core_idea": "Dopamine neurons do not signal reward — they signal REWARD PREDICTION ERROR, exactly the TD error of Q-learning.",
+    "why_it_matters": "The single most celebrated neuro↔AI bridge: a learning algorithm (TD, domain 02) was discovered in neurons before it was standard in machines (or rather, matched after) — reward prediction errors drive both.",
+    "keywords": [
+      "dopamine",
+      "td-error",
+      "reinforcement-learning",
+      "prediction-error"
+    ]
+  },
+  {
+    "id": "04-1999-08",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 1999,
+    "title": "Predictive Coding in the Visual Cortex: A Functional Interpretation of Some Extra-Classical Receptive-Field Effects",
+    "authors": "Rajesh Rao, Dana Ballard",
+    "link": "https://doi.org/10.1038/1480 (Nature Neuroscience)",
+    "core_idea": "Cortex transmits prediction ERRORS up the hierarchy (feedback carries predictions); explains end-stopping and contextual effects.",
+    "why_it_matters": "Bandwidth-efficient, learned, hierarchical inference — the brain runs a self-supervised predictive model; the blueprint for predictive-processing architectures and a candidate biologically plausible learning rule.",
+    "keywords": [
+      "predictive-coding",
+      "hierarchy",
+      "feedback",
+      "prediction-error"
+    ]
+  },
+  {
+    "id": "04-2003-09",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2003,
+    "title": "A Neural Global Workspace Theory of Conscious (and Unconscious) Processing",
+    "authors": "Stanislas Dehaene, Jean-Pierre Changeux (building on Baars' Global Workspace 1988)",
+    "link": "https://doi.org/10.1016/S1053-8119(03)00067-7 (with Baars 2003 Neuron: \"A neuronal global workspace model\")",
+    "core_idea": "Conscious access = broadcasting of a winner-take-all selection through a global workspace — a shared, capacity-limited bottleneck routed to many processors.",
+    "why_it_matters": "A concrete architecture pattern (bottleneck + broadcast) that inspired MoE-style routing, LLM context as workspace, and modular agent designs (Goyal & Bengio 2020).",
+    "keywords": [
+      "global-workspace",
+      "consciousness",
+      "broadcast",
+      "bottleneck"
+    ]
+  },
+  {
+    "id": "04-2004-10",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2004,
+    "title": "An Information-Theoretic Measure of Consciousness (Integrated Information Theory)",
+    "authors": "Giulio Tononi",
+    "link": "https://doi.org/10.1186/1471-2202-5-42 (BMC Neuroscience)",
+    "core_idea": "Consciousness corresponds to integrated information (Φ) — the causal irreducibility of a system's parts.",
+    "why_it_matters": "Influential formal program linking substrate structure to experience; CONTested (adversarial testing 2023 favored recurrent processing over IIT) — include as theory-design lesson: formal elegance ≠ empirical validity.",
+    "keywords": [
+      "iit",
+      "consciousness",
+      "integrated-information"
+    ]
+  },
+  {
+    "id": "04-2004-11",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2004,
+    "title": "Neuronal Circuits of the Neocortex: The Canonical Microcircuit",
+    "authors": "Rodney Douglas, Kevan Martin",
+    "link": "https://doi.org/10.1146/annurev.neuro.26.041002.131126 (Annu. Rev. Neurosci.)",
+    "core_idea": "Cortex is a repeated canonical circuit (6 layers, characteristic recurrence and inhibition) whose connectivity is stereotyped across areas.",
+    "why_it_matters": "Nature's answer to architecture reuse: one repeated block, specialized by input/output, prefigures layer-stacking universality (transformer blocks).",
+    "keywords": [
+      "microcircuit",
+      "cortex",
+      "canonical-architecture"
+    ]
+  },
+  {
+    "id": "04-2005-12",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2005,
+    "title": "Microstructure of a Spatial Map in the Entorhinal Cortex (grid cells)",
+    "authors": "Torkel Hafting, Marianne Fyhn, Sturla Molden, May-Britt Moser, Edvard Moser",
+    "link": "https://doi.org/10.1038/nature03721 (Nature 436)",
+    "core_idea": "Entorhinal grid cells fire on hexagonal tessellations — a metric spatial code.",
+    "why_it_matters": "Nobel-recognized discovery of an elegant internal coordinate system; grid-cell-like codes emerge in RL agents (Banino 2018) — convergent evolution of representation between brains and networks.",
+    "keywords": [
+      "grid-cells",
+      "entorhinal",
+      "spatial-coding"
+    ]
+  },
+  {
+    "id": "04-2005-13",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2005,
+    "title": "Uncertainty, Neuromodulation, and Attention (ACh & NE)",
+    "authors": "Angela Yu, Peter Dayan",
+    "link": "https://doi.org/10.1016/j.neuron.2005.04.014 (Neuron 46)",
+    "core_idea": "Acetylcholine signals expected uncertainty; norepinephrine signals unexpected uncertainty — neuromodulators encode uncertainty types, gating learning and attention.",
+    "why_it_matters": "Global state control as architecture: neuromodulation is a broadcast hyperparameter system — the biological template for meta-learners, adaptive optimizers, and context conditioning in ML.",
+    "keywords": [
+      "neuromodulation",
+      "uncertainty",
+      "ach",
+      "ne",
+      "gain-control"
+    ]
+  },
+  {
+    "id": "04-2006-14",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2006,
+    "title": "Small-World Brain Networks",
+    "authors": "Danielle Bassett, Ed Bullmore",
+    "link": "https://doi.org/10.1016/j.brainresrev.2006.03.011 (and Watts–Strogatz 1998, domain 01)",
+    "core_idea": "Human brain graphs combine high local clustering with short global path lengths — optimal for segregated AND integrated processing.",
+    "why_it_matters": "Network-architecture lesson for AI: mixture-of-experts routing, agent topologies, and MoE load-balancing are engineering rediscoveries of small-world design.",
+    "keywords": [
+      "connectome",
+      "small-world",
+      "network-topology"
+    ]
+  },
+  {
+    "id": "04-2006-15",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2006,
+    "title": "Neuronal Avalanches in Neocortical Circuits",
+    "authors": "John Beggs, Dietmar Plenz",
+    "link": "https://doi.org/10.1523/JNEUROSCI.23-35-11167.2003 (J. Neurosci. 2003); see also Kinouchi & Copelli 2006, Nat. Phys.",
+    "core_idea": "Cortical activity propagates in power-law-distributed avalanches — signatures of operation near a critical point.",
+    "why_it_matters": "Evidence the brain self-tunes to criticality (maximal dynamic range, information transmission) — matching self-organized criticality in physics (domain 01, F11) and edge-of-chaos results in RNN/attention dynamics.",
+    "keywords": [
+      "criticality",
+      "avalanches",
+      "power-laws"
+    ]
+  },
+  {
+    "id": "04-2008-16",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2008,
+    "title": "Representational Similarity Analysis (RSA): Connecting Computational Models with Brains",
+    "authors": "Nikolaus Kriegeskorte, Marieke Mur, Peter Bandettini",
+    "link": "https://doi.org/10.3389/neuro.06.039.2008 (Frontiers in Systems Neuroscience; concept formalizing Edelman 1998)",
+    "core_idea": "Compare representations via geometry of pairwise distances — model-agnostic comparison between brains, behavior, and machines.",
+    "why_it_matters": "The measurement tool of representational convergence: CNN layers ↔ visual cortex correspondences (later Yamins et al. 2014) were established this way; reusable for comparing your model's internal geometry to anything.",
+    "keywords": [
+      "rsa",
+      "representational-geometry",
+      "neuro-ai-comparison"
+    ]
+  },
+  {
+    "id": "04-2006-17",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2006,
+    "title": "Sleep and Synaptic Homeostasis",
+    "authors": "Giulio Tononi, Chiara Cirelli",
+    "link": "https://doi.org/10.1016/j.neuron.2006.04.016 (Neuron; hypothesis 2003–2006)",
+    "core_idea": "Sleep globally downscales synaptic strengths — renormalizing after a day of potentiation, preserving relative weights.",
+    "why_it_matters": "A biological analogue of normalization and weight decay — \"forget the noise, keep the signal\"; a design hint for continual-learning systems that consolidate by re-normalizing.",
+    "keywords": [
+      "sleep",
+      "homeostasis",
+      "synaptic-scaling"
+    ]
+  },
+  {
+    "id": "04-2018-18",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2018,
+    "title": "Prioritized Memory Access Reveals Planning Networks in the Brain",
+    "authors": "Marcelo Mattar, Nathaniel Daw",
+    "link": "https://doi.org/10.1038/s41593-018-0232-z (Nature Neuroscience)",
+    "core_idea": "What to replay is itself a computation: expected reward gain × shortcut-to-decision determine replay priority.",
+    "why_it_matters": "Explains WHY experience replay works and when: prioritized replay is information-theoretically optimal curriculum — directly transferable to RL buffer design and agent memory management.",
+    "keywords": [
+      "replay",
+      "planning",
+      "prioritization",
+      "rl-bridge"
+    ]
+  },
+  {
+    "id": "04-2017-19",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2017,
+    "title": "Dendritic Error Backpropagation in Deep Cortical Microcircuits",
+    "authors": "João Sacramento, Rui Ponte Costa, Yoshua Bengio, Walter Senn",
+    "link": "https://doi.org/10.1038/s41593-017-0020-0 (Nature Neuroscience)",
+    "core_idea": "Layer-specific dendritic compartments can carry error signals locally, approximating backprop in a biologically plausible cortical circuit.",
+    "why_it_matters": "Existence proof that error-driven deep learning might be implementable in wetware — and a template for local-learning-rule hardware (neuromorphic, optical).",
+    "keywords": [
+      "dendrites",
+      "local-learning",
+      "backprop-plausibility"
+    ]
+  },
+  {
+    "id": "04-2016-20",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2016,
+    "title": "Random Feedback Weights Support Learning in Deep Neural Networks (feedback alignment)",
+    "authors": "Timothy Lillicrap, Daniel Cownden, Douglas Tweed, Colin Akerman",
+    "link": "https://doi.org/10.1038/ncomms13276 (Nature Communications)",
+    "core_idea": "Backward weights need not be symmetric — networks adapt their forward weights to whatever feedback channel exists.",
+    "why_it_matters": "Kills the \"backprop is biologically impossible\" objection in its simplest form; enables training on hardware where exact reverse passes are impractical.",
+    "keywords": [
+      "feedback-alignment",
+      "local-learning",
+      "plausibility"
+    ]
+  },
+  {
+    "id": "04-2016-21",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2016,
+    "title": "Towards an Integration of Deep Learning and Neuroscience",
+    "authors": "Adam Marblestone, Greg Wayne, Konrad Kording",
+    "link": "https://doi.org/10.3389/fncom.2016.00094 (Frontiers in Computational Neuroscience)",
+    "core_idea": "Systematic map of what neuroscience could contribute to deep learning: memory, attention, continual learning — with the transfer direction specified.",
+    "why_it_matters": "The reference agenda for neuro→AI borrowing; use as a checklist against your architecture design.",
+    "keywords": [
+      "neuro-ai",
+      "integration",
+      "agenda"
+    ]
+  },
+  {
+    "id": "04-2017-22",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2017,
+    "title": "Neuroscience-Inspired Artificial Intelligence",
+    "authors": "Demis Hassabis, Dharshan Kumaran, Courtney Summerfield, Matthew Botvinick",
+    "link": "https://doi.org/10.1016/j.neuron.2017.06.011 (Neuron 95)",
+    "core_idea": "Historical and forward synthesis: reliving the neuro→AI pipeline that produced CNNs/RL/attention, and what remains untapped (meta-learning, memory consolidation).",
+    "why_it_matters": "The manifesto of the field from DeepMind's cofounder — argues AGI likely requires re-engagement with brain mechanisms.",
+    "keywords": [
+      "neuro-ai",
+      "manifesto",
+      "hassabis"
+    ]
+  },
+  {
+    "id": "04-2018-23",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2018,
+    "title": "Prefrontal Cortex as a Meta-Reinforcement Learning System",
+    "authors": "Jane Wang, Zeb Kurth-Nelson, Dharshan Kumaran, ... Matthew Botvinick, Demis Hassabis",
+    "link": "https://doi.org/10.1038/s41593-018-0147-8 (Nature Neuroscience 21)",
+    "core_idea": "The brain's prefrontal system implements meta-RL: slow synaptic learning (outside) shapes a fast in-context learner (inside) — and the same dynamics emerge in recurrent ANNs trained on task distributions.",
+    "why_it_matters": "Unifies biological and artificial in-context learning: prefrontal meta-RL ≈ transformer ICL (domain 03, F7); tells you when learned recurrent state beats weight updates.",
+    "keywords": [
+      "meta-learning",
+      "prefrontal",
+      "icl-parallel"
+    ]
+  },
+  {
+    "id": "04-2019-24",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2019,
+    "title": "High-Dimensional Geometry of Population Responses",
+    "authors": "Stringer, C. et al. (Carsen Stringer, Marius Pachitariu, Nicholas Steinmetz, ... Kenneth Harris)",
+    "link": "https://doi.org/10.1038/s41586-019-1346-5 (\"High-dimensional geometry of population responses in visual cortex\", Nature)",
+    "core_idea": "Cortical populations track many stimulus variables (near-power-law eigenspectrum) while remaining decodable — high-dimensional but smooth, no collapse.",
+    "why_it_matters": "Empirical geometry that neural networks should match; connects to superposition (domain 03, F8) and neural collapse (domain 01) — three views of representation geometry across substrates.",
+    "keywords": [
+      "population-geometry",
+      "manifold",
+      "representational-dimension"
+    ]
+  },
+  {
+    "id": "04-2020-25",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2020,
+    "title": "Inductive Biases for Higher-Level Cognition",
+    "authors": "Anirudh Goyal, Yoshua Bengio",
+    "link": "https://arxiv.org/abs/2011.09192",
+    "core_idea": "Transplant Global-Workspace-style inductive biases (bottleneck, modules, broadcast, attention control) into deep nets for combinatorial generalization.",
+    "why_it_matters": "The most concrete GWT-to-architecture pipeline — directly relevant to modular/multi-agent LLM system design (domain 05).",
+    "keywords": [
+      "global-workspace",
+      "inductive-bias",
+      "modularity"
+    ]
+  },
+  {
+    "id": "04-2025-26",
+    "domain": "04_neuroscience-of-intelligence",
+    "year": 2025,
+    "title": "A Survey on Neuro-Mimetic Deep Learning via Predictive Coding",
+    "authors": "Tommaso Salvatori et al.",
+    "link": "arXiv (2025; PubMed-indexed — search \"Salvatori predictive coding survey\")",
+    "core_idea": "Comprehensive survey of predictive coding as a learning algorithm — approximating backprop with local errors, with efficiency gains on edge hardware.",
+    "why_it_matters": "The 2025 state of a serious backprop alternative: local, online, event-friendly — candidate learning rule for neuromorphic and continually-learning systems (domain 05).",
+    "keywords": [
+      "predictive-coding",
+      "survey",
+      "backprop-alternative",
+      "2025"
+    ]
+  }
+]

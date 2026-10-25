@@ -1,0 +1,699 @@
+[
+  {
+    "id": "01-1936-01",
+    "domain": "01_mathematical-foundations",
+    "year": 1936,
+    "title": "On Computable Numbers, with an Application to the Entscheidungsproblem",
+    "authors": "Alan Turing",
+    "link": "https://doi.org/10.1112/plms/s2-42.1.230",
+    "core_idea": "Defines the Turing machine — the minimal formal model of computation — and proves some problems are undecidable.",
+    "why_it_matters": "Establishes the ceiling of what any intelligence, biological or artificial, can compute; every result below inherits this frame.",
+    "keywords": [
+      "computability",
+      "turing-machine",
+      "foundations"
+    ]
+  },
+  {
+    "id": "01-1943-02",
+    "domain": "01_mathematical-foundations",
+    "year": 1943,
+    "title": "A Logical Calculus of the Ideas Immanent in Nervous Activity",
+    "authors": "Warren McCulloch, Walter Pitts",
+    "link": "https://doi.org/10.1007/BF02478259",
+    "core_idea": "Neurons as threshold logic units; networks of them compute any logical proposition.",
+    "why_it_matters": "First proof that neural substrate ⇒ computation; the founding bridge between brain and mathematics.",
+    "keywords": [
+      "mcculloch-pitts",
+      "threshold-logic",
+      "neuro-ai-bridge"
+    ]
+  },
+  {
+    "id": "01-1948-03",
+    "domain": "01_mathematical-foundations",
+    "year": 1948,
+    "title": "A Mathematical Theory of Communication",
+    "authors": "Claude Shannon",
+    "link": "https://doi.org/10.1002/j.1538-7305.1948.tb01338.x",
+    "core_idea": "Information = reduction of uncertainty (entropy); source coding and channel coding theorems; the bit.",
+    "why_it_matters": "The vocabulary of every loss function (cross-entropy = Shannon information) and of compression-as-understanding. The single most-used equation in LLM training.",
+    "keywords": [
+      "information-theory",
+      "entropy",
+      "compression"
+    ]
+  },
+  {
+    "id": "01-1964-04",
+    "domain": "01_mathematical-foundations",
+    "year": 1964,
+    "title": "A Formal Theory of Inductive Inference",
+    "authors": "Ray Solomonoff",
+    "link": "https://doi.org/10.1016/S0019-9958(64)90231-7",
+    "core_idea": "Predict the future by Bayesian mixture over all computable hypotheses, weighted by 2^(−description length) (algorithmic probability).",
+    "why_it_matters": "The mathematically ideal — though uncomputable — learner; modern sequence models are its practical approximation.",
+    "keywords": [
+      "solomonoff-induction",
+      "algorithmic-probability",
+      "prediction"
+    ]
+  },
+  {
+    "id": "01-1965-05",
+    "domain": "01_mathematical-foundations",
+    "year": 1965,
+    "title": "Three Approaches to the Quantitative Definition of Information",
+    "authors": "Andrey Kolmogorov",
+    "link": "https://doi.org/10.1109/TIT.1965.1053769",
+    "core_idea": "Kolmogorov complexity: the length of the shortest program that outputs an object.",
+    "why_it_matters": "\"Understanding = compression\" made precise; ties Occam's razor to computability.",
+    "keywords": [
+      "kolmogorov-complexity",
+      "compression",
+      "occam"
+    ]
+  },
+  {
+    "id": "01-1978-06",
+    "domain": "01_mathematical-foundations",
+    "year": 1978,
+    "title": "Modeling by Shortest Data Description",
+    "authors": "Jorma Rissanen",
+    "link": "https://doi.org/10.1016/0005-1098(78)90005-5",
+    "core_idea": "Minimum Description Length (MDL): prefer the model that compresses the data plus model code best.",
+    "why_it_matters": "Practical model-selection principle uniting compression and generalization; ancestor of bits-per-byte evals.",
+    "keywords": [
+      "mdl",
+      "model-selection",
+      "compression"
+    ]
+  },
+  {
+    "id": "01-1971-07",
+    "domain": "01_mathematical-foundations",
+    "year": 1971,
+    "title": "On the Uniform Convergence of Relative Frequencies to Probabilities (VC theory)",
+    "authors": "Vladimir Vapnik, Alexey Chervonenkis",
+    "link": "https://doi.org/10.1137/S0040585X97975476 (theory overview)",
+    "core_idea": "Generalization is controlled by the capacity (VC dimension) of the hypothesis class, not just sample count.",
+    "why_it_matters": "Classical generalization theory — and the benchmark modern deep learning spectacularly violated (see Zhang 2017), forcing new theory.",
+    "keywords": [
+      "vc-dimension",
+      "generalization-theory",
+      "capacity"
+    ]
+  },
+  {
+    "id": "01-1982-08",
+    "domain": "01_mathematical-foundations",
+    "year": 1982,
+    "title": "Simplified Neuron Model as a Principal Component Analyzer",
+    "authors": "Erkki Oja",
+    "link": "https://doi.org/10.1007/BF00275687",
+    "core_idea": "A single neuron with Hebbian plasticity plus normalization converges to the first principal component of its input.",
+    "why_it_matters": "Local, biologically plausible rules can compute global statistics — dimensionality reduction for free.",
+    "keywords": [
+      "pca",
+      "hebbian",
+      "unsupervised"
+    ]
+  },
+  {
+    "id": "01-1982-09",
+    "domain": "01_mathematical-foundations",
+    "year": 1982,
+    "title": "Neural Networks and Physical Systems with Emergent Collective Computational Abilities",
+    "authors": "John Hopfield",
+    "link": "https://doi.org/10.1126/science.186.4566.4595",
+    "core_idea": "Recurrent binary networks as energy minima = content-addressable memory; physics (spin glasses) applied to neural systems.",
+    "why_it_matters": "Founded the statistical-mechanics view of neural networks; modern \"attention as associative memory\" results trace here (Nobel Prize 2024, shared with Hinton).",
+    "keywords": [
+      "hopfield",
+      "energy-based",
+      "associative-memory",
+      "statistical-mechanics"
+    ]
+  },
+  {
+    "id": "01-1984-10",
+    "domain": "01_mathematical-foundations",
+    "year": 1984,
+    "title": "A Theory of the Learnable",
+    "authors": "Leslie Valiant",
+    "link": "https://doi.org/10.1145/1968.1972",
+    "core_idea": "PAC learning: learnable = efficiently learnable to arbitrary accuracy with high probability.",
+    "why_it_matters": "Put learning itself on computational footing — learning has complexity classes like computation does.",
+    "keywords": [
+      "pac-learning",
+      "learnability",
+      "complexity"
+    ]
+  },
+  {
+    "id": "01-1985-11",
+    "domain": "01_mathematical-foundations",
+    "year": 1985,
+    "title": "A Learning Algorithm for Boltzmann Machines",
+    "authors": "David Ackley, Geoffrey Hinton, Terrence Sejnowski",
+    "link": "https://doi.org/10.1016/0005-1098(85)90020-5",
+    "core_idea": "Stochastic energy-based networks trained by contrasting data and model statistics.",
+    "why_it_matters": "First usable learning rule for hidden-unit networks; ancestor of contrastive divergence, wake-sleep, and modern self-supervised losses.",
+    "keywords": [
+      "boltzmann-machine",
+      "energy-based",
+      "unsupervised"
+    ]
+  },
+  {
+    "id": "01-1986-12",
+    "domain": "01_mathematical-foundations",
+    "year": 1986,
+    "title": "Learning Representations by Back-Propagating Errors",
+    "authors": "David Rumelhart, Geoffrey Hinton, Ronald Williams",
+    "link": "https://www.nature.com/articles/323533a0",
+    "core_idea": "Compute gradients of error through layers via the chain rule, making internal representations trainable.",
+    "why_it_matters": "The learning algorithm of the entire deep learning era; still how every LLM trains.",
+    "keywords": [
+      "backpropagation",
+      "gradient-descent",
+      "representations"
+    ]
+  },
+  {
+    "id": "01-1988-13",
+    "domain": "01_mathematical-foundations",
+    "year": 1988,
+    "title": "The Space of Interactions in Neural Network Models (statistical mechanics of learning)",
+    "authors": "Elizabeth Gardner",
+    "link": "https://doi.org/10.1088/0305-4470/21/1/030",
+    "core_idea": "Compute the volume of parameter space consistent with a training set — capacity thresholds and phase transitions in learning.",
+    "why_it_matters": "Learning has thermodynamic phase transitions; this lens predicts grokking-like phenomena decades early.",
+    "keywords": [
+      "statistical-mechanics",
+      "capacity",
+      "phase-transitions"
+    ]
+  },
+  {
+    "id": "01-1989-14",
+    "domain": "01_mathematical-foundations",
+    "year": 1989,
+    "title": "Multilayer Feedforward Networks Are Universal Approximators",
+    "authors": "Kurt Hornik, Maxwell Stinchcombe, Halbert White",
+    "link": "https://doi.org/10.1016/0893-6080(89)90020-8",
+    "core_idea": "One hidden layer with enough units approximates any continuous function (independently: Cybenko 1989).",
+    "why_it_matters": "Guarantees representational sufficiency — but says nothing about depth efficiency or learnability (see Poole 2017).",
+    "keywords": [
+      "universal-approximation",
+      "expressivity"
+    ]
+  },
+  {
+    "id": "01-1995-15",
+    "domain": "01_mathematical-foundations",
+    "year": 1995,
+    "title": "An Information-Maximization Approach to Blind Separation and Blind Deconvolution",
+    "authors": "Anthony Bell, Terrence Sejnowski",
+    "link": "https://doi.org/10.1162/neco.1995.7.6.1129",
+    "core_idea": "Maximize output entropy (InfoMax) and the network discovers independent sources — without labels.",
+    "why_it_matters": "Information-theoretic self-supervision works; direct ancestor of contrastive and predictive self-supervised learning.",
+    "keywords": [
+      "infomax",
+      "ica",
+      "self-supervised"
+    ]
+  },
+  {
+    "id": "01-1996-16",
+    "domain": "01_mathematical-foundations",
+    "year": 1996,
+    "title": "The Lack of A Priori Distinctions Between Learning Algorithms (No Free Lunch)",
+    "authors": "David Wolpert",
+    "link": "https://doi.org/10.1162/neco.1996.8.7.1341",
+    "core_idea": "Averaged over all possible problems, no learner beats random guessing.",
+    "why_it_matters": "Generalization must come from inductive bias matched to the world's structure — explains why architecture and priors matter.",
+    "keywords": [
+      "no-free-lunch",
+      "inductive-bias"
+    ]
+  },
+  {
+    "id": "01-1998-17",
+    "domain": "01_mathematical-foundations",
+    "year": 1998,
+    "title": "Collective Dynamics of 'Small-World' Networks",
+    "authors": "Duncan Watts, Steven Strogatz",
+    "link": "https://doi.org/10.1038/30918",
+    "core_idea": "Networks interpolating regular/random achieve high clustering with short path lengths (small-world).",
+    "why_it_matters": "The architecture of brains, and increasingly of ML systems (MoE routing, agent swarms); a recurring mathematical pattern.",
+    "keywords": [
+      "network-science",
+      "small-world",
+      "mathematical-patterns"
+    ]
+  },
+  {
+    "id": "01-1999-18",
+    "domain": "01_mathematical-foundations",
+    "year": 1999,
+    "title": "Emergence of Scaling in Random Networks",
+    "authors": "Albert-László Barabási, Réka Albert",
+    "link": "https://doi.org/10.1126/science.286.5439.509",
+    "core_idea": "Growth + preferential attachment produces power-law degree distributions (scale-free networks).",
+    "why_it_matters": "Power laws appear in language (Zipf), brains, and model scaling — one generating mechanism, many systems.",
+    "keywords": [
+      "scale-free",
+      "power-laws",
+      "network-science"
+    ]
+  },
+  {
+    "id": "01-1987-19",
+    "domain": "01_mathematical-foundations",
+    "year": 1987,
+    "title": "Self-Organized Criticality: An Explanation of 1/f Noise",
+    "authors": "Per Bak, Chao Tang, Kurt Wiesenfeld",
+    "link": "https://doi.org/10.1103/PhysRevLett.58.381",
+    "core_idea": "Driven dissipative systems self-tune to a critical point between order and chaos, producing scale-invariant avalanches.",
+    "why_it_matters": "Candidate explanation for brain criticality (domain 04) and for why edge-of-chaos dynamics keep recurring in learning systems.",
+    "keywords": [
+      "criticality",
+      "self-organization",
+      "power-laws"
+    ]
+  },
+  {
+    "id": "01-1999-20",
+    "domain": "01_mathematical-foundations",
+    "year": 1999,
+    "title": "The Information Bottleneck Method",
+    "authors": "Naftali Tishby, Fernando Pereira, William Bialek",
+    "link": "https://doi.org/10.1109/ISIT.1999.770759",
+    "core_idea": "Optimal representations maximally compress X about irrelevant detail while preserving information about relevance variable Y; formally rate-distortion with a relevance constraint.",
+    "why_it_matters": "The leading formal account of what a \"good representation\" is; frames deep learning as progressive information compression.",
+    "keywords": [
+      "information-bottleneck",
+      "representations",
+      "rate-distortion"
+    ]
+  },
+  {
+    "id": "01-2014-21",
+    "domain": "01_mathematical-foundations",
+    "year": 2014,
+    "title": "An Exact Mapping Between the Variational Renormalization Group and Deep Learning",
+    "authors": "Pankaj Mehta, David Schwab",
+    "link": "https://arxiv.org/abs/1410.3831",
+    "core_idea": "Stacked restricted Boltzmann machines perform the variational renormalization group exactly.",
+    "why_it_matters": "Physics' tool for scale-dependent structure (RG) ≈ deep learning's stacked abstraction; concrete support for \"deep = multi-scale\".",
+    "keywords": [
+      "renormalization",
+      "physics",
+      "multiscale",
+      "mathematical-patterns"
+    ]
+  },
+  {
+    "id": "01-2015-22",
+    "domain": "01_mathematical-foundations",
+    "year": 2015,
+    "title": "Deep Learning and the Information Bottleneck Principle",
+    "authors": "Naftali Tishby, Noga Zaslavsky",
+    "link": "https://arxiv.org/abs/1503.02406",
+    "core_idea": "Deep networks should first fit (memorize) then compress representations — phases observed via mutual-information probes.",
+    "why_it_matters": "Predicted a two-phase training dynamic later echoing in grokking (F10).",
+    "keywords": [
+      "information-bottleneck",
+      "compression-phase"
+    ]
+  },
+  {
+    "id": "01-2016-23",
+    "domain": "01_mathematical-foundations",
+    "year": 2016,
+    "title": "Group Equivariant Convolutional Networks",
+    "authors": "Taco Cohen, Max Welling",
+    "link": "https://arxiv.org/abs/1602.07576",
+    "core_idea": "Build symmetry (translation, rotation equivariance) into architecture rather than learning it from data.",
+    "why_it_matters": "Symmetry is the strongest inductive bias physics knows; equivariant nets show architectural priors can replace data volume.",
+    "keywords": [
+      "symmetry",
+      "equivariance",
+      "inductive-bias"
+    ]
+  },
+  {
+    "id": "01-2016-24",
+    "domain": "01_mathematical-foundations",
+    "year": 2016,
+    "title": "Exponential Expressivity in Deep Neural Networks through Transient Chaos",
+    "authors": "Ben Poole, Surya Ganguli, Maithra Raghu (with \"On the Expressivity of Deep Neural Networks\", Raghu et al. 2017)",
+    "link": "https://arxiv.org/abs/1606.05340 (NeurIPS 2016); companion: https://arxiv.org/abs/1611.08087",
+    "core_idea": "Depth yields exponential gains in expressivity for representing compositional functions, beyond what width can buy.",
+    "why_it_matters": "Why we stack layers instead of widening flat ones; why hierarchies (brains included) are deep.",
+    "keywords": [
+      "expressivity",
+      "depth",
+      "compositionality"
+    ]
+  },
+  {
+    "id": "01-2017-25",
+    "domain": "01_mathematical-foundations",
+    "year": 2017,
+    "title": "Understanding Deep Learning Requires Rethinking Generalization",
+    "authors": "Chiyuan Zhang, Samy Bengio, Moritz Hardt, Benjamin Recht, Oriol Vinyals",
+    "link": "https://arxiv.org/abs/1611.03530",
+    "core_idea": "Deep nets can fit random labels perfectly, so generalization cannot follow from classical capacity control alone.",
+    "why_it_matters": "Broke VC-style theory of deep learning; opened implicit-regularization and double-descent research lines.",
+    "keywords": [
+      "generalization",
+      "implicit-regularization",
+      "overparameterization"
+    ]
+  },
+  {
+    "id": "01-2017-26",
+    "domain": "01_mathematical-foundations",
+    "year": 2017,
+    "title": "Opening the Black Box of Deep Neural Networks via Information",
+    "authors": "Ravid Shwartz-Ziv, Naftali Tishby",
+    "link": "https://arxiv.org/abs/1703.00810",
+    "core_idea": "Empirically observes the fit-then-compress information phases during SGD training.",
+    "why_it_matters": "Made information-plane analysis famous — and triggered the field's sharpest theory debate.",
+    "keywords": [
+      "information-bottleneck",
+      "empirical"
+    ]
+  },
+  {
+    "id": "01-2018-27",
+    "domain": "01_mathematical-foundations",
+    "year": 2018,
+    "title": "On the Information Bottleneck Theory of Deep Learning",
+    "authors": "Andrew Saxe et al.",
+    "link": "https://arxiv.org/abs/1801.04540 (ICLR 2018)",
+    "core_idea": "Compression phases largely vanish with ReLU/unbounded activations and realistic datasets; IB theory is not the mechanism.",
+    "why_it_matters": "The decisive rebuttal — science working; the field now treats IB as a design principle, not a law.",
+    "keywords": [
+      "information-bottleneck",
+      "critique"
+    ]
+  },
+  {
+    "id": "01-2018-28",
+    "domain": "01_mathematical-foundations",
+    "year": 2018,
+    "title": "Neural Tangent Kernel: Convergence and Generalization in Neural Networks",
+    "authors": "Arthur Jacot, Franck Gabriel, Clément Hongler",
+    "link": "https://arxiv.org/abs/1806.07572",
+    "core_idea": "In the infinite-width limit, training a network equals kernel regression with a fixed kernel (NTK).",
+    "why_it_matters": "Makes one training regime exactly solvable — and marks its boundary: NTK-lazy networks do NOT learn features.",
+    "keywords": [
+      "ntk",
+      "kernel-regime",
+      "theory"
+    ]
+  },
+  {
+    "id": "01-2019-29",
+    "domain": "01_mathematical-foundations",
+    "year": 2019,
+    "title": "On Lazy Training in Differentiable Programming",
+    "authors": "Lénaïc Chizat, Edouard Oyallon, Francis Bach",
+    "link": "https://arxiv.org/abs/1906.11248",
+    "core_idea": "Two regimes: lazy (kernel-like, features fixed) vs rich (feature learning); initialization scale selects the regime.",
+    "why_it_matters": "Feature learning — the rich regime — is what makes deep learning work; connects to grokking transitions.",
+    "keywords": [
+      "lazy-vs-rich",
+      "feature-learning"
+    ]
+  },
+  {
+    "id": "01-2019-30",
+    "domain": "01_mathematical-foundations",
+    "year": 2019,
+    "title": "Reconciling Modern Machine-Learning Practice and the Classical Bias–Variance Trade-Off",
+    "authors": "Mikhail Belkin, Daniel Hsu, Siyuan Ma, Soumik Mandal",
+    "link": "https://doi.org/10.1073/pnas.1803071116",
+    "core_idea": "Double descent: test error descends, peaks at the interpolation threshold, then descends again as overparameterization grows.",
+    "why_it_matters": "The modern generalization curve; explains why billion-parameter models on \"small\" data behave well.",
+    "keywords": [
+      "double-descent",
+      "overparameterization",
+      "generalization"
+    ]
+  },
+  {
+    "id": "01-2019-31",
+    "domain": "01_mathematical-foundations",
+    "year": 2019,
+    "title": "Deep Double Descent: Where Bigger Models and More Data Hurt",
+    "authors": "Preetum Nakkiran et al.",
+    "link": "https://arxiv.org/abs/1912.02292",
+    "core_idea": "Double descent is ubiquitous across model size, data size, and training time in modern deep learning.",
+    "why_it_matters": "Practical warning: more parameters/data can hurt before they help; scale results have regime boundaries.",
+    "keywords": [
+      "double-descent",
+      "empirical"
+    ]
+  },
+  {
+    "id": "01-2018-32",
+    "domain": "01_mathematical-foundations",
+    "year": 2018,
+    "title": "Visualizing the Loss Landscape of Neural Nets",
+    "authors": "Hao Li, Zheng Xu, Gavin Taylor, Christoph Studer, Tom Goldstein",
+    "link": "https://arxiv.org/abs/1712.09913 (NeurIPS 2018)",
+    "core_idea": "Filter-normalized visualization shows residual nets have trainable convex-ish valleys; without skip connections landscapes are chaotic.",
+    "why_it_matters": "Explains why residual connections (ResNet, transformer) made depth trainable — geometry, not just gradients.",
+    "keywords": [
+      "loss-landscape",
+      "optimization",
+      "residuals"
+    ]
+  },
+  {
+    "id": "01-2020-33",
+    "domain": "01_mathematical-foundations",
+    "year": 2020,
+    "title": "Neural Collapse: An Analysis of the Modes of Neural Network Classifiers",
+    "authors": "Vardan Papyan, X. Y. Han, David Donoho",
+    "link": "https://doi.org/10.1073/pnas.2015509117",
+    "core_idea": "At training's end, last-layer features collapse to class means arranged as a simplex ETF — a sharp geometric universal.",
+    "why_it_matters": "2025 work unifies grokking and information bottleneck via neural collapse; a concrete geometry of \"converged\" learning.",
+    "keywords": [
+      "neural-collapse",
+      "geometry",
+      "classifiers"
+    ]
+  },
+  {
+    "id": "01-2020-34",
+    "domain": "01_mathematical-foundations",
+    "year": 2020,
+    "title": "Scaling Laws for Neural Language Models",
+    "authors": "Jared Kaplan et al. (OpenAI)",
+    "link": "https://arxiv.org/abs/2001.08361",
+    "core_idea": "Loss follows smooth power laws in parameters, data, and compute, across 6+ orders of magnitude.",
+    "why_it_matters": "Made scaling a predictive engineering discipline: you can read next year's loss off this year's curves.",
+    "keywords": [
+      "scaling-laws",
+      "power-laws",
+      "llm"
+    ]
+  },
+  {
+    "id": "01-2022-35",
+    "domain": "01_mathematical-foundations",
+    "year": 2022,
+    "title": "Training Compute-Optimal Large Language Models (Chinchilla)",
+    "authors": "Jordan Hoffmann et al. (DeepMind)",
+    "link": "https://arxiv.org/abs/2203.15556",
+    "core_idea": "For fixed compute, parameters and tokens should scale equally (~20 tokens/parameter) — most 2021-era models were badly undertrained.",
+    "why_it_matters": "The recipe behind every efficient model since (LLaMA etc.); GPT-3-sized results from 4× smaller models.",
+    "keywords": [
+      "chinchilla",
+      "scaling-laws",
+      "compute-optimal"
+    ]
+  },
+  {
+    "id": "01-2022-36",
+    "domain": "01_mathematical-foundations",
+    "year": 2022,
+    "title": "Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets",
+    "authors": "Alethea Power et al.",
+    "link": "https://arxiv.org/abs/2201.02177",
+    "core_idea": "Networks memorize quickly but suddenly generalize long after overfitting, when trained past the point of zero training loss.",
+    "why_it_matters": "Separates memorization from understanding in time; a lab model of \"aha moment\" learning.",
+    "keywords": [
+      "grokking",
+      "generalization",
+      "phase-transition"
+    ]
+  },
+  {
+    "id": "01-2022-37",
+    "domain": "01_mathematical-foundations",
+    "year": 2022,
+    "title": "Towards Understanding Grokking: An Effective Theory of Representation Learning",
+    "authors": "Ziming Liu, Ouail Kitouni, Mike Nolte, Eric Michaud, Max Tegmark, Mike Williams",
+    "link": "https://arxiv.org/abs/2205.10343 (NeurIPS 2022)",
+    "core_idea": "Grokking = delayed generalization explained by a effective-theory of representation learning dynamics.",
+    "why_it_matters": "First mechanistic theory; predicts when grokking happens from dataset properties.",
+    "keywords": [
+      "grokking",
+      "theory"
+    ]
+  },
+  {
+    "id": "01-2023-38",
+    "domain": "01_mathematical-foundations",
+    "year": 2023,
+    "title": "Omnigrok: Grokking Beyond Algorithmic Data",
+    "authors": "Ziming Liu, Eric Michaud, Max Tegmark",
+    "link": "https://arxiv.org/abs/2210.01117 (ICLR 2023)",
+    "core_idea": "Grokking occurs on image datasets too; driven by weight-norm scale — \"LU mechanism\": memorize large-norm, generalize small-norm.",
+    "why_it_matters": "Grokking is general, and controllable via weight decay — a knob for generalization.",
+    "keywords": [
+      "grokking",
+      "weight-decay"
+    ]
+  },
+  {
+    "id": "01-2023-39",
+    "domain": "01_mathematical-foundations",
+    "year": 2023,
+    "title": "Progress Measures for Grokking via Mechanistic Interpretability",
+    "authors": "Neel Nanda, Lawrence Chan, Tom Lieberum, Jess Smith, Jacob Steinhardt",
+    "link": "https://arxiv.org/abs/2305.01677 (ICLR 2024)",
+    "core_idea": "Reverse-engineers a grokking network: it transitions from memorization to a generalizing Fourier/multiplication circuit; restricted-set \"pre-grokking\" progress measures predict the transition.",
+    "why_it_matters": "The cleanest causal story of emergent generalization inside a network; mechanistic interpretability's flagship result.",
+    "keywords": [
+      "grokking",
+      "mechanistic-interpretability",
+      "circuits"
+    ]
+  },
+  {
+    "id": "01-2024-40",
+    "domain": "01_mathematical-foundations",
+    "year": 2024,
+    "title": "Grokking as the Transition from Lazy to Rich Training Dynamics",
+    "authors": "Kaifeng Lyu, Zhiyuan Li, et al. (ICLR 2024)",
+    "link": "https://arxiv.org/abs/2310.06110",
+    "core_idea": "Networks grok when they escape the lazy kernel regime into rich feature learning late in training.",
+    "why_it_matters": "Unifies grokking with the NTK/lazy-rich framework — one theory for both phenomena.",
+    "keywords": [
+      "grokking",
+      "lazy-vs-rich",
+      "theory"
+    ]
+  },
+  {
+    "id": "01-2025-41",
+    "domain": "01_mathematical-foundations",
+    "year": 2025,
+    "title": "Grokking Explained: A Statistical Phenomenon",
+    "authors": "(authors: see paper)",
+    "link": "https://arxiv.org/abs/2502.01774",
+    "core_idea": "Grokking reinterpreted as a distribution shift between training and test data rather than an optimization mystery.",
+    "why_it_matters": "The 2025 theory pivot: grokking may be statistical, not dynamical — with direct implications for what \"generalization\" means for LLM evals.",
+    "keywords": [
+      "grokking",
+      "distribution-shift",
+      "theory-2025"
+    ]
+  },
+  {
+    "id": "01-2025-42",
+    "domain": "01_mathematical-foundations",
+    "year": 2025,
+    "title": "A Survey on Grokking",
+    "authors": "(survey; ACM Computing Surveys)",
+    "link": "https://dl.acm.org/doi/10.1145/3814603",
+    "core_idea": "Systematizes all grokking explanations: norm-based, circuit-formation, statistical, physics-based (glass relaxation).",
+    "why_it_matters": "Entry point to the whole grokking literature; includes 2025 evidence of grokking during 7B-parameter pretraining (OLMoE).",
+    "keywords": [
+      "grokking",
+      "survey"
+    ]
+  },
+  {
+    "id": "01-2025-43",
+    "domain": "01_mathematical-foundations",
+    "year": 2025,
+    "title": "Superposition Yields Robust Neural Scaling",
+    "authors": "(NeurIPS 2025; Anthropic toy-model based)",
+    "link": "https://neurips.cc/virtual/2025/poster/116346",
+    "core_idea": "Neural scaling laws arise mechanistically from superposition — networks storing more features than neurons in interference-prone ways.",
+    "why_it_matters": "First mechanistic account of WHY scaling laws exist, linking interpretability (domain 03) with scaling theory.",
+    "keywords": [
+      "scaling-laws",
+      "superposition",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "01-2026-44",
+    "domain": "01_mathematical-foundations",
+    "year": 2026,
+    "title": "A Limit Theory of Foundation Models",
+    "authors": "(authors: see paper)",
+    "link": "https://arxiv.org/abs/2604.24037",
+    "core_idea": "A rigorous mathematical limit theory for foundation models, extending scaling-law analysis to data quality and training strategies.",
+    "why_it_matters": "Theoretical frontier (as of 2026): scaling laws are becoming a full limit theory rather than curve fits.",
+    "keywords": [
+      "limit-theory",
+      "scaling-laws",
+      "theory-2026"
+    ]
+  },
+  {
+    "id": "01-2023-45",
+    "domain": "01_mathematical-foundations",
+    "year": 2023,
+    "title": "Scaling Data-Constrained Language Models",
+    "authors": "Niklas Muennighoff et al.",
+    "link": "https://arxiv.org/abs/2305.16264",
+    "core_idea": "Repeating data helps up to ~4 epochs, then returns diminish sharply; unique tokens dominate value.",
+    "why_it_matters": "The data side of scaling laws — governs planning when internet text runs out; motivates synthetic data and RL data loops.",
+    "keywords": [
+      "data-scaling",
+      "epochs",
+      "chinchilla"
+    ]
+  },
+  {
+    "id": "01-2005-46",
+    "domain": "01_mathematical-foundations",
+    "year": 2005,
+    "title": "Universal Artificial Intelligence / AIXI",
+    "authors": "Marcus Hutter (book); with Shane Legg",
+    "link": "https://arxiv.org/abs/0909.0801 (Legg & Hutter, \"Universal Intelligence: A Definition of Machine Intelligence\", 2007)",
+    "core_idea": "Intelligence = expected reward maximization over all computable environments weighted by algorithmic probability (AIXI); uncomputable but defines the optimum.",
+    "why_it_matters": "The formal reference point every practical intelligence (including LLMs) is measured against; Legg-Hutter gives the field's cleanest intelligence definition.",
+    "keywords": [
+      "aixi",
+      "universal-intelligence",
+      "definitions"
+    ]
+  },
+  {
+    "id": "01-2019-47",
+    "domain": "01_mathematical-foundations",
+    "year": 2019,
+    "title": "On the Measure of Intelligence",
+    "authors": "François Chollet",
+    "link": "https://arxiv.org/abs/1911.01547",
+    "core_idea": "Intelligence = skill-acquisition efficiency over novel tasks, not skill itself; introduces the ARC benchmark built on core knowledge priors.",
+    "why_it_matters": "Corrects the benchmark-culture error (skill ≠ intelligence); ARC-AGI remains the reference test for generalization (domain 05).",
+    "keywords": [
+      "intelligence-definition",
+      "arc",
+      "generalization"
+    ]
+  }
+]
