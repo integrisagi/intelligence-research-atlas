@@ -1,95 +1,110 @@
-# Intelligence Research Atlas
+# Research Atlas — Two Corpora, Kept Separate
 
-**The load-bearing ideas behind AI, LLMs, neuroscience, and the mathematics of learning — distilled, mapped, and citable.**
+Two research corpora in one public repo, **kept isolated from each other** — and from any personal assistant's own system. Each corpus has its own folder, its own index, and its own agent navigation file. Nothing at the top level tells an agent to adopt either corpus's persona or rules.
 
-Not a dump of papers. Not a textbook. A working map: 63 distilled findings, 13 diagrams, and a machine-readable paper index, covering 1936 to October 2026 — so you (or an agent you point at this repo) don't have to re-read the field to build on it.
-
-> **One-sentence takeaway:** Intelligence — biological or artificial — is compression. Everything else in this atlas is a different substrate's way of doing that one thing better.
+Use one corpus at a time. Point a future agent at exactly one corpus folder, not at this repo root.
 
 ---
 
-## What is inside
+## The two corpora
 
-| | Verified count |
-|---|---|
-| Domains | 5 + master atlas |
-| Findings (claim → evidence → implication) | 63 |
-| Paper entries across the five volumes | 184 entries |
-| Diagrams (Mermaid, render in GitHub / Obsidian) | 13 |
-| Compiled PDF volumes | 6, 51 pages total |
-| Machine-readable index | `index/papers-master.json` |
-| Compiled | 2026-10-25 |
+### 1. Intelligence Atlas — what intelligence is
 
-**Honest count note:** 184 is the sum of the five volume tables. Several landmark papers appear in more than one volume, so the number of *unique* papers is 138+. That overlap is deliberate — it is how the cross-domain connections show up.
+`corpora/intelligence-atlas/`
 
-## The five load-bearing connections
+The load-bearing ideas behind AI, LLMs, neuroscience, and the mathematics of learning — distilled, mapped, and citable.
 
-If you remember nothing else, remember these five bridges. Each is developed in `00_master-atlas/cross-domain-map.md`.
+- **63 findings** (14 maths + 10 deep learning + 12 LLM + 14 neuroscience + 13 frontiers)
+- **138+ unique papers** (184 entries across the five volumes; several papers appear in more than one volume, which is how the cross-domain connections show up)
+- **13 diagrams** (Mermaid, render in GitHub / Obsidian)
+- **6 PDF volumes, 51 pages**
+- **Machine-readable index:** `corpora/intelligence-atlas/index/papers-master.json`
+- **Compiled:** 2026-10-25
 
-1. **Compression is the universal objective** — Shannon entropy, LLM cross-entropy loss, and cortical free energy are the same quantity, minimised by different substrates.
-2. **Dopamine is the TD error** — the brain's reward-prediction error is the algorithm behind Q-learning, RLHF, and RLVR. Its pathologies (reward hacking) mirror addiction.
-3. **Memory is an active process, not a log** — hippocampal maps, grid codes, and replay are the blueprint for agent memory: episodic stores, indexing, and consolidation.
-4. **Search + learned priors beats either alone** — AlphaGo's template returns as chain-of-thought, tree search, and reasoning models.
-5. **Sparse distributed coding, twice over** — V1 sparse codes and transformer superposition converged on packing more concepts than units, and both needed dictionary methods to decode them.
+Its one-sentence takeaway: intelligence — biological or artificial — is compression. Its five load-bearing connections are compression as the universal objective, dopamine as the TD error, memory as an active process, search + learned priors beating either alone, and sparse distributed coding, twice over.
 
-## The five domains
+Start there: `corpora/intelligence-atlas/00_master-atlas/reading-order.md`
+Its own presentation: `corpora/intelligence-atlas/docs/presentation.html`
+Its own agent navigation file (for use *inside that corpus only*): `corpora/intelligence-atlas/AGENTS.md`
 
-| Domain | Folder | What it answers |
-|---|---|---|
-| 01 Mathematical foundations | `01_mathematical-foundations/` | Why does learning work at all? Compression, inductive bias, scaling laws, grokking, emergence. F1–F14 |
-| 02 Deep learning canon | `02_deep-learning-canon/` | What mechanisms did the transformer era inherit? Perceptron → backprop → CNN/LSTM → RL → self-supervision. F1–F10 |
-| 03 LLM architecture & training | `03_llm-architecture-training/` | How do you build, align, and reason with LLMs? Pretraining, RLHF, RLVR, test-time compute, interpretability. F1–F12 |
-| 04 Neuroscience of intelligence | `04_neuroscience-of-intelligence/` | What blueprints does backprop lack? Dopamine, prediction, replay, sleep, global workspace, local learning. F1–F14 |
-| 05 Frontiers: new intelligence | `05_frontiers-new-intelligence/` | What comes after next-token prediction? World models, active inference, post-transformer architectures, agents, oversight. F1–F13 |
+### 2. God-Tier Code — how the best code is actually built
 
-Each domain folder contains the same four things: `papers.md` (the canon, one entry per paper), `findings.md` (the distilled findings), `papers.json` (machine-readable), and `diagrams/` (Mermaid).
+`corpora/god-tier-code/`
 
-## Start here — by goal
+A deconstruction of how big tech actually builds scalable, modular, resource-adaptive software — Chromium, VS Code, Google/Meta engineering workflow, data pipelines, and adaptive systems.
 
-- **New to the corpus?** → `00_master-atlas/reading-order.md`, then `00_master-atlas/master-mindmap.md`
-- **Building or fine-tuning an LLM?** → Domain 03 findings, then Domain 01 (F8–F10 on scaling)
-- **Designing a new architecture?** → Domain 01 (F1–F5, F11), all of Domain 04, all of Domain 05, then the cross-domain map
-- **Learning the neuroscience?** → Domain 04 in full, then Domain 01 (F11, F14)
-- **Alignment and safety?** → Domain 03 (F3, F6, F12), Domain 05 (F12–F13)
-- **The whole story, chronologically?** → `00_master-atlas/timeline.md`, then 02, 03, 01, 04, 05
+- **73 corpus findings** (10 codebase anatomy + 14 structural principles + 22 workflow + 13 data pipelines + 14 adaptive systems), distilled from **110 verified research findings** (Chromium C1–C24, VS Code V1–V24, workflow/pipelines W1–W35, adaptive D1–D27)
+- **30 playbook rules** (R1–R30) + a 10-question pre-ship checklist + an anti-pattern hall of shame
+- **9 adaptive patterns** (P1–P9, pseudocode only — not runnable implementations, by design)
+- **7 Mermaid diagrams**, all under the 30-node limit
+- **~24,700 words** across 22 markdown files, plus a build report
+- **Compiled:** 2026-10-25
 
-## For humans
+Its one-sentence takeaway: big tech's edge is not talent density, it is structure — dependency direction enforced by machines, every seam an explicit contract, failure isolated behind process boundaries, and runtime behaviour that flexes with available resources instead of falling over.
 
-Read the PDFs in `pdf/` for a clean, typeset version — one volume per domain, plus an overview. The Markdown is the living version; the PDFs are build artifacts generated from it, so if the two ever disagree, the Markdown wins.
+Start there: `corpora/god-tier-code/PLAYBOOK.md`, then `corpora/god-tier-code/master-map.md`
+Its own agent navigation file (for use *inside that corpus only*): `corpora/god-tier-code/AGENTS.md`
+Its own adoptable persona (load it only for a session you explicitly want to work this way): `corpora/god-tier-code/PERSONA.md`
 
-## For agents
+---
 
-This repo is built to be *looked up, not re-read*. Inside this repo — and only inside this repo — `AGENTS.md` is the navigation protocol for anyone or anything working with this corpus: lookup patterns, the stable directory contract, and the conventions for adding papers and findings without breaking the index.
+## Repo map
 
-> Note: that `AGENTS.md` belongs to this public repo. It is not instructions for any personal assistant outside it.
+```
+.
+├── README.md                          ← you are here (human overview only)
+├── LICENSE                            ← CC BY 4.0 for the distilled text/diagrams
+├── docs/
+│   └── combined-presentation.html     ← 16-slide overview of both corpora
+│   └── combined-presentation.md
+├── corpora/
+│   ├── intelligence-atlas/            ← Corpus 1, self-contained
+│   │   ├── AGENTS.md                  ← navigation for Corpus 1 only
+│   │   ├── INDEX.md
+│   │   ├── 00_master-atlas/
+│   │   ├── 01_mathematical-foundations/
+│   │   ├── 02_deep-learning-canon/
+│   │   ├── 03_llm-architecture-training/
+│   │   ├── 04_neuroscience-of-intelligence/
+│   │   ├── 05_frontiers-new-intelligence/
+│   │   ├── index/papers-master.json
+│   │   ├── pdf/                       ← 6 volumes
+│   │   ├── tools/
+│   │   └── docs/                      ← Corpus 1 presentation
+│   └── god-tier-code/                 ← Corpus 2, self-contained
+│       ├── AGENTS.md                  ← navigation for Corpus 2 only
+│       ├── PERSONA.md                 ← adoptable persona, Corpus 2 only
+│       ├── PLAYBOOK.md
+│       ├── master-map.md
+│       ├── SOURCES.md
+│       ├── BUILD_REPORT.md
+│       ├── 01_codebase-anatomy/
+│       ├── 02_structural-principles/
+│       ├── 03_engineering-workflow/
+│       ├── 04_data-pipelines/
+│       └── 05_adaptive-systems/
+```
 
-## What this atlas is not
+## Isolation rules — read this before using either corpus
 
-- **Not exhaustive.** ~150 unique papers were chosen for load-bearing ideas, not completeness.
-- **Not a textbook.** Derivations are omitted; maths is named and sourced, not proven.
-- **Not current past its compile date.** Content after 2026-10-25 is not represented. Treat 2025–2026 claims — especially on reasoning, diffusion LMs, and ARC — as the frontier at that date, not settled law.
-- **Not uncontested.** Emergence, the information bottleneck, and several frontier claims are debated in the literature, and the findings say so where that matters.
+1. **No shared agent file.** There is no `AGENTS.md` at the repo root, on purpose. Each corpus's `AGENTS.md` applies only inside its own folder.
+2. **No shared persona.** The god-tier-code `PERSONA.md` is not this repo's persona, and it is not any assistant's persona. Load it only for a session you explicitly want to work that way, then drop it.
+3. **No cross-links between corpora.** Neither corpus links into the other (except this human README, which only points at folder names). Findings, rules, and numbering are per-corpus and append-only — never renumber either corpus to fit the other.
+4. **No session material in this repo.** The GLM session transcript and raw session log that accompanied the god-tier-code export are *not* published here. They contain internal session details, not research, and publishing them would break isolation. The research corpus alone is public; the transcript stays private with its author.
+5. **Compiled snapshots.** Both corpora are snapshots of October 2026. Upstream codebases (Chromium main, VS Code main) and the research frontier move daily; newer changes are not represented.
 
-## Traps this corpus documents
+## How to use a corpus
 
-Emergence claims that are metric artifacts. Reasoning models that collapse past a complexity frontier. Reward hacking in RLHF. Benchmark contamination. Objectives that actively mislead (novelty search). Knowing these before you build is half the work.
-
-## How to contribute
-
-Follow the repo's own conventions, so the index stays rebuildable:
-
-1. Findings are numbered within a domain and never renumbered — new findings append.
-2. Paper entries in `papers.md` use the strict format the parser expects (year, title, authors, link, core idea, why it matters, keywords).
-3. After editing any `papers.md`, regenerate the index and PDFs from `tools/` — never hand-edit a PDF.
-4. Every new finding must cite at least one paper entry that exists in `papers.md`.
-5. Keep diagrams to ~30 nodes or fewer; split rather than grow one diagram.
+- **Human:** read its own README first, then its playbook / reading order.
+- **Agent, for one task:** point it at exactly one corpus folder and tell it to read that folder's `AGENTS.md` first. Do not point it at the repo root and expect it to choose — the root deliberately gives no agent instructions.
+- **Extending a corpus:** follow that corpus's own conventions (numbered findings append-only, every new finding carries a source, diagrams ≤30 nodes, never hand-edit PDFs in the atlas). Rebuild its index with its own tools where it has them.
 
 ## Licence
 
-This atlas — the distilled findings, diagrams, and index text written for it — is licensed under **CC BY 4.0** (see `LICENSE`). You may share and adapt it with attribution to tirunara.
+The distilled text, findings, diagrams, and index data written for these corpora are licensed under **CC BY 4.0** (see `LICENSE`). You may share and adapt them with attribution to tirunara.
 
-Original papers, figures, and trademarks remain the property of their respective authors and publishers; this repo summarises and cites them, it does not republish them.
+Original papers, code excerpts, figures, and trademarks remain the property of their respective authors and publishers; these corpora summarise, cite, and excerpt them to ground claims, they do not republish them.
 
 ---
 
-*Compiled 2026-10-25. The atlas is a map of the field as it stood then — use it to navigate, verify against the cited papers before you build on any single claim, and extend it as the field moves.*
+*Compiled 2026-10-25. Two maps, kept separate on purpose: one for what intelligence is, one for how the best code is built. Use each where it belongs, verify against the cited sources before building on any single claim, and extend each corpus inside its own folder.*
